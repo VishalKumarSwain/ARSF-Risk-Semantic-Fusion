@@ -1,0 +1,20 @@
+{
+  "n_subset_declared": 4000,
+  "n_subset_unique": 4000,
+  "check_no_duplicates": true,
+  "n_subset_in_train_split": 4000,
+  "check_all_in_train_split": true,
+  "n_overlap_with_val": 0,
+  "n_overlap_with_test": 0,
+  "n_overlap_with_stage1_1000": 0,
+  "check_no_val_overlap": true,
+  "check_no_test_overlap": true,
+  "check_no_stage1_overlap": true,
+  "n_fail_subset": 1535,
+  "n_pass_subset": 2465,
+  "fail_rate_subset": 0.38375,
+  "fail_rate_full_train": 0.3838926174496644,
+  "selection_method": "Stratified random sample of 4,000 scenarios from the 21,605-scenario TRAIN split only. seed=42. Procedure: split train ids into FAIL/PASS pools, shuffle each independently (random.seed(42)), take the same FAIL fraction as the full train split (8294/21605=38.39%) from the front of each shuffled pool (1535 FAIL + 2465 PASS = 4000), then shuffle the combined sample. This preserves the train-split base rate and uses a fixed, pre-specified seed -- not selected after inspecting any result.",
+  "remaining_train_scenarios_available": 17605,
+  "n_train_total": 21605
+}

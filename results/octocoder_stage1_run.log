@@ -1,0 +1,43 @@
+2026-08-31 00:19:58.220852: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/user2/.local/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.12) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+INFO 08-31 00:20:02 [__init__.py:244] Automatically detected platform cuda.
+WARNING 08-31 00:20:02 [cuda.py:478] Detected different devices in the system: NVIDIA A100-SXM4-80GB, NVIDIA A100-SXM4-80GB, NVIDIA A100-SXM4-80GB, NVIDIA DGX Display, NVIDIA A100-SXM4-80GB. Please make sure to set `CUDA_DEVICE_ORDER=PCI_BUS_ID` to avoid unexpected behavior.
+Scoring bigcode/octocoder on 1000 Stage-1 scenarios ...
+  50/1000: ok=0 malformed=0 error=50 elapsed=2.6s
+  100/1000: ok=0 malformed=0 error=100 elapsed=2.7s
+  150/1000: ok=0 malformed=0 error=150 elapsed=2.8s
+  200/1000: ok=0 malformed=0 error=200 elapsed=2.8s
+  250/1000: ok=0 malformed=0 error=250 elapsed=2.9s
+  300/1000: ok=0 malformed=0 error=300 elapsed=3.0s
+  350/1000: ok=0 malformed=0 error=350 elapsed=3.1s
+  400/1000: ok=0 malformed=0 error=400 elapsed=3.2s
+  450/1000: ok=0 malformed=0 error=450 elapsed=3.3s
+  500/1000: ok=0 malformed=0 error=500 elapsed=3.4s
+  550/1000: ok=0 malformed=0 error=550 elapsed=3.5s
+  600/1000: ok=0 malformed=0 error=600 elapsed=3.5s
+  650/1000: ok=0 malformed=0 error=650 elapsed=3.6s
+  700/1000: ok=0 malformed=0 error=700 elapsed=3.7s
+  750/1000: ok=0 malformed=0 error=750 elapsed=3.8s
+  800/1000: ok=0 malformed=0 error=800 elapsed=3.9s
+  850/1000: ok=0 malformed=0 error=850 elapsed=4.0s
+  900/1000: ok=0 malformed=0 error=900 elapsed=4.1s
+  950/1000: ok=0 malformed=0 error=950 elapsed=4.1s
+  1000/1000: ok=0 malformed=0 error=1000 elapsed=4.2s
+
+=== STAGE-1 SUMMARY: bigcode/octocoder ===
+model: bigcode/octocoder
+total_requests: 1000
+successful_requests: 0
+malformed_json: 0
+inference_errors: 1000
+success_rate_pct: 0.0
+mean_latency_sec: 0.0042
+median_latency_sec: 0.0016
+std_latency_sec: 0.0786
+min_latency_sec: 0.0015
+max_latency_sec: 2.4897
+total_runtime_sec: 4.24
+scenarios_per_minute: 14163.75
+Wrote ranking to results/rankings/octocoder_1000.csv

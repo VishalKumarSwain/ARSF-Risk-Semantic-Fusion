@@ -1,0 +1,6 @@
+{
+  "T_feature_total_sec_36006_scenarios": 43.7238,
+  "T_feature_per_scenario_sec": 0.00121435,
+  "T_rank_total_sec_36006_scenarios": 0.01104,
+  "note": "T_feature and T_rank are model-independent (shared across KSERESNET/B4/all LLMs since they operate on the same pool/scores); measured once, not per-LLM-run."
+}

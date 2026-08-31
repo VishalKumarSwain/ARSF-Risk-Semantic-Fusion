@@ -1,0 +1,43 @@
+Using device: cuda
+Loading pool...
+train=21605 val=7196
+Building features...
+epoch 001 | train_loss=0.6939 val_loss=0.6212 val_acc=0.7260 val_prec=0.6032 val_rec=0.8368 val_f1=0.7010 elapsed=3.0s
+  -> saved new best (val_loss=0.6212)
+epoch 002 | train_loss=0.6028 val_loss=0.5525 val_acc=0.7825 val_prec=0.6977 val_rec=0.7651 val_f1=0.7298 elapsed=5.6s
+  -> saved new best (val_loss=0.5525)
+epoch 003 | train_loss=0.5759 val_loss=0.5514 val_acc=0.7939 val_prec=0.7205 val_rec=0.7568 val_f1=0.7382 elapsed=8.1s
+  -> saved new best (val_loss=0.5514)
+epoch 004 | train_loss=0.5584 val_loss=0.5379 val_acc=0.7763 val_prec=0.6613 val_rec=0.8552 val_f1=0.7459 elapsed=10.4s
+  -> saved new best (val_loss=0.5379)
+epoch 005 | train_loss=0.5498 val_loss=0.5129 val_acc=0.8011 val_prec=0.7121 val_rec=0.8093 val_f1=0.7576 elapsed=12.9s
+  -> saved new best (val_loss=0.5129)
+epoch 006 | train_loss=0.5333 val_loss=0.5125 val_acc=0.8156 val_prec=0.7596 val_rec=0.7604 val_f1=0.7600 elapsed=15.2s
+  -> saved new best (val_loss=0.5125)
+epoch 007 | train_loss=0.5219 val_loss=0.5056 val_acc=0.8205 val_prec=0.7662 val_rec=0.7662 val_f1=0.7662 elapsed=17.6s
+  -> saved new best (val_loss=0.5056)
+epoch 008 | train_loss=0.5143 val_loss=0.5049 val_acc=0.7999 val_prec=0.6985 val_rec=0.8426 val_f1=0.7638 elapsed=19.9s
+  -> saved new best (val_loss=0.5049)
+epoch 009 | train_loss=0.5086 val_loss=0.5105 val_acc=0.8163 val_prec=0.7503 val_rec=0.7818 val_f1=0.7657 elapsed=23.2s
+epoch 010 | train_loss=0.4995 val_loss=0.5147 val_acc=0.8128 val_prec=0.7303 val_rec=0.8125 val_f1=0.7692 elapsed=25.7s
+epoch 011 | train_loss=0.4936 val_loss=0.4768 val_acc=0.8257 val_prec=0.7576 val_rec=0.8031 val_f1=0.7797 elapsed=28.0s
+  -> saved new best (val_loss=0.4768)
+epoch 012 | train_loss=0.4865 val_loss=0.4840 val_acc=0.8221 val_prec=0.7664 val_rec=0.7720 val_f1=0.7692 elapsed=30.4s
+epoch 013 | train_loss=0.4728 val_loss=0.4910 val_acc=0.8237 val_prec=0.7605 val_rec=0.7894 val_f1=0.7746 elapsed=32.7s
+epoch 014 | train_loss=0.4687 val_loss=0.4836 val_acc=0.8256 val_prec=0.7631 val_rec=0.7915 val_f1=0.7770 elapsed=35.1s
+epoch 015 | train_loss=0.4671 val_loss=0.4781 val_acc=0.8300 val_prec=0.7723 val_rec=0.7904 val_f1=0.7813 elapsed=37.4s
+epoch 016 | train_loss=0.4377 val_loss=0.4681 val_acc=0.8366 val_prec=0.7825 val_rec=0.7955 val_f1=0.7889 elapsed=39.8s
+  -> saved new best (val_loss=0.4681)
+epoch 017 | train_loss=0.4270 val_loss=0.4753 val_acc=0.8388 val_prec=0.7803 val_rec=0.8075 val_f1=0.7937 elapsed=43.7s
+epoch 018 | train_loss=0.4266 val_loss=0.4629 val_acc=0.8373 val_prec=0.7737 val_rec=0.8143 val_f1=0.7935 elapsed=46.0s
+  -> saved new best (val_loss=0.4629)
+epoch 019 | train_loss=0.4161 val_loss=0.4769 val_acc=0.8369 val_prec=0.7760 val_rec=0.8085 val_f1=0.7919 elapsed=48.4s
+epoch 020 | train_loss=0.4111 val_loss=0.4691 val_acc=0.8399 val_prec=0.7880 val_rec=0.7977 val_f1=0.7928 elapsed=51.1s
+epoch 021 | train_loss=0.4114 val_loss=0.4777 val_acc=0.8321 val_prec=0.7509 val_rec=0.8422 val_f1=0.7939 elapsed=53.4s
+epoch 022 | train_loss=0.4025 val_loss=0.4743 val_acc=0.8417 val_prec=0.7938 val_rec=0.7941 val_f1=0.7939 elapsed=55.8s
+epoch 023 | train_loss=0.3832 val_loss=0.4695 val_acc=0.8349 val_prec=0.7760 val_rec=0.8013 val_f1=0.7885 elapsed=58.3s
+epoch 024 | train_loss=0.3789 val_loss=0.4665 val_acc=0.8382 val_prec=0.7737 val_rec=0.8180 val_f1=0.7952 elapsed=60.8s
+epoch 025 | train_loss=0.3730 val_loss=0.4731 val_acc=0.8381 val_prec=0.7778 val_rec=0.8096 val_f1=0.7934 elapsed=63.2s
+epoch 026 | train_loss=0.3648 val_loss=0.4769 val_acc=0.8378 val_prec=0.7756 val_rec=0.8129 val_f1=0.7938 elapsed=65.6s
+Early stopping at epoch 26 (no improvement for 8 epochs)
+Training complete in 65.6s. Best val_loss=0.4629. Saved to models/kseresnet_native/kseresnet_native_best.pt

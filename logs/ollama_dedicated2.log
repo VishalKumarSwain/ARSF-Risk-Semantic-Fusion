@@ -1,0 +1,1153 @@
+time=2026-08-29T16:43:09.496+05:30 level=INFO source=routes.go:1933 msg="server config" env="map[CUDA_VISIBLE_DEVICES:MIG-80f109f6-aa75-51f9-9909-42ad8029df93 GGML_VK_VISIBLE_DEVICES: GPU_DEVICE_ORDINAL: HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION: HTTPS_PROXY: HTTP_PROXY: LLAMA_ARG_FIT: LLAMA_ARG_FIT_TARGET: NO_PROXY: OLLAMA_CONTEXT_LENGTH:4096 OLLAMA_DEBUG:INFO OLLAMA_DEBUG_LOG_REQUESTS:false OLLAMA_EDITOR: OLLAMA_FLASH_ATTENTION:false OLLAMA_GO_TEMPLATE:true OLLAMA_GPU_OVERHEAD:0 OLLAMA_HOST:http://127.0.0.1:11435 OLLAMA_IGPU_ENABLE: OLLAMA_KEEP_ALIVE:5m0s OLLAMA_KV_CACHE_TYPE: OLLAMA_LLM_LIBRARY: OLLAMA_LOAD_TIMEOUT:5m0s OLLAMA_MAX_LOADED_MODELS:0 OLLAMA_MAX_QUEUE:512 OLLAMA_MAX_TRANSFER_STREAMS:4 OLLAMA_MODELS:/home/user2/.ollama/models OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NO_CLOUD:false OLLAMA_NUM_PARALLEL:1 OLLAMA_ORIGINS:[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://* vscode-file://*] OLLAMA_REMOTES:[ollama.com] OLLAMA_SCHED_SPREAD:false OLLAMA_VULKAN:true ROCR_VISIBLE_DEVICES: http_proxy: https_proxy: no_proxy:]"
+time=2026-08-29T16:43:09.496+05:30 level=INFO source=routes.go:1935 msg="Ollama cloud disabled: false"
+time=2026-08-29T16:43:09.499+05:30 level=INFO source=images.go:911 msg="total blobs: 18"
+time=2026-08-29T16:43:09.499+05:30 level=INFO source=images.go:918 msg="total unused blobs removed: 0"
+time=2026-08-29T16:43:09.500+05:30 level=INFO source=routes.go:1990 msg="Listening on 127.0.0.1:11435 (version 0.32.9)"
+time=2026-08-29T16:43:09.500+05:30 level=INFO source=runner.go:60 msg="discovering available GPUs..."
+time=2026-08-29T16:43:09.500+05:30 level=WARN source=runner.go:722 msg="user overrode visible devices" CUDA_VISIBLE_DEVICES=MIG-80f109f6-aa75-51f9-9909-42ad8029df93
+time=2026-08-29T16:43:09.500+05:30 level=WARN source=runner.go:726 msg="if GPUs are not correctly discovered, unset and try again"
+time=2026-08-29T16:43:09.502+05:30 level=INFO source=model_list_cache.go:112 msg="model list cache hydration complete" models=5 failures=0 elapsed=1.847702ms
+time=2026-08-29T16:43:09.954+05:30 level=INFO source=model_recommendations.go:177 msg="model recommendations cache sleep scheduled" wait=4h27m8.579545433s consecutive_failures=0
+time=2026-08-29T16:43:15.301+05:30 level=INFO source=types.go:32 msg="inference compute" id=2 filter_id=2 library=Vulkan compute=0.0 name=Vulkan2 description="NVIDIA A100-SXM4-80GB" libdirs=ollama,vulkan driver=0.0 pci_id=0000:47:00.0 type=discrete total="80.0 GiB" available="79.1 GiB"
+time=2026-08-29T16:43:15.301+05:30 level=INFO source=types.go:32 msg="inference compute" id=0 filter_id=0 library=Vulkan compute=0.0 name=Vulkan0 description="NVIDIA A100-SXM4-80GB" libdirs=ollama,vulkan driver=0.0 pci_id=0000:01:00.0 type=discrete total="80.0 GiB" available="64.3 GiB"
+time=2026-08-29T16:43:15.301+05:30 level=INFO source=types.go:32 msg="inference compute" id=0 filter_id=MIG-80f109f6-aa75-51f9-9909-42ad8029df93 library=CUDA compute=8.0 name=CUDA0 description="NVIDIA A100-SXM4-80GB MIG 3g.40gb" libdirs=ollama,cuda_v12 driver=12.4 pci_id=0000:81:00.0 type=discrete total="39.2 GiB" available="35.8 GiB"
+time=2026-08-29T16:43:15.301+05:30 level=INFO source=types.go:32 msg="inference compute" id=1 filter_id=1 library=Vulkan compute=0.0 name=Vulkan1 description="NVIDIA DGX Display" libdirs=ollama,vulkan driver=0.0 pci_id=0000:c1:00.0 type=discrete total="4.2 GiB" available="890.0 MiB"
+time=2026-08-29T16:43:15.301+05:30 level=INFO source=routes.go:2040 msg="vram-based default context" total_vram="203.5 GiB" default_num_ctx=262144
+time=2026-08-29T16:43:25.474+05:30 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/usr/local/lib/ollama /usr/local/lib/ollama/vulkan]" extra_envs=map[] error="context deadline exceeded"
+time=2026-08-29T16:43:25.474+05:30 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/usr/local/lib/ollama /usr/local/lib/ollama/vulkan]" extra_envs=map[] error="context deadline exceeded" detail=""
+time=2026-08-29T16:43:25.474+05:30 level=WARN source=runner.go:364 msg="unable to refresh free memory, using old values"
+time=2026-08-29T16:43:25.540+05:30 level=INFO source=sched.go:1013 msg="selecting single GPU for llama-server model" main_gpu=0 id=2 filter_id=2 library=Vulkan name=Vulkan2 description="NVIDIA A100-SXM4-80GB" integrated=false predicted="5.4 GiB" available="79.1 GiB"
+time=2026-08-29T16:43:25.541+05:30 level=INFO source=sched.go:1132 msg="selecting GPU backend for llama-server model" library=Vulkan gpu_count=1 available_gpu_count=4
+time=2026-08-29T16:43:25.541+05:30 level=INFO source=server.go:109 msg="using llama-server for model" model=/home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f
+time=2026-08-29T16:43:25.541+05:30 level=INFO source=llama_server.go:431 msg="starting llama-server" cmd="/usr/local/lib/ollama/llama-server --model /home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f --port 32791 --host 127.0.0.1 --no-webui --offline -c 4096 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --no-jinja --chat-template chatml --flash-attn auto -b 512 -ub 512 --split-mode none --main-gpu 0 --context-shift --keep 4"
+time=2026-08-29T16:43:25.541+05:30 level=INFO source=sched.go:613 msg="system memory" total="503.7 GiB" free="406.9 GiB" free_swap="0 B"
+time=2026-08-29T16:43:25.541+05:30 level=INFO source=sched.go:620 msg="gpu memory" id=2 library=Vulkan available="78.7 GiB" free="79.1 GiB" minimum="457.0 MiB" overhead="0 B"
+time=2026-08-29T16:43:25.541+05:30 level=INFO source=llama_server.go:1046 msg="loading model via llama-server" model=/home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f
+time=2026-08-29T16:43:25.541+05:30 level=INFO source=llama_server.go:1293 msg="waiting for llama-server to start responding"
+time=2026-08-29T16:43:25.542+05:30 level=INFO source=llama_server.go:1348 msg="waiting for llama-server to become available" status="llm server not responding"
+cmn  common_param: common_params_print_info: build 1 (f8def7fe1) with GNU 13.3.1 for Linux x86_64
+cmn  common_param: common_params_print_info: verbosity = 4 (adjust with the `-lv N` CLI arg)
+cmn  common_param: device_info:
+cmn  common_param:   - CPU     : AMD EPYC 7742 64-Core Processor (515804 MiB, 515804 MiB free)
+cmn  common_param:   - Vulkan0 : NVIDIA DGX Display (4342 MiB, 890 MiB free)
+cmn  common_param: system_info: n_threads = 64 (n_threads_batch = 64) / 128 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | REPACK = 1 | 
+srv          init: using 127 threads for HTTP server
+srv          init: The UI is disabled
+srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+srv  llama_server: -----------------
+srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+srv  llama_server: this can be a security risk (cross-origin attacks)
+srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+srv  llama_server: -----------------
+srv         start: binding port with default address family
+srv    load_model: loading model '/home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f'
+srv    load_model: local path '/home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f'
+cmn  common_init_: fitting params to device memory ...
+cmn  common_init_: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+common_params_fit_impl: getting device memory data for initial parameters:
+time=2026-08-29T16:43:26.044+05:30 level=INFO source=llama_server.go:1348 msg="waiting for llama-server to become available" status="llm server loading model"
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (5311 =  4643 +     576 +      92) +       -1853 |
+common_memory_breakdown_print: |   - Host                  |                  353 =   333 +       0 +      20                |
+common_params_fit_impl: projected to use 5311 MiB of device memory vs. 884 MiB of free device memory
+common_params_fit_impl: cannot meet free memory target of 1024 MiB, need to reduce device memory by 5451 MiB
+common_params_fit_impl: context size set by user to 4096 -> no change
+common_params_fit_impl: id=0, target=-140 MiB
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + ( 111 =     0 +       0 +     111) +        3346 |
+common_memory_breakdown_print: |   - Host                  |                 5573 =  4977 +     576 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 0, n_part= 0, overflow_type=4, mem=   111 MiB
+common_params_fit_impl: filling dense layers back-to-front:
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (5311 =  4643 +     576 +      92) +       -1853 |
+common_memory_breakdown_print: |   - Host                  |                  353 =   333 +       0 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=37, n_part= 0, overflow_type=4, mem=  5311 MiB
+common_params_fit_impl: start filling device 0, delta=37
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (5193 =  4522 +     560 +     111) +       -1735 |
+common_memory_breakdown_print: |   - Host                  |                  491 =   455 +      16 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=36, n_part= 0, overflow_type=4, mem=  5193 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=36
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (5055 =  4400 +     544 +     111) +       -1597 |
+common_memory_breakdown_print: |   - Host                  |                  629 =   577 +      32 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=35, n_part= 0, overflow_type=4, mem=  5055 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=35
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (4917 =  4278 +     528 +     111) +       -1459 |
+common_memory_breakdown_print: |   - Host                  |                  766 =   698 +      48 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=34, n_part= 0, overflow_type=4, mem=  4917 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=34
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (4780 =  4157 +     512 +     111) +       -1322 |
+common_memory_breakdown_print: |   - Host                  |                  904 =   820 +      64 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=33, n_part= 0, overflow_type=4, mem=  4780 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=33
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (4654 =  4047 +     496 +     111) +       -1196 |
+common_memory_breakdown_print: |   - Host                  |                 1029 =   929 +      80 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=32, n_part= 0, overflow_type=4, mem=  4654 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=32
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (4529 =  3938 +     480 +     111) +       -1071 |
+common_memory_breakdown_print: |   - Host                  |                 1155 =  1039 +      96 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=31, n_part= 0, overflow_type=4, mem=  4529 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=31
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (4391 =  3816 +     464 +     111) +        -933 |
+common_memory_breakdown_print: |   - Host                  |                 1292 =  1160 +     112 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=30, n_part= 0, overflow_type=4, mem=  4391 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=30
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (4266 =  3707 +     448 +     111) +        -808 |
+common_memory_breakdown_print: |   - Host                  |                 1417 =  1269 +     128 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=29, n_part= 0, overflow_type=4, mem=  4266 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=29
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (4141 =  3598 +     432 +     111) +        -683 |
+common_memory_breakdown_print: |   - Host                  |                 1543 =  1379 +     144 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=28, n_part= 0, overflow_type=4, mem=  4141 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=28
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (4003 =  3476 +     416 +     111) +        -545 |
+common_memory_breakdown_print: |   - Host                  |                 1680 =  1500 +     160 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=27, n_part= 0, overflow_type=4, mem=  4003 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=27
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (3878 =  3367 +     400 +     111) +        -420 |
+common_memory_breakdown_print: |   - Host                  |                 1806 =  1610 +     176 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=26, n_part= 0, overflow_type=4, mem=  3878 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=26
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (3753 =  3258 +     384 +     111) +        -295 |
+common_memory_breakdown_print: |   - Host                  |                 1931 =  1719 +     192 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=25, n_part= 0, overflow_type=4, mem=  3753 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=25
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (3615 =  3136 +     368 +     111) +        -157 |
+common_memory_breakdown_print: |   - Host                  |                 2069 =  1841 +     208 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=24, n_part= 0, overflow_type=4, mem=  3615 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=24
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (3490 =  3027 +     352 +     111) +         -32 |
+common_memory_breakdown_print: |   - Host                  |                 2194 =  1950 +     224 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=23, n_part= 0, overflow_type=4, mem=  3490 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=23
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (3364 =  2917 +     336 +     111) +          93 |
+common_memory_breakdown_print: |   - Host                  |                 2319 =  2059 +     240 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=22, n_part= 0, overflow_type=4, mem=  3364 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=22
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (3227 =  2796 +     320 +     111) +         230 |
+common_memory_breakdown_print: |   - Host                  |                 2457 =  2181 +     256 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=21, n_part= 0, overflow_type=4, mem=  3227 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=21
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (3101 =  2686 +     304 +     111) +         356 |
+common_memory_breakdown_print: |   - Host                  |                 2582 =  2290 +     272 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=20, n_part= 0, overflow_type=4, mem=  3101 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=20
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (2976 =  2577 +     288 +     111) +         481 |
+common_memory_breakdown_print: |   - Host                  |                 2707 =  2399 +     288 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=19, n_part= 0, overflow_type=4, mem=  2976 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=19
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (2839 =  2456 +     272 +     111) +         618 |
+common_memory_breakdown_print: |   - Host                  |                 2845 =  2521 +     304 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=18, n_part= 0, overflow_type=4, mem=  2839 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=18
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (2713 =  2346 +     256 +     111) +         744 |
+common_memory_breakdown_print: |   - Host                  |                 2970 =  2630 +     320 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=17, n_part= 0, overflow_type=4, mem=  2713 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=17
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (2588 =  2237 +     240 +     111) +         869 |
+common_memory_breakdown_print: |   - Host                  |                 3096 =  2740 +     336 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=16, n_part= 0, overflow_type=4, mem=  2588 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=16
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (2450 =  2115 +     224 +     111) +        1007 |
+common_memory_breakdown_print: |   - Host                  |                 3233 =  2861 +     352 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=15, n_part= 0, overflow_type=4, mem=  2450 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=15
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (2325 =  2006 +     208 +     111) +        1132 |
+common_memory_breakdown_print: |   - Host                  |                 3359 =  2971 +     368 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=14, n_part= 0, overflow_type=4, mem=  2325 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=14
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (2200 =  1897 +     192 +     111) +        1257 |
+common_memory_breakdown_print: |   - Host                  |                 3484 =  3080 +     384 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=13, n_part= 0, overflow_type=4, mem=  2200 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=13
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (2062 =  1775 +     176 +     111) +        1395 |
+common_memory_breakdown_print: |   - Host                  |                 3622 =  3202 +     400 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=12, n_part= 0, overflow_type=4, mem=  2062 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=12
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (1937 =  1666 +     160 +     111) +        1520 |
+common_memory_breakdown_print: |   - Host                  |                 3747 =  3311 +     416 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=11, n_part= 0, overflow_type=4, mem=  1937 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=11
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (1812 =  1557 +     144 +     111) +        1645 |
+common_memory_breakdown_print: |   - Host                  |                 3872 =  3420 +     432 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=10, n_part= 0, overflow_type=4, mem=  1812 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=10
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (1674 =  1435 +     128 +     111) +        1783 |
+common_memory_breakdown_print: |   - Host                  |                 4010 =  3542 +     448 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 9, n_part= 0, overflow_type=4, mem=  1674 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=9
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (1549 =  1326 +     112 +     111) +        1908 |
+common_memory_breakdown_print: |   - Host                  |                 4135 =  3651 +     464 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 8, n_part= 0, overflow_type=4, mem=  1549 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=8
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (1423 =  1216 +      96 +     111) +        2034 |
+common_memory_breakdown_print: |   - Host                  |                 4260 =  3760 +     480 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 7, n_part= 0, overflow_type=4, mem=  1423 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=7
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (1286 =  1095 +      80 +     111) +        2171 |
+common_memory_breakdown_print: |   - Host                  |                 4398 =  3882 +     496 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 6, n_part= 0, overflow_type=4, mem=  1286 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=6
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (1148 =   973 +      64 +     111) +        2309 |
+common_memory_breakdown_print: |   - Host                  |                 4536 =  4004 +     512 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 5, n_part= 0, overflow_type=4, mem=  1148 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=5
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + (1010 =   851 +      48 +     111) +        2447 |
+common_memory_breakdown_print: |   - Host                  |                 4673 =  4125 +     528 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 4, n_part= 0, overflow_type=4, mem=  1010 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=4
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + ( 873 =   730 +      32 +     111) +        2584 |
+common_memory_breakdown_print: |   - Host                  |                 4811 =  4247 +     544 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 3, n_part= 0, overflow_type=4, mem=   873 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=3
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  884 + ( 597 =   486 +       0 +     111) +        2860 |
+common_memory_breakdown_print: |   - Host                  |                 5086 =  4490 +     576 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 1, n_part= 0, overflow_type=4, mem=   597 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=1
+common_params_fit_impl:   - Vulkan0 (NVIDIA DGX Display):  0 layers,    111 MiB used,    772 MiB free
+common_fit_params: successfully fit params to free device memory
+common_fit_params: fitting params to free memory took 14.01 seconds
+llama_model_loader: loaded meta data with 28 key-value pairs and 399 tensors from /home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = qwen3
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = Qwen3 8B
+llama_model_loader: - kv   3:                           general.basename str              = Qwen3
+llama_model_loader: - kv   4:                         general.size_label str              = 8B
+llama_model_loader: - kv   5:                            general.license str              = apache-2.0
+llama_model_loader: - kv   6:                          qwen3.block_count u32              = 36
+llama_model_loader: - kv   7:                       qwen3.context_length u32              = 40960
+llama_model_loader: - kv   8:                     qwen3.embedding_length u32              = 4096
+llama_model_loader: - kv   9:                  qwen3.feed_forward_length u32              = 12288
+llama_model_loader: - kv  10:                 qwen3.attention.head_count u32              = 32
+llama_model_loader: - kv  11:              qwen3.attention.head_count_kv u32              = 8
+llama_model_loader: - kv  12:                       qwen3.rope.freq_base f32              = 1000000.000000
+llama_model_loader: - kv  13:     qwen3.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  14:                 qwen3.attention.key_length u32              = 128
+llama_model_loader: - kv  15:               qwen3.attention.value_length u32              = 128
+llama_model_loader: - kv  16:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  17:                         tokenizer.ggml.pre str              = qwen2
+llama_model_loader: - kv  18:                      tokenizer.ggml.tokens arr[str,151936]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  19:                  tokenizer.ggml.token_type arr[i32,151936]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  20:                      tokenizer.ggml.merges arr[str,151387]  = ["Ġ Ġ", "ĠĠ ĠĠ", "i n", "Ġ t",...
+llama_model_loader: - kv  21:                tokenizer.ggml.eos_token_id u32              = 151645
+llama_model_loader: - kv  22:            tokenizer.ggml.padding_token_id u32              = 151643
+llama_model_loader: - kv  23:                tokenizer.ggml.bos_token_id u32              = 151643
+llama_model_loader: - kv  24:               tokenizer.ggml.add_bos_token bool             = false
+llama_model_loader: - kv  25:                    tokenizer.chat_template str              = {%- if tools %}\n    {{- '<|im_start|>...
+llama_model_loader: - kv  26:               general.quantization_version u32              = 2
+llama_model_loader: - kv  27:                          general.file_type u32              = 15
+llama_model_loader: - type  f32:  145 tensors
+llama_model_loader: - type  f16:   36 tensors
+llama_model_loader: - type q4_K:  199 tensors
+llama_model_loader: - type q6_K:   19 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_K - Medium
+print_info: file size   = 4.86 GiB (5.10 BPW) 
+llama_prepare_model_devices: using device Vulkan0 (NVIDIA DGX Display) (0000:c1:00.0) - 884 MiB free
+load: 0 unused tokens
+load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: printing all EOG tokens:
+load:   - 128247 ('</s>')
+load:   - 151643 ('<|endoftext|>')
+load:   - 151645 ('<|im_end|>')
+load:   - 151662 ('<|fim_pad|>')
+load:   - 151663 ('<|repo_name|>')
+load:   - 151664 ('<|file_sep|>')
+load: special tokens cache size = 27
+load: token to piece cache size = 0.9311 MB
+print_info: arch                  = qwen3
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 40960
+print_info: n_embd_inp            = 4096
+print_info: n_embd                = 4096
+print_info: n_embd_out            = 4096
+print_info: n_layer               = 36
+print_info: n_layer_all           = 36
+print_info: n_head                = 32
+print_info: n_head_kv             = 8
+print_info: n_rot                 = 128
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 128
+print_info: n_embd_head_v         = 128
+print_info: n_gqa                 = 4
+print_info: n_embd_k_gqa          = 1024
+print_info: n_embd_v_gqa          = 1024
+print_info: f_norm_eps            = 0.0e+00
+print_info: f_norm_rms_eps        = 1.0e-06
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: f_attn_value_scale    = 0.0000
+print_info: n_ff                  = 12288
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 1
+print_info: pooling type          = -1
+print_info: rope type             = 2
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 1000000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 40960
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = 8B
+print_info: model params          = 8.19 B
+print_info: general.name          = Qwen3 8B
+print_info: vocab type            = BPE
+print_info: n_vocab               = 151936
+print_info: n_merges              = 151387
+print_info: BOS token             = 151643 '<|endoftext|>'
+print_info: EOS token             = 151645 '<|im_end|>'
+print_info: EOT token             = 151645 '<|im_end|>'
+print_info: PAD token             = 151643 '<|endoftext|>'
+print_info: LF token              = 198 'Ċ'
+print_info: FIM PRE token         = 151659 '<|fim_prefix|>'
+print_info: FIM SUF token         = 151661 '<|fim_suffix|>'
+print_info: FIM MID token         = 151660 '<|fim_middle|>'
+print_info: FIM PAD token         = 151662 '<|fim_pad|>'
+print_info: FIM REP token         = 151663 '<|repo_name|>'
+print_info: FIM SEP token         = 151664 '<|file_sep|>'
+print_info: EOG token             = 128247 '</s>'
+print_info: EOG token             = 151643 '<|endoftext|>'
+print_info: EOG token             = 151645 '<|im_end|>'
+print_info: EOG token             = 151662 '<|fim_pad|>'
+print_info: EOG token             = 151663 '<|repo_name|>'
+print_info: EOG token             = 151664 '<|file_sep|>'
+print_info: max token length      = 256
+load_tensors: loading model tensors, this can take a while... (load_mode = mmap)
+time=2026-08-29T16:43:40.570+05:30 level=INFO source=llama_server.go:1348 msg="waiting for llama-server to become available" status="llm server not responding"
+time=2026-08-29T16:43:40.899+05:30 level=INFO source=llama_server.go:1348 msg="waiting for llama-server to become available" status="llm server loading model"
+load_tensors: offloading 0 repeating layers to GPU
+load_tensors: offloaded 0/37 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =  4977.62 MiB
+cmn  common_init_: added </s> logit bias = -inf
+cmn  common_init_: added <|endoftext|> logit bias = -inf
+cmn  common_init_: added <|im_end|> logit bias = -inf
+cmn  common_init_: added <|fim_pad|> logit bias = -inf
+cmn  common_init_: added <|repo_name|> logit bias = -inf
+cmn  common_init_: added <|file_sep|> logit bias = -inf
+llama_context: constructing llama_context
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 4096
+llama_context: n_ctx_seq     = 4096
+llama_context: n_batch       = 512
+llama_context: n_ubatch      = 512
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = auto
+llama_context: kv_unified    = false
+llama_context: freq_base     = 1000000.0
+llama_context: freq_scale    = 1
+llama_context: n_rs_seq      = 0
+llama_context: n_outputs_max = 1
+llama_context: n_ctx_seq (4096) < n_ctx_train (40960) -- the full capacity of the model will not be utilized
+llama_context:        CPU  output buffer size =     0.58 MiB
+llama_kv_cache:        CPU KV buffer size =   576.00 MiB
+llama_kv_cache: size =  576.00 MiB (  4096 cells,  36 layers,  1/1 seqs), K (f16):  288.00 MiB, V (f16):  288.00 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 128
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 128
+sched_reserve: reserving ...
+resolve_fused_ops: Flash Attention enabled
+resolve_fused_ops: resolving fused Gated Delta Net support:
+resolve_fused_ops: fused Gated Delta Net (autoregressive) enabled
+resolve_fused_ops: fused Gated Delta Net (chunked) enabled
+resolve_fused_ops: resolving fused Lightning Indexer support:
+resolve_fused_ops: Lightning Indexer enabled
+resolve_fused_ops: resolving fused DeepSeek V4 HC support:
+resolve_fused_ops: fused DeepSeek V4 HC pre enabled
+resolve_fused_ops: fused DeepSeek V4 HC comb enabled
+resolve_fused_ops: fused DeepSeek V4 HC post enabled
+sched_reserve:    Vulkan0 compute buffer size =   111.00 MiB
+sched_reserve: Vulkan_Host compute buffer size =    20.01 MiB
+sched_reserve: graph nodes  = 1266
+sched_reserve: graph splits = 467 (with bs=512), 73 (with bs=1)
+sched_reserve: reserve took 21.02 ms, sched copies = 1
+cmn  common_init_: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+srv    load_model: initializing, n_slots = 1, n_ctx_slot = 4096, kv_unified = 'false'
+spec common_specu: no implementations specified for speculative decoding
+slot   load_model: id  0 | task -1 | new slot, n_ctx = 4096
+srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+srv    load_model: use `--cache-ram 0` to disable the prompt cache
+srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+srv    load_model: context checkpoints enabled, max = 32, min spacing = 8192
+srv          init: idle slots will be saved to prompt cache upon starting a new task
+srv          init: init: chat template, example_format: '<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+'
+srv          init: init: chat template, thinking = 0
+srv  llama_server: model loaded
+srv  llama_server: listening on http://127.0.0.1:32791
+srv  update_slots: all slots are idle
+time=2026-08-29T16:43:43.662+05:30 level=INFO source=llama_server.go:1360 msg="llama-server started in 18.12 seconds"
+time=2026-08-29T16:43:43.706+05:30 level=INFO source=images.go:373 msg="template selection" model=registry.ollama.ai/library/qwen3:8b selected=go_template renderer="" parser="" go_template="[completion tools thinking]" chat_template="[tools thinking completion]" harmony=null renderer_parser=null
+time=2026-08-29T16:43:43.706+05:30 level=INFO source=sched.go:728 msg="loaded runners" count=1
+time=2026-08-29T16:43:43.706+05:30 level=INFO source=llama_server.go:1293 msg="waiting for llama-server to start responding"
+time=2026-08-29T16:43:43.706+05:30 level=INFO source=llama_server.go:1360 msg="llama-server started in 18.17 seconds"
+srv  server_strea: conv_id= (empty=1)
+slot get_availabl: id  0 | task -1 |  - skipping, slot is empty
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+srv  get_availabl: updating prompt cache
+srv          load:  - looking for better prompt, base f_keep = -1.000, f_sim = 0.000
+srv        update:  - cache state: 0 prompts, 0.000 MiB (limits: 8192.000 MiB, 4096 tokens, 8589934592 est)
+srv  get_availabl: prompt cache update took 0.03 ms
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.600
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+slot   operator(): id  0 | task 0 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 22
+slot   operator(): id  0 | task 0 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot init_sampler: id  0 | task 0 | init sampler, took 0.01 ms, tokens: text = 22, total = 22
+slot print_timing: id  0 | task 0 | prompt eval time =    1918.72 ms /    22 tokens (   87.21 ms per token,    11.47 tokens per second)
+slot print_timing: id  0 | task 0 |        eval time =    2248.82 ms /     3 tokens (  749.61 ms per token,     1.33 tokens per second)
+slot print_timing: id  0 | task 0 |       total time =    4167.54 ms /    25 tokens
+slot print_timing: id  0 | task 0 |    graphs reused =          2
+slot      release: id  0 | task 0 | stop processing: n_tokens = 24, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/08/29 - 16:43:47 | 200 | 25.771715529s |       127.0.0.1 | POST     "/api/generate"
+time=2026-08-29T16:44:08.106+05:30 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/usr/local/lib/ollama /usr/local/lib/ollama/vulkan]" extra_envs=map[] error="context deadline exceeded"
+time=2026-08-29T16:44:08.106+05:30 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/usr/local/lib/ollama /usr/local/lib/ollama/vulkan]" extra_envs=map[] error="context deadline exceeded" detail=""
+time=2026-08-29T16:44:08.106+05:30 level=WARN source=runner.go:364 msg="unable to refresh free memory, using old values"
+time=2026-08-29T16:44:11.357+05:30 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/usr/local/lib/ollama /usr/local/lib/ollama/vulkan]" extra_envs=map[] error="context deadline exceeded"
+time=2026-08-29T16:44:11.357+05:30 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/usr/local/lib/ollama /usr/local/lib/ollama/vulkan]" extra_envs=map[] error="context deadline exceeded" detail=""
+time=2026-08-29T16:44:11.357+05:30 level=WARN source=runner.go:364 msg="unable to refresh free memory, using old values"
+time=2026-08-29T16:44:13.107+05:30 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/usr/local/lib/ollama /usr/local/lib/ollama/vulkan]" extra_envs=map[] error="context deadline exceeded"
+time=2026-08-29T16:44:13.107+05:30 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/usr/local/lib/ollama /usr/local/lib/ollama/vulkan]" extra_envs=map[] error="context deadline exceeded" detail=""
+time=2026-08-29T16:44:13.107+05:30 level=WARN source=runner.go:364 msg="unable to refresh free memory, using old values"
+time=2026-08-29T16:44:13.107+05:30 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/usr/local/lib/ollama /usr/local/lib/ollama/cuda_v12]" extra_envs=map[] error="context deadline exceeded"
+time=2026-08-29T16:44:13.107+05:30 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/usr/local/lib/ollama /usr/local/lib/ollama/cuda_v12]" extra_envs=map[] error="context deadline exceeded" detail=""
+time=2026-08-29T16:44:13.107+05:30 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/usr/local/lib/ollama /usr/local/lib/ollama/vulkan]" extra_envs=map[] error="context deadline exceeded"
+time=2026-08-29T16:44:13.107+05:30 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/usr/local/lib/ollama /usr/local/lib/ollama/vulkan]" extra_envs=map[] error="context deadline exceeded" detail=""
+time=2026-08-29T16:44:13.107+05:30 level=WARN source=runner.go:364 msg="unable to refresh free memory, using old values"
+time=2026-08-29T16:44:13.160+05:30 level=WARN source=llama_server.go:130 msg="llama-server discovery: timed out waiting for server startup" error="context deadline exceeded" libDirs="[/usr/local/lib/ollama /usr/local/lib/ollama/vulkan]" lines_captured=0
+time=2026-08-29T16:44:16.107+05:30 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/usr/local/lib/ollama /usr/local/lib/ollama/vulkan]" extra_envs=map[] error="context deadline exceeded"
+time=2026-08-29T16:44:16.108+05:30 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/usr/local/lib/ollama /usr/local/lib/ollama/vulkan]" extra_envs=map[] error="context deadline exceeded" detail=""
+time=2026-08-29T16:44:16.108+05:30 level=WARN source=runner.go:364 msg="unable to refresh free memory, using old values"
+time=2026-08-29T16:44:16.176+05:30 level=INFO source=sched.go:1013 msg="selecting single GPU for llama-server model" main_gpu=0 id=2 filter_id=2 library=Vulkan name=Vulkan2 description="NVIDIA A100-SXM4-80GB" integrated=false predicted="5.4 GiB" available="80.0 GiB"
+time=2026-08-29T16:44:16.176+05:30 level=INFO source=sched.go:1132 msg="selecting GPU backend for llama-server model" library=Vulkan gpu_count=1 available_gpu_count=4
+time=2026-08-29T16:44:16.176+05:30 level=INFO source=server.go:109 msg="using llama-server for model" model=/home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f
+time=2026-08-29T16:44:16.176+05:30 level=INFO source=llama_server.go:431 msg="starting llama-server" cmd="/usr/local/lib/ollama/llama-server --model /home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f --port 41357 --host 127.0.0.1 --no-webui --offline -c 4096 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --no-jinja --chat-template chatml --flash-attn auto -b 512 -ub 512 -ngl 999 --split-mode none --main-gpu 0 --context-shift --keep 4"
+time=2026-08-29T16:44:16.177+05:30 level=INFO source=sched.go:613 msg="system memory" total="503.7 GiB" free="398.7 GiB" free_swap="0 B"
+time=2026-08-29T16:44:16.177+05:30 level=INFO source=sched.go:620 msg="gpu memory" id=2 library=Vulkan available="79.6 GiB" free="80.0 GiB" minimum="457.0 MiB" overhead="0 B"
+time=2026-08-29T16:44:16.177+05:30 level=INFO source=llama_server.go:1046 msg="loading model via llama-server" model=/home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f
+time=2026-08-29T16:44:16.177+05:30 level=INFO source=llama_server.go:1293 msg="waiting for llama-server to start responding"
+time=2026-08-29T16:44:16.177+05:30 level=INFO source=llama_server.go:1348 msg="waiting for llama-server to become available" status="llm server not responding"
+cmn  common_param: common_params_print_info: build 1 (f8def7fe1) with GNU 13.3.1 for Linux x86_64
+cmn  common_param: common_params_print_info: verbosity = 4 (adjust with the `-lv N` CLI arg)
+cmn  common_param: device_info:
+cmn  common_param:   - CPU     : AMD EPYC 7742 64-Core Processor (515804 MiB, 515804 MiB free)
+cmn  common_param:   - Vulkan0 : NVIDIA DGX Display (4342 MiB, 890 MiB free)
+cmn  common_param: system_info: n_threads = 64 (n_threads_batch = 64) / 128 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | REPACK = 1 | 
+srv          init: using 127 threads for HTTP server
+srv          init: The UI is disabled
+srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+srv  llama_server: -----------------
+srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+srv  llama_server: this can be a security risk (cross-origin attacks)
+srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+srv  llama_server: -----------------
+srv         start: binding port with default address family
+srv    load_model: loading model '/home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f'
+srv    load_model: local path '/home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f'
+cmn  common_init_: fitting params to device memory ...
+cmn  common_init_: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+common_params_fit_impl: getting device memory data for initial parameters:
+time=2026-08-29T16:44:16.930+05:30 level=INFO source=llama_server.go:1348 msg="waiting for llama-server to become available" status="llm server loading model"
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (5311 =  4643 +     576 +      92) +       -1853 |
+common_memory_breakdown_print: |   - Host                  |                  353 =   333 +       0 +      20                |
+common_params_fit_impl: projected to use 5311 MiB of device memory vs. 883 MiB of free device memory
+common_params_fit_impl: cannot meet free memory target of 1024 MiB, need to reduce device memory by 5451 MiB
+common_params_fit_impl: context size set by user to 4096 -> no change
+common_fit_params: failed to fit params to free device memory: n_gpu_layers already set by user to 999, abort
+common_fit_params: fitting params to free memory took 0.55 seconds
+llama_model_loader: loaded meta data with 28 key-value pairs and 399 tensors from /home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = qwen3
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = Qwen3 8B
+llama_model_loader: - kv   3:                           general.basename str              = Qwen3
+llama_model_loader: - kv   4:                         general.size_label str              = 8B
+llama_model_loader: - kv   5:                            general.license str              = apache-2.0
+llama_model_loader: - kv   6:                          qwen3.block_count u32              = 36
+llama_model_loader: - kv   7:                       qwen3.context_length u32              = 40960
+llama_model_loader: - kv   8:                     qwen3.embedding_length u32              = 4096
+llama_model_loader: - kv   9:                  qwen3.feed_forward_length u32              = 12288
+llama_model_loader: - kv  10:                 qwen3.attention.head_count u32              = 32
+llama_model_loader: - kv  11:              qwen3.attention.head_count_kv u32              = 8
+llama_model_loader: - kv  12:                       qwen3.rope.freq_base f32              = 1000000.000000
+llama_model_loader: - kv  13:     qwen3.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  14:                 qwen3.attention.key_length u32              = 128
+llama_model_loader: - kv  15:               qwen3.attention.value_length u32              = 128
+llama_model_loader: - kv  16:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  17:                         tokenizer.ggml.pre str              = qwen2
+llama_model_loader: - kv  18:                      tokenizer.ggml.tokens arr[str,151936]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  19:                  tokenizer.ggml.token_type arr[i32,151936]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  20:                      tokenizer.ggml.merges arr[str,151387]  = ["Ġ Ġ", "ĠĠ ĠĠ", "i n", "Ġ t",...
+llama_model_loader: - kv  21:                tokenizer.ggml.eos_token_id u32              = 151645
+llama_model_loader: - kv  22:            tokenizer.ggml.padding_token_id u32              = 151643
+llama_model_loader: - kv  23:                tokenizer.ggml.bos_token_id u32              = 151643
+llama_model_loader: - kv  24:               tokenizer.ggml.add_bos_token bool             = false
+llama_model_loader: - kv  25:                    tokenizer.chat_template str              = {%- if tools %}\n    {{- '<|im_start|>...
+llama_model_loader: - kv  26:               general.quantization_version u32              = 2
+llama_model_loader: - kv  27:                          general.file_type u32              = 15
+llama_model_loader: - type  f32:  145 tensors
+llama_model_loader: - type  f16:   36 tensors
+llama_model_loader: - type q4_K:  199 tensors
+llama_model_loader: - type q6_K:   19 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_K - Medium
+print_info: file size   = 4.86 GiB (5.10 BPW) 
+llama_prepare_model_devices: using device Vulkan0 (NVIDIA DGX Display) (0000:c1:00.0) - 883 MiB free
+load: 0 unused tokens
+load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: printing all EOG tokens:
+load:   - 128247 ('</s>')
+load:   - 151643 ('<|endoftext|>')
+load:   - 151645 ('<|im_end|>')
+load:   - 151662 ('<|fim_pad|>')
+load:   - 151663 ('<|repo_name|>')
+load:   - 151664 ('<|file_sep|>')
+load: special tokens cache size = 27
+load: token to piece cache size = 0.9311 MB
+print_info: arch                  = qwen3
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 40960
+print_info: n_embd_inp            = 4096
+print_info: n_embd                = 4096
+print_info: n_embd_out            = 4096
+print_info: n_layer               = 36
+print_info: n_layer_all           = 36
+print_info: n_head                = 32
+print_info: n_head_kv             = 8
+print_info: n_rot                 = 128
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 128
+print_info: n_embd_head_v         = 128
+print_info: n_gqa                 = 4
+print_info: n_embd_k_gqa          = 1024
+print_info: n_embd_v_gqa          = 1024
+print_info: f_norm_eps            = 0.0e+00
+print_info: f_norm_rms_eps        = 1.0e-06
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: f_attn_value_scale    = 0.0000
+print_info: n_ff                  = 12288
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 1
+print_info: pooling type          = -1
+print_info: rope type             = 2
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 1000000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 40960
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = 8B
+print_info: model params          = 8.19 B
+print_info: general.name          = Qwen3 8B
+print_info: vocab type            = BPE
+print_info: n_vocab               = 151936
+print_info: n_merges              = 151387
+print_info: BOS token             = 151643 '<|endoftext|>'
+print_info: EOS token             = 151645 '<|im_end|>'
+print_info: EOT token             = 151645 '<|im_end|>'
+print_info: PAD token             = 151643 '<|endoftext|>'
+print_info: LF token              = 198 'Ċ'
+print_info: FIM PRE token         = 151659 '<|fim_prefix|>'
+print_info: FIM SUF token         = 151661 '<|fim_suffix|>'
+print_info: FIM MID token         = 151660 '<|fim_middle|>'
+print_info: FIM PAD token         = 151662 '<|fim_pad|>'
+print_info: FIM REP token         = 151663 '<|repo_name|>'
+print_info: FIM SEP token         = 151664 '<|file_sep|>'
+print_info: EOG token             = 128247 '</s>'
+print_info: EOG token             = 151643 '<|endoftext|>'
+print_info: EOG token             = 151645 '<|im_end|>'
+print_info: EOG token             = 151662 '<|fim_pad|>'
+print_info: EOG token             = 151663 '<|repo_name|>'
+print_info: EOG token             = 151664 '<|file_sep|>'
+print_info: max token length      = 256
+load_tensors: loading model tensors, this can take a while... (load_mode = mmap)
+time=2026-08-29T16:44:17.884+05:30 level=INFO source=llama_server.go:1348 msg="waiting for llama-server to become available" status="llm server not responding"
+ggml_vulkan: Device memory allocation of size 1050444800 failed.
+ggml_vulkan: vk::Device::allocateMemory: ErrorOutOfDeviceMemory
+alloc_tensor_range: failed to allocate Vulkan0 buffer of size 1050444800
+time=2026-08-29T16:44:18.135+05:30 level=INFO source=llama_server.go:1348 msg="waiting for llama-server to become available" status="llm server loading model"
+llama_model_load: error loading model: unable to allocate Vulkan0 buffer
+llama_model_load_from_file_impl: failed to load model
+cmn  common_init_: failed to load model '/home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f'
+srv    load_model: failed to load model, '/home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f'
+srv    operator(): operator(): cleaning up before exit...
+srv  llama_server: exiting due to model loading error
+time=2026-08-29T16:44:18.563+05:30 level=ERROR source=llama_server.go:1021 msg="llama-server terminated" error="exit status 1" exit=1
+time=2026-08-29T16:44:18.687+05:30 level=INFO source=sched.go:641 msg="Load failed" model=/home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f error="llama-server process has terminated: exit status 1: alloc_tensor_range: failed to allocate Vulkan0 buffer of size 1050444800\nerror loading model: unable to allocate Vulkan0 buffer"
+[GIN] 2026/08/29 - 16:44:18 | 500 | 13.898083927s |       127.0.0.1 | POST     "/api/generate"
+time=2026-08-29T16:44:31.373+05:30 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/usr/local/lib/ollama /usr/local/lib/ollama/vulkan]" extra_envs=map[] error="context deadline exceeded"
+time=2026-08-29T16:44:31.374+05:30 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/usr/local/lib/ollama /usr/local/lib/ollama/vulkan]" extra_envs=map[] error="context deadline exceeded" detail=""
+time=2026-08-29T16:44:31.374+05:30 level=WARN source=runner.go:364 msg="unable to refresh free memory, using old values"
+time=2026-08-29T16:44:31.483+05:30 level=INFO source=sched.go:1013 msg="selecting single GPU for llama-server model" main_gpu=0 id=2 filter_id=2 library=Vulkan name=Vulkan2 description="NVIDIA A100-SXM4-80GB" integrated=false predicted="5.4 GiB" available="80.0 GiB"
+time=2026-08-29T16:44:31.483+05:30 level=INFO source=sched.go:1132 msg="selecting GPU backend for llama-server model" library=Vulkan gpu_count=1 available_gpu_count=4
+time=2026-08-29T16:44:31.483+05:30 level=INFO source=server.go:109 msg="using llama-server for model" model=/home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f
+time=2026-08-29T16:44:31.484+05:30 level=INFO source=llama_server.go:431 msg="starting llama-server" cmd="/usr/local/lib/ollama/llama-server --model /home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f --port 37773 --host 127.0.0.1 --no-webui --offline -c 4096 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --no-jinja --chat-template chatml --flash-attn auto -b 512 -ub 512 --split-mode none --main-gpu 0 --context-shift --keep 4"
+time=2026-08-29T16:44:31.485+05:30 level=INFO source=sched.go:613 msg="system memory" total="503.7 GiB" free="393.4 GiB" free_swap="0 B"
+time=2026-08-29T16:44:31.485+05:30 level=INFO source=sched.go:620 msg="gpu memory" id=2 library=Vulkan available="79.6 GiB" free="80.0 GiB" minimum="457.0 MiB" overhead="0 B"
+time=2026-08-29T16:44:31.485+05:30 level=INFO source=llama_server.go:1046 msg="loading model via llama-server" model=/home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f
+time=2026-08-29T16:44:31.485+05:30 level=INFO source=llama_server.go:1293 msg="waiting for llama-server to start responding"
+time=2026-08-29T16:44:31.485+05:30 level=INFO source=llama_server.go:1348 msg="waiting for llama-server to become available" status="llm server not responding"
+cmn  common_param: common_params_print_info: build 1 (f8def7fe1) with GNU 13.3.1 for Linux x86_64
+cmn  common_param: common_params_print_info: verbosity = 4 (adjust with the `-lv N` CLI arg)
+cmn  common_param: device_info:
+cmn  common_param:   - CPU     : AMD EPYC 7742 64-Core Processor (515804 MiB, 515804 MiB free)
+cmn  common_param:   - Vulkan0 : NVIDIA DGX Display (4342 MiB, 890 MiB free)
+cmn  common_param: system_info: n_threads = 64 (n_threads_batch = 64) / 128 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | REPACK = 1 | 
+srv          init: using 127 threads for HTTP server
+srv          init: The UI is disabled
+srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+srv  llama_server: -----------------
+srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+srv  llama_server: this can be a security risk (cross-origin attacks)
+srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+srv  llama_server: -----------------
+srv         start: binding port with default address family
+srv    load_model: loading model '/home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f'
+srv    load_model: local path '/home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f'
+cmn  common_init_: fitting params to device memory ...
+cmn  common_init_: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+common_params_fit_impl: getting device memory data for initial parameters:
+time=2026-08-29T16:44:31.987+05:30 level=INFO source=llama_server.go:1348 msg="waiting for llama-server to become available" status="llm server loading model"
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (5311 =  4643 +     576 +      92) +       -1853 |
+common_memory_breakdown_print: |   - Host                  |                  353 =   333 +       0 +      20                |
+common_params_fit_impl: projected to use 5311 MiB of device memory vs. 883 MiB of free device memory
+common_params_fit_impl: cannot meet free memory target of 1024 MiB, need to reduce device memory by 5451 MiB
+common_params_fit_impl: context size set by user to 4096 -> no change
+common_params_fit_impl: id=0, target=-140 MiB
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + ( 111 =     0 +       0 +     111) +        3347 |
+common_memory_breakdown_print: |   - Host                  |                 5573 =  4977 +     576 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 0, n_part= 0, overflow_type=4, mem=   111 MiB
+common_params_fit_impl: filling dense layers back-to-front:
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (5311 =  4643 +     576 +      92) +       -1853 |
+common_memory_breakdown_print: |   - Host                  |                  353 =   333 +       0 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=37, n_part= 0, overflow_type=4, mem=  5311 MiB
+common_params_fit_impl: start filling device 0, delta=37
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (5193 =  4522 +     560 +     111) +       -1735 |
+common_memory_breakdown_print: |   - Host                  |                  491 =   455 +      16 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=36, n_part= 0, overflow_type=4, mem=  5193 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=36
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (5055 =  4400 +     544 +     111) +       -1597 |
+common_memory_breakdown_print: |   - Host                  |                  629 =   577 +      32 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=35, n_part= 0, overflow_type=4, mem=  5055 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=35
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (4917 =  4278 +     528 +     111) +       -1459 |
+common_memory_breakdown_print: |   - Host                  |                  766 =   698 +      48 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=34, n_part= 0, overflow_type=4, mem=  4917 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=34
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (4780 =  4157 +     512 +     111) +       -1322 |
+common_memory_breakdown_print: |   - Host                  |                  904 =   820 +      64 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=33, n_part= 0, overflow_type=4, mem=  4780 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=33
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (4654 =  4047 +     496 +     111) +       -1196 |
+common_memory_breakdown_print: |   - Host                  |                 1029 =   929 +      80 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=32, n_part= 0, overflow_type=4, mem=  4654 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=32
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (4529 =  3938 +     480 +     111) +       -1071 |
+common_memory_breakdown_print: |   - Host                  |                 1155 =  1039 +      96 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=31, n_part= 0, overflow_type=4, mem=  4529 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=31
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (4391 =  3816 +     464 +     111) +        -933 |
+common_memory_breakdown_print: |   - Host                  |                 1292 =  1160 +     112 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=30, n_part= 0, overflow_type=4, mem=  4391 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=30
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (4266 =  3707 +     448 +     111) +        -808 |
+common_memory_breakdown_print: |   - Host                  |                 1417 =  1269 +     128 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=29, n_part= 0, overflow_type=4, mem=  4266 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=29
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (4141 =  3598 +     432 +     111) +        -683 |
+common_memory_breakdown_print: |   - Host                  |                 1543 =  1379 +     144 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=28, n_part= 0, overflow_type=4, mem=  4141 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=28
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (4003 =  3476 +     416 +     111) +        -545 |
+common_memory_breakdown_print: |   - Host                  |                 1680 =  1500 +     160 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=27, n_part= 0, overflow_type=4, mem=  4003 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=27
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (3878 =  3367 +     400 +     111) +        -420 |
+common_memory_breakdown_print: |   - Host                  |                 1806 =  1610 +     176 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=26, n_part= 0, overflow_type=4, mem=  3878 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=26
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (3753 =  3258 +     384 +     111) +        -295 |
+common_memory_breakdown_print: |   - Host                  |                 1931 =  1719 +     192 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=25, n_part= 0, overflow_type=4, mem=  3753 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=25
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (3615 =  3136 +     368 +     111) +        -157 |
+common_memory_breakdown_print: |   - Host                  |                 2069 =  1841 +     208 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=24, n_part= 0, overflow_type=4, mem=  3615 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=24
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (3490 =  3027 +     352 +     111) +         -32 |
+common_memory_breakdown_print: |   - Host                  |                 2194 =  1950 +     224 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=23, n_part= 0, overflow_type=4, mem=  3490 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=23
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (3364 =  2917 +     336 +     111) +          93 |
+common_memory_breakdown_print: |   - Host                  |                 2319 =  2059 +     240 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=22, n_part= 0, overflow_type=4, mem=  3364 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=22
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (3227 =  2796 +     320 +     111) +         230 |
+common_memory_breakdown_print: |   - Host                  |                 2457 =  2181 +     256 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=21, n_part= 0, overflow_type=4, mem=  3227 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=21
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (3101 =  2686 +     304 +     111) +         356 |
+common_memory_breakdown_print: |   - Host                  |                 2582 =  2290 +     272 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=20, n_part= 0, overflow_type=4, mem=  3101 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=20
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (2976 =  2577 +     288 +     111) +         481 |
+common_memory_breakdown_print: |   - Host                  |                 2707 =  2399 +     288 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=19, n_part= 0, overflow_type=4, mem=  2976 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=19
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (2839 =  2456 +     272 +     111) +         619 |
+common_memory_breakdown_print: |   - Host                  |                 2845 =  2521 +     304 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=18, n_part= 0, overflow_type=4, mem=  2839 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=18
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (2713 =  2346 +     256 +     111) +         744 |
+common_memory_breakdown_print: |   - Host                  |                 2970 =  2630 +     320 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=17, n_part= 0, overflow_type=4, mem=  2713 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=17
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (2588 =  2237 +     240 +     111) +         869 |
+common_memory_breakdown_print: |   - Host                  |                 3096 =  2740 +     336 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=16, n_part= 0, overflow_type=4, mem=  2588 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=16
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (2450 =  2115 +     224 +     111) +        1007 |
+common_memory_breakdown_print: |   - Host                  |                 3233 =  2861 +     352 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=15, n_part= 0, overflow_type=4, mem=  2450 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=15
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (2325 =  2006 +     208 +     111) +        1132 |
+common_memory_breakdown_print: |   - Host                  |                 3359 =  2971 +     368 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=14, n_part= 0, overflow_type=4, mem=  2325 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=14
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (2200 =  1897 +     192 +     111) +        1257 |
+common_memory_breakdown_print: |   - Host                  |                 3484 =  3080 +     384 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=13, n_part= 0, overflow_type=4, mem=  2200 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=13
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (2062 =  1775 +     176 +     111) +        1395 |
+common_memory_breakdown_print: |   - Host                  |                 3622 =  3202 +     400 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=12, n_part= 0, overflow_type=4, mem=  2062 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=12
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (1937 =  1666 +     160 +     111) +        1520 |
+common_memory_breakdown_print: |   - Host                  |                 3747 =  3311 +     416 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=11, n_part= 0, overflow_type=4, mem=  1937 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=11
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (1812 =  1557 +     144 +     111) +        1646 |
+common_memory_breakdown_print: |   - Host                  |                 3872 =  3420 +     432 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=10, n_part= 0, overflow_type=4, mem=  1812 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=10
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (1674 =  1435 +     128 +     111) +        1783 |
+common_memory_breakdown_print: |   - Host                  |                 4010 =  3542 +     448 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 9, n_part= 0, overflow_type=4, mem=  1674 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=9
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (1549 =  1326 +     112 +     111) +        1908 |
+common_memory_breakdown_print: |   - Host                  |                 4135 =  3651 +     464 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 8, n_part= 0, overflow_type=4, mem=  1549 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=8
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (1423 =  1216 +      96 +     111) +        2034 |
+common_memory_breakdown_print: |   - Host                  |                 4260 =  3760 +     480 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 7, n_part= 0, overflow_type=4, mem=  1423 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=7
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (1286 =  1095 +      80 +     111) +        2171 |
+common_memory_breakdown_print: |   - Host                  |                 4398 =  3882 +     496 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 6, n_part= 0, overflow_type=4, mem=  1286 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=6
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (1148 =   973 +      64 +     111) +        2309 |
+common_memory_breakdown_print: |   - Host                  |                 4536 =  4004 +     512 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 5, n_part= 0, overflow_type=4, mem=  1148 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=5
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + (1010 =   851 +      48 +     111) +        2447 |
+common_memory_breakdown_print: |   - Host                  |                 4673 =  4125 +     528 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 4, n_part= 0, overflow_type=4, mem=  1010 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=4
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + ( 873 =   730 +      32 +     111) +        2584 |
+common_memory_breakdown_print: |   - Host                  |                 4811 =  4247 +     544 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 3, n_part= 0, overflow_type=4, mem=   873 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=3
+common_memory_breakdown_print: | memory breakdown [MiB]    | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Vulkan0 (DGX Display) |  4342 =  883 + ( 597 =   486 +       0 +     111) +        2860 |
+common_memory_breakdown_print: |   - Host                  |                 5086 =  4490 +     576 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 1, n_part= 0, overflow_type=4, mem=   597 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=1
+common_params_fit_impl:   - Vulkan0 (NVIDIA DGX Display):  0 layers,    111 MiB used,    772 MiB free
+common_fit_params: successfully fit params to free device memory
+common_fit_params: fitting params to free memory took 13.99 seconds
+llama_model_loader: loaded meta data with 28 key-value pairs and 399 tensors from /home/user2/.ollama/models/blobs/sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = qwen3
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = Qwen3 8B
+llama_model_loader: - kv   3:                           general.basename str              = Qwen3
+llama_model_loader: - kv   4:                         general.size_label str              = 8B
+llama_model_loader: - kv   5:                            general.license str              = apache-2.0
+llama_model_loader: - kv   6:                          qwen3.block_count u32              = 36
+llama_model_loader: - kv   7:                       qwen3.context_length u32              = 40960
+llama_model_loader: - kv   8:                     qwen3.embedding_length u32              = 4096
+llama_model_loader: - kv   9:                  qwen3.feed_forward_length u32              = 12288
+llama_model_loader: - kv  10:                 qwen3.attention.head_count u32              = 32
+llama_model_loader: - kv  11:              qwen3.attention.head_count_kv u32              = 8
+llama_model_loader: - kv  12:                       qwen3.rope.freq_base f32              = 1000000.000000
+llama_model_loader: - kv  13:     qwen3.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  14:                 qwen3.attention.key_length u32              = 128
+llama_model_loader: - kv  15:               qwen3.attention.value_length u32              = 128
+llama_model_loader: - kv  16:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  17:                         tokenizer.ggml.pre str              = qwen2
+llama_model_loader: - kv  18:                      tokenizer.ggml.tokens arr[str,151936]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  19:                  tokenizer.ggml.token_type arr[i32,151936]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  20:                      tokenizer.ggml.merges arr[str,151387]  = ["Ġ Ġ", "ĠĠ ĠĠ", "i n", "Ġ t",...
+llama_model_loader: - kv  21:                tokenizer.ggml.eos_token_id u32              = 151645
+llama_model_loader: - kv  22:            tokenizer.ggml.padding_token_id u32              = 151643
+llama_model_loader: - kv  23:                tokenizer.ggml.bos_token_id u32              = 151643
+llama_model_loader: - kv  24:               tokenizer.ggml.add_bos_token bool             = false
+llama_model_loader: - kv  25:                    tokenizer.chat_template str              = {%- if tools %}\n    {{- '<|im_start|>...
+llama_model_loader: - kv  26:               general.quantization_version u32              = 2
+llama_model_loader: - kv  27:                          general.file_type u32              = 15
+llama_model_loader: - type  f32:  145 tensors
+llama_model_loader: - type  f16:   36 tensors
+llama_model_loader: - type q4_K:  199 tensors
+llama_model_loader: - type q6_K:   19 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_K - Medium
+print_info: file size   = 4.86 GiB (5.10 BPW) 
+llama_prepare_model_devices: using device Vulkan0 (NVIDIA DGX Display) (0000:c1:00.0) - 883 MiB free
+load: 0 unused tokens
+load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: printing all EOG tokens:
+load:   - 128247 ('</s>')
+load:   - 151643 ('<|endoftext|>')
+load:   - 151645 ('<|im_end|>')
+load:   - 151662 ('<|fim_pad|>')
+load:   - 151663 ('<|repo_name|>')
+load:   - 151664 ('<|file_sep|>')
+load: special tokens cache size = 27
+load: token to piece cache size = 0.9311 MB
+print_info: arch                  = qwen3
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 40960
+print_info: n_embd_inp            = 4096
+print_info: n_embd                = 4096
+print_info: n_embd_out            = 4096
+print_info: n_layer               = 36
+print_info: n_layer_all           = 36
+print_info: n_head                = 32
+print_info: n_head_kv             = 8
+print_info: n_rot                 = 128
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 128
+print_info: n_embd_head_v         = 128
+print_info: n_gqa                 = 4
+print_info: n_embd_k_gqa          = 1024
+print_info: n_embd_v_gqa          = 1024
+print_info: f_norm_eps            = 0.0e+00
+print_info: f_norm_rms_eps        = 1.0e-06
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: f_attn_value_scale    = 0.0000
+print_info: n_ff                  = 12288
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 1
+print_info: pooling type          = -1
+print_info: rope type             = 2
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 1000000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 40960
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = 8B
+print_info: model params          = 8.19 B
+print_info: general.name          = Qwen3 8B
+print_info: vocab type            = BPE
+print_info: n_vocab               = 151936
+print_info: n_merges              = 151387
+print_info: BOS token             = 151643 '<|endoftext|>'
+print_info: EOS token             = 151645 '<|im_end|>'
+print_info: EOT token             = 151645 '<|im_end|>'
+print_info: PAD token             = 151643 '<|endoftext|>'
+print_info: LF token              = 198 'Ċ'
+print_info: FIM PRE token         = 151659 '<|fim_prefix|>'
+print_info: FIM SUF token         = 151661 '<|fim_suffix|>'
+print_info: FIM MID token         = 151660 '<|fim_middle|>'
+print_info: FIM PAD token         = 151662 '<|fim_pad|>'
+print_info: FIM REP token         = 151663 '<|repo_name|>'
+print_info: FIM SEP token         = 151664 '<|file_sep|>'
+print_info: EOG token             = 128247 '</s>'
+print_info: EOG token             = 151643 '<|endoftext|>'
+print_info: EOG token             = 151645 '<|im_end|>'
+print_info: EOG token             = 151662 '<|fim_pad|>'
+print_info: EOG token             = 151663 '<|repo_name|>'
+print_info: EOG token             = 151664 '<|file_sep|>'
+print_info: max token length      = 256
+load_tensors: loading model tensors, this can take a while... (load_mode = mmap)
+time=2026-08-29T16:44:46.504+05:30 level=INFO source=llama_server.go:1348 msg="waiting for llama-server to become available" status="llm server not responding"
+load_tensors: offloading 0 repeating layers to GPU
+load_tensors: offloaded 0/37 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =  4977.62 MiB
+cmn  common_init_: added </s> logit bias = -inf
+cmn  common_init_: added <|endoftext|> logit bias = -inf
+cmn  common_init_: added <|im_end|> logit bias = -inf
+cmn  common_init_: added <|fim_pad|> logit bias = -inf
+cmn  common_init_: added <|repo_name|> logit bias = -inf
+cmn  common_init_: added <|file_sep|> logit bias = -inf
+llama_context: constructing llama_context
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 4096
+llama_context: n_ctx_seq     = 4096
+llama_context: n_batch       = 512
+llama_context: n_ubatch      = 512
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = auto
+llama_context: kv_unified    = false
+llama_context: freq_base     = 1000000.0
+llama_context: freq_scale    = 1
+llama_context: n_rs_seq      = 0
+llama_context: n_outputs_max = 1
+llama_context: n_ctx_seq (4096) < n_ctx_train (40960) -- the full capacity of the model will not be utilized
+llama_context:        CPU  output buffer size =     0.58 MiB
+llama_kv_cache:        CPU KV buffer size =   576.00 MiB
+time=2026-08-29T16:44:46.756+05:30 level=INFO source=llama_server.go:1348 msg="waiting for llama-server to become available" status="llm server loading model"
+llama_kv_cache: size =  576.00 MiB (  4096 cells,  36 layers,  1/1 seqs), K (f16):  288.00 MiB, V (f16):  288.00 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 128
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 128
+sched_reserve: reserving ...
+resolve_fused_ops: Flash Attention enabled
+resolve_fused_ops: resolving fused Gated Delta Net support:
+resolve_fused_ops: fused Gated Delta Net (autoregressive) enabled
+resolve_fused_ops: fused Gated Delta Net (chunked) enabled
+resolve_fused_ops: resolving fused Lightning Indexer support:
+resolve_fused_ops: Lightning Indexer enabled
+resolve_fused_ops: resolving fused DeepSeek V4 HC support:
+resolve_fused_ops: fused DeepSeek V4 HC pre enabled
+resolve_fused_ops: fused DeepSeek V4 HC comb enabled
+resolve_fused_ops: fused DeepSeek V4 HC post enabled
+sched_reserve:    Vulkan0 compute buffer size =   111.00 MiB
+sched_reserve: Vulkan_Host compute buffer size =    20.01 MiB
+sched_reserve: graph nodes  = 1266
+sched_reserve: graph splits = 467 (with bs=512), 73 (with bs=1)
+sched_reserve: reserve took 20.22 ms, sched copies = 1
+cmn  common_init_: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+srv    load_model: initializing, n_slots = 1, n_ctx_slot = 4096, kv_unified = 'false'
+spec common_specu: no implementations specified for speculative decoding
+slot   load_model: id  0 | task -1 | new slot, n_ctx = 4096
+srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+srv    load_model: use `--cache-ram 0` to disable the prompt cache
+srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+srv    load_model: context checkpoints enabled, max = 32, min spacing = 8192
+srv          init: idle slots will be saved to prompt cache upon starting a new task
+srv          init: init: chat template, example_format: '<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+'
+srv          init: init: chat template, thinking = 0
+srv  llama_server: model loaded
+srv  llama_server: listening on http://127.0.0.1:37773
+srv  update_slots: all slots are idle
+time=2026-08-29T16:44:49.521+05:30 level=INFO source=llama_server.go:1360 msg="llama-server started in 18.04 seconds"
+time=2026-08-29T16:44:49.569+05:30 level=INFO source=images.go:373 msg="template selection" model=registry.ollama.ai/library/qwen3:8b selected=go_template renderer="" parser="" go_template="[completion tools thinking]" chat_template="[tools thinking completion]" harmony=null renderer_parser=null
+time=2026-08-29T16:44:49.569+05:30 level=INFO source=sched.go:728 msg="loaded runners" count=1
+time=2026-08-29T16:44:49.569+05:30 level=INFO source=llama_server.go:1293 msg="waiting for llama-server to start responding"
+time=2026-08-29T16:44:49.570+05:30 level=INFO source=llama_server.go:1360 msg="llama-server started in 18.09 seconds"
+srv  server_strea: conv_id= (empty=1)
+slot get_availabl: id  0 | task -1 |  - skipping, slot is empty
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+srv  get_availabl: updating prompt cache
+srv          load:  - looking for better prompt, base f_keep = -1.000, f_sim = 0.000
+srv        update:  - cache state: 0 prompts, 0.000 MiB (limits: 8192.000 MiB, 4096 tokens, 8589934592 est)
+srv  get_availabl: prompt cache update took 0.02 ms
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.600
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+slot   operator(): id  0 | task 0 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 22
+slot   operator(): id  0 | task 0 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot init_sampler: id  0 | task 0 | init sampler, took 0.01 ms, tokens: text = 22, total = 22
+slot print_timing: id  0 | task 0 | prompt eval time =    1992.07 ms /    22 tokens (   90.55 ms per token,    11.04 tokens per second)
+slot print_timing: id  0 | task 0 |        eval time =    1982.93 ms /     3 tokens (  660.98 ms per token,     1.51 tokens per second)
+slot print_timing: id  0 | task 0 |       total time =    3975.00 ms /    25 tokens
+slot print_timing: id  0 | task 0 |    graphs reused =          2
+slot      release: id  0 | task 0 | stop processing: n_tokens = 24, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/08/29 - 16:44:53 | 200 | 25.496242285s |       127.0.0.1 | POST     "/api/generate"

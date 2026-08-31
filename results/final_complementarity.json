@@ -1,0 +1,51 @@
+{
+  "n_test": 7205,
+  "n_fail_test": 2767,
+  "by_budget": {
+    "500": {
+      "budget": 500,
+      "R_top_fail_hits": 390,
+      "L_top_fail_hits": 267,
+      "RS_top_fail_hits": 366,
+      "shared_failures": 53,
+      "KSERESNET_only_failures": 337,
+      "Qwen_only_failures": 214,
+      "union_failures": 604,
+      "jaccard_overlap": 0.08774834437086093,
+      "RS_captures_of_Qwen_only": 133,
+      "RS_captures_of_Qwen_only_frac": 0.6214953271028038,
+      "RS_captures_of_KSERESNET_only": 180,
+      "RS_captures_of_KSERESNET_only_frac": 0.5341246290801187
+    },
+    "1000": {
+      "budget": 1000,
+      "R_top_fail_hits": 714,
+      "L_top_fail_hits": 267,
+      "RS_top_fail_hits": 722,
+      "shared_failures": 75,
+      "KSERESNET_only_failures": 639,
+      "Qwen_only_failures": 192,
+      "union_failures": 906,
+      "jaccard_overlap": 0.08278145695364239,
+      "RS_captures_of_Qwen_only": 123,
+      "RS_captures_of_Qwen_only_frac": 0.640625,
+      "RS_captures_of_KSERESNET_only": 524,
+      "RS_captures_of_KSERESNET_only_frac": 0.8200312989045383
+    },
+    "2000": {
+      "budget": 2000,
+      "R_top_fail_hits": 1271,
+      "L_top_fail_hits": 630,
+      "RS_top_fail_hits": 1291,
+      "shared_failures": 264,
+      "KSERESNET_only_failures": 1007,
+      "Qwen_only_failures": 366,
+      "union_failures": 1637,
+      "jaccard_overlap": 0.16127061698228468,
+      "RS_captures_of_Qwen_only": 91,
+      "RS_captures_of_Qwen_only_frac": 0.24863387978142076,
+      "RS_captures_of_KSERESNET_only": 943,
+      "RS_captures_of_KSERESNET_only_frac": 0.9364448857994042
+    }
+  }
+}

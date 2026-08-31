@@ -1,0 +1,15 @@
+{
+  "model": "ministral-8b",
+  "total_requests": 1000,
+  "successful_requests": 1000,
+  "malformed_json": 0,
+  "inference_errors": 0,
+  "success_rate_pct": 100.0,
+  "mean_latency_sec": 3.3127,
+  "median_latency_sec": 3.2689,
+  "std_latency_sec": 0.4772,
+  "min_latency_sec": 2.3071,
+  "max_latency_sec": 6.434,
+  "total_runtime_sec": 3312.79,
+  "scenarios_per_minute": 18.11
+}

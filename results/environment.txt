@@ -1,0 +1,34 @@
+=== Hostname ===
+bigdata-DGX-Station-A100-920-23487-2531-0R0
+=== OS ===
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+=== Kernel ===
+Linux bigdata-DGX-Station-A100-920-23487-2531-0R0 5.15.0-1073-nvidia #74-Ubuntu SMP Wed Feb 19 01:38:23 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+=== Python ===
+Python 3.10.12
+=== CUDA driver / version ===
+driver_version, name
+550.144.03, NVIDIA A100-SXM4-80GB
+550.144.03, NVIDIA A100-SXM4-80GB
+550.144.03, NVIDIA A100-SXM4-80GB
+550.144.03, NVIDIA DGX Display
+550.144.03, NVIDIA A100-SXM4-80GB
+=== CPU model ===
+model name	: AMD EPYC 7742 64-Core Processor
+=== CPU core count (visible) ===
+128
+=== Total system RAM ===
+               total        used        free      shared  buff/cache   available
+Mem:           503Gi        89Gi       102Gi       9.8Gi       312Gi       401Gi
+Swap:             0B          0B          0B

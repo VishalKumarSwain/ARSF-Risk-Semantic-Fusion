@@ -1,0 +1,19 @@
+{
+  "method": "frame_invariant_shape_signature",
+  "n_original_competition_roads": 956,
+  "n_pool_scenarios": 36006,
+  "n_overlap": 11,
+  "overlap_ids": [
+    "mt_set6/frenetic/test-167",
+    "mt_set6/frenetic/test-286",
+    "mt_set6/frenetic/test-665",
+    "mt_set6/frenetic/test-670",
+    "mt_set6/frenetic/test-671",
+    "mt_set6/frenetic/test-743",
+    "mt_set6/frenetic/test-75",
+    "mt_set6/frenetic/test-833",
+    "mt_set6/frenetic/test-851",
+    "mt_set6/frenetic/test-870",
+    "mt_set6/frenetic/test-929"
+  ]
+}

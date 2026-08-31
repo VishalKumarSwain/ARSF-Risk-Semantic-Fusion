@@ -1,0 +1,23 @@
+{
+  "n_test_ids_declared": 7205,
+  "n_test_ids_unique": 7205,
+  "check_exactly_7205": true,
+  "check_no_duplicate_ids": true,
+  "n_missing_from_R": 0,
+  "n_missing_from_L": 0,
+  "n_missing_from_G": 0,
+  "n_common_ids_all_sources": 7205,
+  "n_label_mismatches_across_sources": 0,
+  "label_mismatch_sample": [],
+  "check_labels_consistent_across_methods": true,
+  "n_fail_test": 2767,
+  "n_pass_test": 4438,
+  "check_alpha_is_0.40": true,
+  "alpha_used": 0.4,
+  "check_no_outcome_in_prompt": true,
+  "prompt_template_note": "llm_prompt_template.py line 4: 'No ground-truth outcome is ever included.'; docstring requires feature_record must NOT include outcome",
+  "check_alpha_selected_on_val_only": true,
+  "alpha_selection_note": "alpha_sweep.py loads split_val_ids.json exclusively; results/alpha_sweep_summary.json alpha_star=0.4 computed before any test-file was read in that script",
+  "frozen_normalization_source": "results/alpha_sweep_summary.json: r_range and l_range (fit on validation split only), reused verbatim for test-set normalization -- NOT refit on test data",
+  "ALL_CHECKS_PASS": true
+}

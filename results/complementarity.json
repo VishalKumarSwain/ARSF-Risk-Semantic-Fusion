@@ -1,0 +1,89 @@
+{
+  "qwen3_8b": {
+    "K=100": {
+      "unique_failures_kseresnet_topk": 50,
+      "unique_failures_llm_topk": 51,
+      "shared_failures": 15,
+      "kseresnet_only_failures": 35,
+      "llm_only_failures": 36,
+      "union_failures": 86,
+      "jaccard": 0.1744
+    },
+    "K=500": {
+      "unique_failures_kseresnet_topk": 212,
+      "unique_failures_llm_topk": 206,
+      "shared_failures": 122,
+      "kseresnet_only_failures": 90,
+      "llm_only_failures": 84,
+      "union_failures": 296,
+      "jaccard": 0.4122
+    },
+    "K=1000": {
+      "unique_failures_kseresnet_topk": 385,
+      "unique_failures_llm_topk": 385,
+      "shared_failures": 385,
+      "kseresnet_only_failures": 0,
+      "llm_only_failures": 0,
+      "union_failures": 385,
+      "jaccard": 1.0
+    }
+  },
+  "ministral_8b": {
+    "K=100": {
+      "unique_failures_kseresnet_topk": 50,
+      "unique_failures_llm_topk": 40,
+      "shared_failures": 4,
+      "kseresnet_only_failures": 46,
+      "llm_only_failures": 36,
+      "union_failures": 86,
+      "jaccard": 0.0465
+    },
+    "K=500": {
+      "unique_failures_kseresnet_topk": 212,
+      "unique_failures_llm_topk": 196,
+      "shared_failures": 81,
+      "kseresnet_only_failures": 131,
+      "llm_only_failures": 115,
+      "union_failures": 327,
+      "jaccard": 0.2477
+    },
+    "K=1000": {
+      "unique_failures_kseresnet_topk": 385,
+      "unique_failures_llm_topk": 385,
+      "shared_failures": 385,
+      "kseresnet_only_failures": 0,
+      "llm_only_failures": 0,
+      "union_failures": 385,
+      "jaccard": 1.0
+    }
+  },
+  "deepseek_r1_7b": {
+    "K=100": {
+      "unique_failures_kseresnet_topk": 50,
+      "unique_failures_llm_topk": 48,
+      "shared_failures": 13,
+      "kseresnet_only_failures": 37,
+      "llm_only_failures": 35,
+      "union_failures": 85,
+      "jaccard": 0.1529
+    },
+    "K=500": {
+      "unique_failures_kseresnet_topk": 212,
+      "unique_failures_llm_topk": 226,
+      "shared_failures": 130,
+      "kseresnet_only_failures": 82,
+      "llm_only_failures": 96,
+      "union_failures": 308,
+      "jaccard": 0.4221
+    },
+    "K=1000": {
+      "unique_failures_kseresnet_topk": 385,
+      "unique_failures_llm_topk": 385,
+      "shared_failures": 385,
+      "kseresnet_only_failures": 0,
+      "llm_only_failures": 0,
+      "union_failures": 385,
+      "jaccard": 1.0
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "n_trainable_params": 2177,
+  "architecture": "Linear(66,32) -> ReLU -> Linear(32,1) -> Sigmoid",
+  "input_dim": 66,
+  "hidden_dim": 32,
+  "device": "CPU",
+  "framework": "PyTorch",
+  "inference_total_time_sec_val_batched": 0.0008378028869628906,
+  "inference_per_scenario_ms": 0.00011642619329667741,
+  "model_file_size_bytes": 11319,
+  "model_file_size_kb": 11.0537109375,
+  "training_time_sec_80_epochs_full_batch_cpu": 0.13248085975646973,
+  "training_epochs": 80,
+  "training_device": "CPU",
+  "comparison_costs": {
+    "qwen3_8b_mean_latency_sec_per_scenario": 1.6986,
+    "qwen3_8b_gpu_memory_gb_approx": 15.2,
+    "kseresnet_forward_pass": "sub-millisecond per scenario, CPU, ~561KB checkpoint (existing, frozen)",
+    "gate_overhead_vs_qwen": "negligible: ~1e-4 ms/scenario vs ~1700 ms/scenario for Qwen3-8B (~1.8e7x smaller)"
+  },
+  "note": "ARSF gate adds negligible compute on top of already-computed R(s)/L(s)/h(s) -- its own training (80 epochs, full-batch, CPU) takes well under 1 second, and its inference is effectively free relative to Qwen3-8B inference or even KSERESNET's own forward pass."
+}

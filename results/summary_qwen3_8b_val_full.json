@@ -1,0 +1,15 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "total_requests": 7196,
+  "successful_requests": 7196,
+  "malformed_json": 0,
+  "inference_errors": 0,
+  "success_rate_pct": 100.0,
+  "mean_latency_sec": 1.6611,
+  "median_latency_sec": 1.6291,
+  "std_latency_sec": 0.1192,
+  "min_latency_sec": 1.4384,
+  "max_latency_sec": 4.0764,
+  "total_runtime_sec": 11954.85,
+  "scenarios_per_minute": 36.12
+}

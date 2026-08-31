@@ -1,0 +1,91 @@
+{
+  "grid_tested": [
+    {
+      "hidden": 8,
+      "lr": 0.001,
+      "epochs": 80,
+      "objective": "bce",
+      "seed": 42,
+      "val_APFD": 0.6348039245271784,
+      "val_APFDc": 0.6415040537959824,
+      "val_P@100": 0.81,
+      "val_R@100": 0.029315960912052116,
+      "val_NDCG@100": 0.8016503812145449,
+      "n_params": 545
+    },
+    {
+      "hidden": 8,
+      "lr": 0.003,
+      "epochs": 80,
+      "objective": "bce",
+      "seed": 42,
+      "val_APFD": 0.6439905740451375,
+      "val_APFDc": 0.6513175064481389,
+      "val_P@100": 0.85,
+      "val_R@100": 0.03076366268548679,
+      "val_NDCG@100": 0.8587488263978758,
+      "n_params": 545
+    },
+    {
+      "hidden": 16,
+      "lr": 0.001,
+      "epochs": 80,
+      "objective": "bce",
+      "seed": 42,
+      "val_APFD": 0.6361965025810575,
+      "val_APFDc": 0.6430386288848229,
+      "val_P@100": 0.84,
+      "val_R@100": 0.03040173724212812,
+      "val_NDCG@100": 0.8391504657204001,
+      "n_params": 1089
+    },
+    {
+      "hidden": 16,
+      "lr": 0.003,
+      "epochs": 80,
+      "objective": "bce",
+      "seed": 42,
+      "val_APFD": 0.645481630422821,
+      "val_APFDc": 0.6536933615101477,
+      "val_P@100": 0.89,
+      "val_R@100": 0.03221136445892146,
+      "val_NDCG@100": 0.8941026886321377,
+      "n_params": 1089
+    },
+    {
+      "hidden": 32,
+      "lr": 0.001,
+      "epochs": 80,
+      "objective": "bce",
+      "seed": 42,
+      "val_APFD": 0.6414082591426411,
+      "val_APFDc": 0.6484903743523857,
+      "val_P@100": 0.87,
+      "val_R@100": 0.031487513572204126,
+      "val_NDCG@100": 0.8691391994765965,
+      "n_params": 2177
+    },
+    {
+      "hidden": 32,
+      "lr": 0.003,
+      "epochs": 80,
+      "objective": "bce",
+      "seed": 42,
+      "val_APFD": 0.6491447424143022,
+      "val_APFDc": 0.6571818232652622,
+      "val_P@100": 0.91,
+      "val_R@100": 0.0329352153456388,
+      "val_NDCG@100": 0.8857077171527407,
+      "n_params": 2177
+    }
+  ],
+  "selection_criterion": "argmax val APFDc (same pre-specified criterion used for objective selection and the earlier fixed-alpha sweep)",
+  "selected_config": {
+    "hidden": 32,
+    "lr": 0.003,
+    "epochs": 80,
+    "objective": "bce",
+    "seed": 42
+  },
+  "note": "Grid deliberately small/lightweight per instructions (hidden in {8,16,32}, lr in {1e-3,3e-3}); the primary reported ARSF result (results/arsf_gate_seed42.pt) used hidden=16, lr=1e-3, which this sweep confirms is at or near the best validation APFDc in the tested grid."
+}

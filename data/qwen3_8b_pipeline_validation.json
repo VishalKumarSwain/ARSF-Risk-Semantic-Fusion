@@ -1,0 +1,1320 @@
+[
+  {
+    "test_id": "mt/set_11/frenetic_v/test-806",
+    "status": "ok",
+    "latency": 2.349165201187134,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt_set5/ambiegen/test-577",
+    "status": "ok",
+    "latency": 2.6078662872314453,
+    "risk_score": 0.35,
+    "risk_factors": [
+      "high tortuosity",
+      "moderate turn angle variability",
+      "presence of sharp turns"
+    ],
+    "rationale": "The high tortuosity indicates a winding path, increasing the likelihood of control challenges. Moderate turn angle variability and the presence of sharp turns further contribute to the risk of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_12/ambiegen/test-581",
+    "status": "ok",
+    "latency": 2.527503252029419,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_12/frenetic/test-306",
+    "status": "ok",
+    "latency": 2.8196263313293457,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_18/frenetic/test-185",
+    "status": "ok",
+    "latency": 2.3370821475982666,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has minimal curvature and low variability, indicating a straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_2/ambiegen/odr/test-385",
+    "status": "ok",
+    "latency": 2.904599189758301,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "no sharp turns",
+      "moderate bounding-box aspect ratio"
+    ],
+    "rationale": "The road has low tortuosity and no sharp turns, indicating a relatively straightforward path. The moderate bounding-box aspect ratio suggests the road is not excessively wide or narrow, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_16/ambiegen/test-27",
+    "status": "ok",
+    "latency": 2.802341938018799,
+    "risk_score": 0.35,
+    "risk_factors": [
+      "high tortuosity",
+      "moderate turn angle variability",
+      "presence of sharp turns"
+    ],
+    "rationale": "The scenario has high tortuosity and a few sharp turns, which can challenge vehicle control and increase the risk of driving off the road.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_18/ambiegen/test-459",
+    "status": "ok",
+    "latency": 2.650319814682007,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "no sharp turns",
+      "moderate bounding-box aspect ratio"
+    ],
+    "rationale": "The road has low tortuosity and no sharp turns, indicating a relatively straightforward path with minimal control challenges, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_8/frenetic_v/odr/test-611",
+    "status": "ok",
+    "latency": 2.679508686065674,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "low turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_14/ambiegen/test-139",
+    "status": "ok",
+    "latency": 2.719602108001709,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_6/frenetic_v/test-380",
+    "status": "ok",
+    "latency": 2.5404717922210693,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_18/frenetic/test-314",
+    "status": "ok",
+    "latency": 2.6062676906585693,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt_set5/ambiegen/test-785",
+    "status": "ok",
+    "latency": 2.5690817832946777,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and no sharp turns, indicating a relatively straightforward path with minimal control challenges, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_2/ambiegen/odr/test-365",
+    "status": "ok",
+    "latency": 2.663114547729492,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-429",
+    "status": "ok",
+    "latency": 2.545736074447632,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_18/ambiegen/test-625",
+    "status": "ok",
+    "latency": 2.786933422088623,
+    "risk_score": 0.35,
+    "risk_factors": [
+      "moderate tortuosity",
+      "some sharp turns",
+      "moderate turn angle variability"
+    ],
+    "rationale": "The scenario has moderate tortuosity and a few sharp turns, which can challenge vehicle control. However, the overall turn angle variability is low, reducing the risk of sudden directional changes.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_9/frenetic/test-50",
+    "status": "ok",
+    "latency": 2.53938889503479,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_13/frenetic_v/test-787",
+    "status": "ok",
+    "latency": 2.5783350467681885,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_6/frenetic_v/test-456",
+    "status": "ok",
+    "latency": 2.459862470626831,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_18/ambiegen/test-343",
+    "status": "ok",
+    "latency": 2.7271275520324707,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_7/frenetic_v/odr/test-812",
+    "status": "ok",
+    "latency": 2.545431613922119,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_14/ambiegen/test-957",
+    "status": "ok",
+    "latency": 2.7670514583587646,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_6/frenetic_v/test-625",
+    "status": "ok",
+    "latency": 2.910092353820801,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "low turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_14/frenetic_v/test-326",
+    "status": "ok",
+    "latency": 2.5268235206604004,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_11/frenetic/test-461",
+    "status": "ok",
+    "latency": 2.7367749214172363,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_10/ambiegen/test-481",
+    "status": "ok",
+    "latency": 2.646616220474243,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_8/frenetic/odr/test-810",
+    "status": "ok",
+    "latency": 2.5580461025238037,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_11/frenetic_v/test-628",
+    "status": "ok",
+    "latency": 2.447349786758423,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_8/frenetic/odr/test-405",
+    "status": "ok",
+    "latency": 2.754934310913086,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-213",
+    "status": "ok",
+    "latency": 2.5188562870025635,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges or off-road risk.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_11/ambiegen/test-823",
+    "status": "ok",
+    "latency": 2.8603427410125732,
+    "risk_score": 0.35,
+    "risk_factors": [
+      "high tortuosity",
+      "moderate turn angle variability",
+      "presence of sharp turns"
+    ],
+    "rationale": "The high tortuosity indicates a winding path, increasing the likelihood of control challenges. The moderate variability in turn angles and the presence of sharp turns also contribute to the risk of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-232",
+    "status": "ok",
+    "latency": 2.6948320865631104,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_7/frenetic/odr/test-547",
+    "status": "ok",
+    "latency": 2.4208133220672607,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_11/frenetic/test-556",
+    "status": "ok",
+    "latency": 2.6560938358306885,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-726",
+    "status": "ok",
+    "latency": 2.5200462341308594,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_14/ambiegen/test-436",
+    "status": "ok",
+    "latency": 2.626497983932495,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_14/frenetic/test-151",
+    "status": "ok",
+    "latency": 2.515044927597046,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt_set5/ambiegen/test-223",
+    "status": "ok",
+    "latency": 2.5807251930236816,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_16/ambiegen/test-434",
+    "status": "ok",
+    "latency": 2.6513640880584717,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_18/frenetic/test-914",
+    "status": "ok",
+    "latency": 4.745087623596191,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_2/ambiegen/odr/test-69",
+    "status": "ok",
+    "latency": 2.5786685943603516,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "low turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_10/frenetic/test-921",
+    "status": "ok",
+    "latency": 2.4613070487976074,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt_set6/frenetic/test-720",
+    "status": "ok",
+    "latency": 2.5810346603393555,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_8/frenetic_v/odr/test-588",
+    "status": "ok",
+    "latency": 2.5962963104248047,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_10/frenetic/test-260",
+    "status": "ok",
+    "latency": 2.5789101123809814,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_18/ambiegen/test-598",
+    "status": "ok",
+    "latency": 2.5548441410064697,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_17/frenetic_v/test-594",
+    "status": "ok",
+    "latency": 2.5816757678985596,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_7/frenetic_v/odr/test-481",
+    "status": "ok",
+    "latency": 2.8967413902282715,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_9/ambiegen/test-928",
+    "status": "ok",
+    "latency": 2.67366623878479,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "low turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_10/frenetic/test-907",
+    "status": "ok",
+    "latency": 2.5697662830352783,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_16/ambiegen/test-453",
+    "status": "ok",
+    "latency": 3.7331767082214355,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "no sharp turns",
+      "moderate bounding-box aspect ratio"
+    ],
+    "rationale": "The road has low tortuosity and no sharp turns, indicating a relatively straightforward path. The moderate bounding-box aspect ratio suggests the road is not excessively wide or narrow, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_17/frenetic_v/test-511",
+    "status": "ok",
+    "latency": 2.4900848865509033,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt_set6/frenetic/test-942",
+    "status": "ok",
+    "latency": 2.8646514415740967,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "no sharp turns",
+      "moderate bounding-box aspect ratio"
+    ],
+    "rationale": "The road has low tortuosity and no sharp turns, indicating a relatively straightforward path. The moderate bounding-box aspect ratio suggests the road is not excessively wide or narrow, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_14/frenetic_v/test-48",
+    "status": "ok",
+    "latency": 2.630735158920288,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_16/frenetic_v/test-392",
+    "status": "ok",
+    "latency": 2.6111042499542236,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_18/frenetic/test-831",
+    "status": "ok",
+    "latency": 4.78182053565979,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with minimal control challenges, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_17/frenetic_v/test-425",
+    "status": "ok",
+    "latency": 2.5568838119506836,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_10/ambiegen/test-504",
+    "status": "ok",
+    "latency": 2.673909902572632,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt_set5/ambiegen/test-209",
+    "status": "ok",
+    "latency": 2.649946689605713,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-934",
+    "status": "ok",
+    "latency": 2.433565855026245,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_14/ambiegen/test-488",
+    "status": "ok",
+    "latency": 2.570307970046997,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-754",
+    "status": "ok",
+    "latency": 2.6379077434539795,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_13/ambiegen/test-422",
+    "status": "ok",
+    "latency": 2.5416676998138428,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_14/frenetic/test-256",
+    "status": "ok",
+    "latency": 2.59739351272583,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_10/ambiegen/test-957",
+    "status": "ok",
+    "latency": 2.5400514602661133,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-476",
+    "status": "ok",
+    "latency": 2.7353861331939697,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-31",
+    "status": "ok",
+    "latency": 3.292480945587158,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "low turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_7/frenetic_v/odr/test-242",
+    "status": "ok",
+    "latency": 2.552834987640381,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_8/frenetic_v/odr/test-825",
+    "status": "ok",
+    "latency": 2.7041220664978027,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "low turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt_set6/frenetic/test-745",
+    "status": "ok",
+    "latency": 2.512600898742676,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-661",
+    "status": "ok",
+    "latency": 2.6833181381225586,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "low turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_16/frenetic/test-584",
+    "status": "ok",
+    "latency": 5.200358629226685,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "high tortuosity",
+      "low sharp turn count",
+      "moderate turn angle variability"
+    ],
+    "rationale": "The high tortuosity indicates a winding path, which increases the complexity of navigation. However, the absence of sharp turns and moderate turn angle variability suggest manageable control challenges, leading to a relatively low risk of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_14/frenetic/test-257",
+    "status": "ok",
+    "latency": 2.5698280334472656,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "low turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-169",
+    "status": "ok",
+    "latency": 2.68125319480896,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "low turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-466",
+    "status": "ok",
+    "latency": 2.721188545227051,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_7/frenetic_v/odr/test-439",
+    "status": "ok",
+    "latency": 2.5691874027252197,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_13/ambiegen/test-178",
+    "status": "ok",
+    "latency": 2.5465073585510254,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_10/frenetic_v/test-571",
+    "status": "ok",
+    "latency": 2.588524103164673,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_8/frenetic_v/odr/test-839",
+    "status": "ok",
+    "latency": 2.5014071464538574,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_9/ambiegen/test-950",
+    "status": "ok",
+    "latency": 2.506863832473755,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_6/frenetic_v/test-409",
+    "status": "ok",
+    "latency": 2.7017874717712402,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_18/frenetic/test-191",
+    "status": "ok",
+    "latency": 2.522041082382202,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-282",
+    "status": "ok",
+    "latency": 3.4894349575042725,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_16/frenetic_v/test-124",
+    "status": "ok",
+    "latency": 2.7134182453155518,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-777",
+    "status": "ok",
+    "latency": 2.493436336517334,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_7/frenetic/odr/test-406",
+    "status": "ok",
+    "latency": 2.895207405090332,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "no sharp turns",
+      "moderate bounding-box aspect ratio"
+    ],
+    "rationale": "The road has low tortuosity and no sharp turns, indicating a relatively straightforward path. The moderate bounding-box aspect ratio suggests the road is not excessively wide or narrow, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_14/frenetic_v/test-461",
+    "status": "ok",
+    "latency": 2.6667041778564453,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_18/frenetic_v/test-188",
+    "status": "ok",
+    "latency": 4.786642074584961,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_10/ambiegen/test-571",
+    "status": "ok",
+    "latency": 2.646963357925415,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "no sharp turns",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_10/frenetic/test-916",
+    "status": "ok",
+    "latency": 2.7031519412994385,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_2/ambiegen/odr/test-632",
+    "status": "ok",
+    "latency": 2.623021125793457,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_17/frenetic/test-815",
+    "status": "ok",
+    "latency": 2.8216824531555176,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "no sharp turns",
+      "moderate bounding-box aspect ratio"
+    ],
+    "rationale": "The scenario has low tortuosity and no sharp turns, indicating a relatively straightforward path with minimal directional changes, which reduces the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_11/ambiegen/test-258",
+    "status": "ok",
+    "latency": 2.6068341732025146,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_16/frenetic/test-586",
+    "status": "ok",
+    "latency": 2.520188808441162,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_10/frenetic/test-463",
+    "status": "ok",
+    "latency": 2.6477699279785156,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "low turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_7/frenetic/odr/test-417",
+    "status": "ok",
+    "latency": 2.641153573989868,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_12/ambiegen/test-795",
+    "status": "ok",
+    "latency": 2.6319808959960938,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_9/ambiegen/test-371",
+    "status": "ok",
+    "latency": 2.7667324542999268,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small mean turn angle",
+      "no sharp turns",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with minimal control challenges, reducing the likelihood of off-road failure.",
+    "true_outcome": "FAIL"
+  },
+  {
+    "test_id": "mt/set_13/frenetic_v/test-810",
+    "status": "ok",
+    "latency": 2.4570958614349365,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angle variability",
+      "no sharp turns"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with no sharp turns, which reduces the likelihood of control challenges and off-road risk.",
+    "true_outcome": "PASS"
+  },
+  {
+    "test_id": "mt/set_7/frenetic/odr/test-806",
+    "status": "ok",
+    "latency": 2.5503246784210205,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "low tortuosity",
+      "small turn angles",
+      "low turn angle variability"
+    ],
+    "rationale": "The road has low tortuosity and minimal turn angles, indicating a relatively straightforward path with low control demands, reducing the likelihood of off-road failure.",
+    "true_outcome": "PASS"
+  }
+]

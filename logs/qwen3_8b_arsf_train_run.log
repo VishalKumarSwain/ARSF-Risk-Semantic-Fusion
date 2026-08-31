@@ -1,0 +1,103 @@
+2026-08-31 11:06:32.592233: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/user2/.local/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.12) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+INFO 08-31 11:06:37 [__init__.py:244] Automatically detected platform cuda.
+WARNING 08-31 11:06:38 [cuda.py:478] Detected different devices in the system: NVIDIA A100-SXM4-80GB, NVIDIA A100-SXM4-80GB, NVIDIA A100-SXM4-80GB, NVIDIA DGX Display, NVIDIA A100-SXM4-80GB. Please make sure to set `CUDA_DEVICE_ORDER=PCI_BUS_ID` to avoid unexpected behavior.
+Scoring Qwen/Qwen3-8B on 4000 Stage-1 scenarios ...
+  50/4000: ok=50 malformed=0 error=0 elapsed=86.8s
+  100/4000: ok=100 malformed=0 error=0 elapsed=171.5s
+  150/4000: ok=150 malformed=0 error=0 elapsed=255.4s
+  200/4000: ok=200 malformed=0 error=0 elapsed=339.8s
+  250/4000: ok=250 malformed=0 error=0 elapsed=423.5s
+  300/4000: ok=300 malformed=0 error=0 elapsed=507.4s
+  350/4000: ok=350 malformed=0 error=0 elapsed=590.3s
+  400/4000: ok=400 malformed=0 error=0 elapsed=673.7s
+  450/4000: ok=450 malformed=0 error=0 elapsed=759.2s
+  500/4000: ok=500 malformed=0 error=0 elapsed=843.6s
+  550/4000: ok=550 malformed=0 error=0 elapsed=927.3s
+  600/4000: ok=600 malformed=0 error=0 elapsed=1010.9s
+  650/4000: ok=650 malformed=0 error=0 elapsed=1096.4s
+  700/4000: ok=700 malformed=0 error=0 elapsed=1180.5s
+  750/4000: ok=750 malformed=0 error=0 elapsed=1264.5s
+  800/4000: ok=800 malformed=0 error=0 elapsed=1348.9s
+  850/4000: ok=850 malformed=0 error=0 elapsed=1433.1s
+  900/4000: ok=900 malformed=0 error=0 elapsed=1518.4s
+  950/4000: ok=950 malformed=0 error=0 elapsed=1602.0s
+  1000/4000: ok=1000 malformed=0 error=0 elapsed=1686.3s
+  1050/4000: ok=1050 malformed=0 error=0 elapsed=1771.2s
+  1100/4000: ok=1100 malformed=0 error=0 elapsed=1856.7s
+  1150/4000: ok=1150 malformed=0 error=0 elapsed=1940.4s
+  1200/4000: ok=1200 malformed=0 error=0 elapsed=2024.9s
+  1250/4000: ok=1250 malformed=0 error=0 elapsed=2107.6s
+  1300/4000: ok=1300 malformed=0 error=0 elapsed=2191.5s
+  1350/4000: ok=1350 malformed=0 error=0 elapsed=2276.7s
+  1400/4000: ok=1400 malformed=0 error=0 elapsed=2362.0s
+  1450/4000: ok=1450 malformed=0 error=0 elapsed=2445.8s
+  1500/4000: ok=1500 malformed=0 error=0 elapsed=2530.8s
+  1550/4000: ok=1550 malformed=0 error=0 elapsed=2615.2s
+  1600/4000: ok=1600 malformed=0 error=0 elapsed=2701.2s
+  1650/4000: ok=1650 malformed=0 error=0 elapsed=2785.4s
+  1700/4000: ok=1700 malformed=0 error=0 elapsed=2869.7s
+  1750/4000: ok=1750 malformed=0 error=0 elapsed=2953.6s
+  1800/4000: ok=1800 malformed=0 error=0 elapsed=3037.9s
+  1850/4000: ok=1850 malformed=0 error=0 elapsed=3125.1s
+  1900/4000: ok=1900 malformed=0 error=0 elapsed=3210.2s
+  1950/4000: ok=1950 malformed=0 error=0 elapsed=3292.8s
+  2000/4000: ok=2000 malformed=0 error=0 elapsed=3376.3s
+  2050/4000: ok=2050 malformed=0 error=0 elapsed=3460.7s
+  2100/4000: ok=2100 malformed=0 error=0 elapsed=3545.3s
+  2150/4000: ok=2150 malformed=0 error=0 elapsed=3631.5s
+  2200/4000: ok=2200 malformed=0 error=0 elapsed=3717.0s
+  2250/4000: ok=2250 malformed=0 error=0 elapsed=3802.7s
+  2300/4000: ok=2300 malformed=0 error=0 elapsed=3887.4s
+  2350/4000: ok=2350 malformed=0 error=0 elapsed=3973.3s
+  2400/4000: ok=2400 malformed=0 error=0 elapsed=4058.5s
+  2450/4000: ok=2450 malformed=0 error=0 elapsed=4144.4s
+  2500/4000: ok=2500 malformed=0 error=0 elapsed=4228.1s
+  2550/4000: ok=2550 malformed=0 error=0 elapsed=4313.8s
+  2600/4000: ok=2600 malformed=0 error=0 elapsed=4397.7s
+  2650/4000: ok=2650 malformed=0 error=0 elapsed=4482.0s
+  2700/4000: ok=2700 malformed=0 error=0 elapsed=4568.4s
+  2750/4000: ok=2750 malformed=0 error=0 elapsed=4653.1s
+  2800/4000: ok=2800 malformed=0 error=0 elapsed=4737.4s
+  2850/4000: ok=2850 malformed=0 error=0 elapsed=4821.6s
+  2900/4000: ok=2900 malformed=0 error=0 elapsed=4907.4s
+  2950/4000: ok=2950 malformed=0 error=0 elapsed=4992.3s
+  3000/4000: ok=3000 malformed=0 error=0 elapsed=5076.8s
+  3050/4000: ok=3050 malformed=0 error=0 elapsed=5162.3s
+  3100/4000: ok=3100 malformed=0 error=0 elapsed=5246.5s
+  3150/4000: ok=3150 malformed=0 error=0 elapsed=5331.7s
+  3200/4000: ok=3200 malformed=0 error=0 elapsed=5415.7s
+  3250/4000: ok=3250 malformed=0 error=0 elapsed=5499.7s
+  3300/4000: ok=3300 malformed=0 error=0 elapsed=5585.1s
+  3350/4000: ok=3350 malformed=0 error=0 elapsed=5670.1s
+  3400/4000: ok=3400 malformed=0 error=0 elapsed=5754.6s
+  3450/4000: ok=3450 malformed=0 error=0 elapsed=5839.6s
+  3500/4000: ok=3500 malformed=0 error=0 elapsed=5925.0s
+  3550/4000: ok=3550 malformed=0 error=0 elapsed=6010.7s
+  3600/4000: ok=3600 malformed=0 error=0 elapsed=6096.3s
+  3650/4000: ok=3650 malformed=0 error=0 elapsed=6181.8s
+  3700/4000: ok=3700 malformed=0 error=0 elapsed=6267.4s
+  3750/4000: ok=3750 malformed=0 error=0 elapsed=6353.5s
+  3800/4000: ok=3800 malformed=0 error=0 elapsed=6440.8s
+  3850/4000: ok=3850 malformed=0 error=0 elapsed=6529.2s
+  3900/4000: ok=3900 malformed=0 error=0 elapsed=6616.9s
+  3950/4000: ok=3950 malformed=0 error=0 elapsed=6706.3s
+  4000/4000: ok=4000 malformed=0 error=0 elapsed=6794.7s
+
+=== STAGE-1 SUMMARY: Qwen/Qwen3-8B ===
+model: Qwen/Qwen3-8B
+total_requests: 4000
+successful_requests: 4000
+malformed_json: 0
+inference_errors: 0
+success_rate_pct: 100.0
+mean_latency_sec: 1.6986
+median_latency_sec: 1.6465
+std_latency_sec: 0.1928
+min_latency_sec: 1.4026
+max_latency_sec: 4.3091
+total_runtime_sec: 6794.74
+scenarios_per_minute: 35.32
+Wrote ranking to results/rankings/qwen3_8b_arsf_train.csv

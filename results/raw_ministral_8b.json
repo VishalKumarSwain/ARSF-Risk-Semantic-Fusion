@@ -1,0 +1,1852 @@
+[
+  {
+    "test_id": "mt/set_11/frenetic_v/test-806",
+    "status": "ok",
+    "latency_sec": 3.7137107849121094,
+    "input_tokens": 350,
+    "output_tokens": 98,
+    "total_tokens": 448,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.45) and high turn angle variability (std 0.0041 radians) suggest a complex and unpredictable path, which increases the risk of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.6,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.45) and high turn angle variability (std 0.0041 radians) suggest a complex and unpredictable path, which increases the risk of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt_set5/ambiegen/test-577",
+    "status": "ok",
+    "latency_sec": 3.218438148498535,
+    "input_tokens": 348,
+    "output_tokens": 100,
+    "total_tokens": 448,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "sharp_turns",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The scenario has a high tortuosity (5.07), indicating a complex and winding path. Additionally, there are sharp turns and high variability in turn angles, which can challenge the vehicle's control system and increase the risk of driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"sharp_turns\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The scenario has a high tortuosity (5.07), indicating a complex and winding path. Additionally, there are sharp turns and high variability in turn angles, which can challenge the vehicle's control system and increase the risk of driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_12/ambiegen/test-581",
+    "status": "ok",
+    "latency_sec": 3.1319832801818848,
+    "input_tokens": 348,
+    "output_tokens": 103,
+    "total_tokens": 451,
+    "risk_score": 0.5,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (2.95) indicates a winding path, which can be challenging for the vehicle to navigate accurately. Despite the low mean turn angle (0.0101 radians), the variability in turn angles (0.0105 radians) suggests potential difficulty in maintaining consistent control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.5,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (2.95) indicates a winding path, which can be challenging for the vehicle to navigate accurately. Despite the low mean turn angle (0.0101 radians), the variability in turn angles (0.0105 radians) suggests potential difficulty in maintaining consistent control.\"\n}"
+  },
+  {
+    "test_id": "mt/set_12/frenetic/test-306",
+    "status": "ok",
+    "latency_sec": 3.7115774154663086,
+    "input_tokens": 348,
+    "output_tokens": 118,
+    "total_tokens": 466,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.65) and low mean turn angle (0.0049 radians) suggest a complex and winding path, while the high turn angle variability (0.0042 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.65) and low mean turn angle (0.0049 radians) suggest a complex and winding path, while the high turn angle variability (0.0042 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_18/frenetic/test-185",
+    "status": "ok",
+    "latency_sec": 3.0920934677124023,
+    "input_tokens": 349,
+    "output_tokens": 97,
+    "total_tokens": 446,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.03) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0027 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.03) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0027 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.\"\n}"
+  },
+  {
+    "test_id": "mt/set_2/ambiegen/odr/test-385",
+    "status": "ok",
+    "latency_sec": 3.0913748741149902,
+    "input_tokens": 348,
+    "output_tokens": 97,
+    "total_tokens": 445,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.62) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0089 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.62) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0089 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.\"\n}"
+  },
+  {
+    "test_id": "mt/set_16/ambiegen/test-27",
+    "status": "ok",
+    "latency_sec": 3.2742350101470947,
+    "input_tokens": 348,
+    "output_tokens": 107,
+    "total_tokens": 455,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "sharp_turns",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The scenario has a high tortuosity (3.63), indicating a complex and winding path. Additionally, there are sharp turns (4) and high variability in turn angles (std 0.0305 rad), which increases the risk of the vehicle driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"sharp_turns\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The scenario has a high tortuosity (3.63), indicating a complex and winding path. Additionally, there are sharp turns (4) and high variability in turn angles (std 0.0305 rad), which increases the risk of the vehicle driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_18/ambiegen/test-459",
+    "status": "ok",
+    "latency_sec": 2.8292453289031982,
+    "input_tokens": 349,
+    "output_tokens": 85,
+    "total_tokens": 434,
+    "risk_score": 0.5,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity indicates a complex and winding path, which can be challenging for the vehicle to navigate. However, the low mean turn angle suggests that the turns are not particularly sharp, reducing the immediate risk of driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.5,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity indicates a complex and winding path, which can be challenging for the vehicle to navigate. However, the low mean turn angle suggests that the turns are not particularly sharp, reducing the immediate risk of driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_8/frenetic_v/odr/test-611",
+    "status": "ok",
+    "latency_sec": 3.0484938621520996,
+    "input_tokens": 350,
+    "output_tokens": 93,
+    "total_tokens": 443,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.27) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0044 radians) suggests frequent, small turns, which can also be difficult to control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.6,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.27) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0044 radians) suggests frequent, small turns, which can also be difficult to control.\"\n}"
+  },
+  {
+    "test_id": "mt/set_14/ambiegen/test-139",
+    "status": "ok",
+    "latency_sec": 2.438436508178711,
+    "input_tokens": 348,
+    "output_tokens": 72,
+    "total_tokens": 420,
+    "risk_score": 0.3,
+    "risk_factors": [
+      "high tortuosity"
+    ],
+    "rationale": "The high tortuosity (road_length / straight_line_distance = 2.80) indicates a winding path, which can make it challenging for the vehicle to maintain control and stay on the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.3,\n  \"risk_factors\": [\"high tortuosity\"],\n  \"rationale\": \"The high tortuosity (road_length / straight_line_distance = 2.80) indicates a winding path, which can make it challenging for the vehicle to maintain control and stay on the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_6/frenetic_v/test-380",
+    "status": "ok",
+    "latency_sec": 3.514662504196167,
+    "input_tokens": 349,
+    "output_tokens": 120,
+    "total_tokens": 469,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (2.03) and low mean turn angle (0.0059 radians) suggest a complex and winding path, while the high turn angle variability (0.0045 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (2.03) and low mean turn angle (0.0059 radians) suggest a complex and winding path, while the high turn angle variability (0.0045 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_18/frenetic/test-314",
+    "status": "ok",
+    "latency_sec": 3.537363052368164,
+    "input_tokens": 348,
+    "output_tokens": 118,
+    "total_tokens": 466,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.71) and low mean turn angle (0.0064 radians) suggest a complex and winding path, while the high turn angle variability (0.0048 radians) indicates frequent changes in direction, increasing the risk of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.71) and low mean turn angle (0.0064 radians) suggest a complex and winding path, while the high turn angle variability (0.0048 radians) indicates frequent changes in direction, increasing the risk of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt_set5/ambiegen/test-785",
+    "status": "ok",
+    "latency_sec": 2.966092109680176,
+    "input_tokens": 349,
+    "output_tokens": 97,
+    "total_tokens": 446,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.18) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0046 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.18) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0046 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.\"\n}"
+  },
+  {
+    "test_id": "mt/set_2/ambiegen/odr/test-365",
+    "status": "ok",
+    "latency_sec": 3.006760358810425,
+    "input_tokens": 348,
+    "output_tokens": 92,
+    "total_tokens": 440,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (2.99) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0063 radians) suggests frequent, small turns, which can also pose control difficulties.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (2.99) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0063 radians) suggests frequent, small turns, which can also pose control difficulties.\"\n}"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-429",
+    "status": "ok",
+    "latency_sec": 2.8176443576812744,
+    "input_tokens": 348,
+    "output_tokens": 93,
+    "total_tokens": 441,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity indicates a complex and winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle suggests that while there are no sharp turns, the path is still quite twisty, increasing the risk of the vehicle driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity indicates a complex and winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle suggests that while there are no sharp turns, the path is still quite twisty, increasing the risk of the vehicle driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_18/ambiegen/test-625",
+    "status": "ok",
+    "latency_sec": 2.5481324195861816,
+    "input_tokens": 348,
+    "output_tokens": 72,
+    "total_tokens": 420,
+    "risk_score": 0.65,
+    "risk_factors": [
+      "high_tortuosity",
+      "sharp_turns"
+    ],
+    "rationale": "The scenario has a high tortuosity (1.77) and includes sharp turns, which increases the likelihood of the vehicle failing to stay on the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.65,\n  \"risk_factors\": [\"high_tortuosity\", \"sharp_turns\"],\n  \"rationale\": \"The scenario has a high tortuosity (1.77) and includes sharp turns, which increases the likelihood of the vehicle failing to stay on the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_9/frenetic/test-50",
+    "status": "ok",
+    "latency_sec": 3.4917774200439453,
+    "input_tokens": 348,
+    "output_tokens": 118,
+    "total_tokens": 466,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (2.05) and low mean turn angle (0.0053 radians) suggest a complex and winding path, while the high turn angle variability (0.0067 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (2.05) and low mean turn angle (0.0053 radians) suggest a complex and winding path, while the high turn angle variability (0.0067 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_13/frenetic_v/test-787",
+    "status": "ok",
+    "latency_sec": 2.386495351791382,
+    "input_tokens": 350,
+    "output_tokens": 65,
+    "total_tokens": 415,
+    "risk_score": 0.3,
+    "risk_factors": [
+      "high tortuosity"
+    ],
+    "rationale": "The high tortuosity (1.08) indicates a winding and complex path, which can make it challenging for the autonomous vehicle to maintain control and navigate safely.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.3,\n  \"risk_factors\": [\"high tortuosity\"],\n  \"rationale\": \"The high tortuosity (1.08) indicates a winding and complex path, which can make it challenging for the autonomous vehicle to maintain control and navigate safely.\"\n}"
+  },
+  {
+    "test_id": "mt/set_6/frenetic_v/test-456",
+    "status": "ok",
+    "latency_sec": 3.0057475566864014,
+    "input_tokens": 350,
+    "output_tokens": 94,
+    "total_tokens": 444,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.29) indicates a winding path, which can be challenging for the vehicle to navigate accurately. Despite the low mean turn angle, the variability in turn angles (0.0036 radians) suggests potential difficulty in maintaining consistent control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.29) indicates a winding path, which can be challenging for the vehicle to navigate accurately. Despite the low mean turn angle, the variability in turn angles (0.0036 radians) suggests potential difficulty in maintaining consistent control.\"\n}"
+  },
+  {
+    "test_id": "mt/set_18/ambiegen/test-343",
+    "status": "ok",
+    "latency_sec": 3.156182289123535,
+    "input_tokens": 348,
+    "output_tokens": 100,
+    "total_tokens": 448,
+    "risk_score": 0.3,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (2.47) indicates a winding path, which can be challenging for the vehicle to navigate accurately. However, the low mean turn angle (0.0041 radians) suggests that the turns are not particularly sharp, reducing the immediate risk of driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.3,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (2.47) indicates a winding path, which can be challenging for the vehicle to navigate accurately. However, the low mean turn angle (0.0041 radians) suggests that the turns are not particularly sharp, reducing the immediate risk of driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_7/frenetic_v/odr/test-812",
+    "status": "ok",
+    "latency_sec": 3.556147813796997,
+    "input_tokens": 349,
+    "output_tokens": 118,
+    "total_tokens": 467,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (2.53) and low mean turn angle (0.0060 radians) suggest a complex and winding path, while the high turn angle variability (0.0041 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (2.53) and low mean turn angle (0.0060 radians) suggest a complex and winding path, while the high turn angle variability (0.0041 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_14/ambiegen/test-957",
+    "status": "ok",
+    "latency_sec": 2.828251838684082,
+    "input_tokens": 348,
+    "output_tokens": 85,
+    "total_tokens": 433,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity indicates a complex path with many turns, which can challenge the vehicle's control system. However, the low mean turn angle suggests that these turns are not particularly sharp, reducing the immediate risk of driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity indicates a complex path with many turns, which can challenge the vehicle's control system. However, the low mean turn angle suggests that these turns are not particularly sharp, reducing the immediate risk of driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_6/frenetic_v/test-625",
+    "status": "ok",
+    "latency_sec": 3.878654718399048,
+    "input_tokens": 350,
+    "output_tokens": 132,
+    "total_tokens": 482,
+    "risk_score": 0.65,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.30) and high turn angle variability (std 0.0064 radians) suggest a complex and unpredictable path, which increases the risk of the vehicle losing control and driving off the road. The low mean turn angle (0.0054 radians) indicates frequent, small turns, which can also be challenging for the vehicle to navigate accurately.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.65,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.30) and high turn angle variability (std 0.0064 radians) suggest a complex and unpredictable path, which increases the risk of the vehicle losing control and driving off the road. The low mean turn angle (0.0054 radians) indicates frequent, small turns, which can also be challenging for the vehicle to navigate accurately.\"\n}"
+  },
+  {
+    "test_id": "mt/set_14/frenetic_v/test-326",
+    "status": "ok",
+    "latency_sec": 3.062959909439087,
+    "input_tokens": 350,
+    "output_tokens": 98,
+    "total_tokens": 448,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.43) and variability in turn angles (std 0.0024 radians) suggest a complex and unpredictable path, which increases the risk of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.6,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.43) and variability in turn angles (std 0.0024 radians) suggest a complex and unpredictable path, which increases the risk of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_11/frenetic/test-461",
+    "status": "ok",
+    "latency_sec": 3.6443066596984863,
+    "input_tokens": 348,
+    "output_tokens": 118,
+    "total_tokens": 466,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (3.42) and low mean turn angle (0.0082 radians) suggest a complex and winding path, while the high turn angle variability (0.0081 radians) indicates frequent changes in direction, increasing the risk of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (3.42) and low mean turn angle (0.0082 radians) suggest a complex and winding path, while the high turn angle variability (0.0081 radians) indicates frequent changes in direction, increasing the risk of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_10/ambiegen/test-481",
+    "status": "ok",
+    "latency_sec": 2.9652457237243652,
+    "input_tokens": 348,
+    "output_tokens": 97,
+    "total_tokens": 445,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.63) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0047 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.63) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0047 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.\"\n}"
+  },
+  {
+    "test_id": "mt/set_8/frenetic/odr/test-810",
+    "status": "ok",
+    "latency_sec": 3.5304818153381348,
+    "input_tokens": 349,
+    "output_tokens": 118,
+    "total_tokens": 467,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.48) and low mean turn angle (0.0070 radians) suggest a winding and complex path, while the high turn angle variability (0.0072 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.48) and low mean turn angle (0.0070 radians) suggest a winding and complex path, while the high turn angle variability (0.0072 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_11/frenetic_v/test-628",
+    "status": "ok",
+    "latency_sec": 3.5339841842651367,
+    "input_tokens": 350,
+    "output_tokens": 118,
+    "total_tokens": 468,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.40) and low mean turn angle (0.0057 radians) suggest a winding and complex path, while the high turn angle variability (0.0034 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.40) and low mean turn angle (0.0057 radians) suggest a winding and complex path, while the high turn angle variability (0.0034 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_8/frenetic/odr/test-405",
+    "status": "ok",
+    "latency_sec": 3.102733612060547,
+    "input_tokens": 349,
+    "output_tokens": 101,
+    "total_tokens": 450,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.21) indicates a winding path, which can be challenging for the vehicle to navigate accurately. Despite the low mean turn angle, the variability in turn angles (0.0039 radians) suggests frequent changes in direction, increasing the risk of driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.6,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.21) indicates a winding path, which can be challenging for the vehicle to navigate accurately. Despite the low mean turn angle, the variability in turn angles (0.0039 radians) suggests frequent changes in direction, increasing the risk of driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-213",
+    "status": "ok",
+    "latency_sec": 2.555440902709961,
+    "input_tokens": 347,
+    "output_tokens": 72,
+    "total_tokens": 419,
+    "risk_score": 0.2,
+    "risk_factors": [
+      "low tortuosity",
+      "low turn angle variability"
+    ],
+    "rationale": "The scenario has a low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with few sharp turns, reducing the likelihood of the vehicle driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.2,\n  \"risk_factors\": [\"low tortuosity\", \"low turn angle variability\"],\n  \"rationale\": \"The scenario has a low tortuosity and minimal turn angle variability, indicating a relatively straightforward path with few sharp turns, reducing the likelihood of the vehicle driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_11/ambiegen/test-823",
+    "status": "ok",
+    "latency_sec": 3.050525426864624,
+    "input_tokens": 349,
+    "output_tokens": 102,
+    "total_tokens": 451,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "sharp_turns",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The scenario has a high tortuosity (20.69), multiple sharp turns (>0.3 rad), and significant turn angle variability (std 0.0296 rad), which increases the likelihood of the vehicle failing to stay on the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"sharp_turns\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The scenario has a high tortuosity (20.69), multiple sharp turns (>0.3 rad), and significant turn angle variability (std 0.0296 rad), which increases the likelihood of the vehicle failing to stay on the road.\"\n}"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-232",
+    "status": "ok",
+    "latency_sec": 3.501173734664917,
+    "input_tokens": 349,
+    "output_tokens": 118,
+    "total_tokens": 467,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.21) and low mean turn angle (0.0047 radians) suggest a winding and complex path, while the high turn angle variability (0.0044 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.21) and low mean turn angle (0.0047 radians) suggest a winding and complex path, while the high turn angle variability (0.0044 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_7/frenetic/odr/test-547",
+    "status": "ok",
+    "latency_sec": 3.409960985183716,
+    "input_tokens": 348,
+    "output_tokens": 108,
+    "total_tokens": 456,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The scenario has a high tortuosity (6.05), indicating a complex and winding path. Despite low mean turn angles and no sharp turns, the high variability in turn angles suggests frequent and unpredictable changes in direction, increasing the risk of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The scenario has a high tortuosity (6.05), indicating a complex and winding path. Despite low mean turn angles and no sharp turns, the high variability in turn angles suggests frequent and unpredictable changes in direction, increasing the risk of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_11/frenetic/test-556",
+    "status": "ok",
+    "latency_sec": 3.504837989807129,
+    "input_tokens": 349,
+    "output_tokens": 118,
+    "total_tokens": 467,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.50) and low mean turn angle (0.0062 radians) suggest a winding and complex path, while the high turn angle variability (0.0039 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.50) and low mean turn angle (0.0062 radians) suggest a winding and complex path, while the high turn angle variability (0.0039 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-726",
+    "status": "ok",
+    "latency_sec": 3.049764633178711,
+    "input_tokens": 348,
+    "output_tokens": 92,
+    "total_tokens": 440,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (2.75) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0049 radians) suggests frequent, small turns, which can also pose control difficulties.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (2.75) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0049 radians) suggests frequent, small turns, which can also pose control difficulties.\"\n}"
+  },
+  {
+    "test_id": "mt/set_14/ambiegen/test-436",
+    "status": "ok",
+    "latency_sec": 2.9204599857330322,
+    "input_tokens": 348,
+    "output_tokens": 92,
+    "total_tokens": 440,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.46) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0047 radians) suggests frequent, small turns, which can also pose control difficulties.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.46) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0047 radians) suggests frequent, small turns, which can also pose control difficulties.\"\n}"
+  },
+  {
+    "test_id": "mt/set_14/frenetic/test-151",
+    "status": "ok",
+    "latency_sec": 3.428575038909912,
+    "input_tokens": 348,
+    "output_tokens": 117,
+    "total_tokens": 465,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.74) and low mean turn angle (0.0059 radians) suggest a complex and winding path, while the high turn angle variability (0.0043 radians) indicates frequent and unpredictable changes in direction, increasing the risk of the vehicle driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.74) and low mean turn angle (0.0059 radians) suggest a complex and winding path, while the high turn angle variability (0.0043 radians) indicates frequent and unpredictable changes in direction, increasing the risk of the vehicle driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt_set5/ambiegen/test-223",
+    "status": "ok",
+    "latency_sec": 2.974674701690674,
+    "input_tokens": 348,
+    "output_tokens": 93,
+    "total_tokens": 441,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.32) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0041 radians) suggests frequent, small turns, which can also be difficult to control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.32) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0041 radians) suggests frequent, small turns, which can also be difficult to control.\"\n}"
+  },
+  {
+    "test_id": "mt/set_16/ambiegen/test-434",
+    "status": "ok",
+    "latency_sec": 2.837423801422119,
+    "input_tokens": 348,
+    "output_tokens": 92,
+    "total_tokens": 440,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (2.47) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0060 radians) suggests frequent, small turns, which can also pose control difficulties.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (2.47) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0060 radians) suggests frequent, small turns, which can also pose control difficulties.\"\n}"
+  },
+  {
+    "test_id": "mt/set_18/frenetic/test-914",
+    "status": "ok",
+    "latency_sec": 3.526700019836426,
+    "input_tokens": 348,
+    "output_tokens": 118,
+    "total_tokens": 466,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (2.15) and low mean turn angle (0.0061 radians) suggest a complex and winding path, while the high turn angle variability (0.0059 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (2.15) and low mean turn angle (0.0061 radians) suggest a complex and winding path, while the high turn angle variability (0.0059 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_2/ambiegen/odr/test-69",
+    "status": "ok",
+    "latency_sec": 3.076143503189087,
+    "input_tokens": 348,
+    "output_tokens": 92,
+    "total_tokens": 440,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.81) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0085 radians) suggests frequent, small turns, which can also pose control difficulties.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.81) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0085 radians) suggests frequent, small turns, which can also pose control difficulties.\"\n}"
+  },
+  {
+    "test_id": "mt/set_10/frenetic/test-921",
+    "status": "ok",
+    "latency_sec": 3.7326059341430664,
+    "input_tokens": 348,
+    "output_tokens": 132,
+    "total_tokens": 480,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (3.24) and high turn angle variability (std: 0.0090 radians) indicate a complex and unpredictable path, which increases the risk of the vehicle losing control and driving off the road. The low mean turn angle (0.0062 radians) suggests frequent, small adjustments, which can be challenging for the vehicle to manage consistently.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (3.24) and high turn angle variability (std: 0.0090 radians) indicate a complex and unpredictable path, which increases the risk of the vehicle losing control and driving off the road. The low mean turn angle (0.0062 radians) suggests frequent, small adjustments, which can be challenging for the vehicle to manage consistently.\"\n}"
+  },
+  {
+    "test_id": "mt_set6/frenetic/test-720",
+    "status": "ok",
+    "latency_sec": 3.5604004859924316,
+    "input_tokens": 349,
+    "output_tokens": 118,
+    "total_tokens": 467,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.88) and low mean turn angle (0.0068 radians) suggest a complex and winding path, while the high turn angle variability (0.0072 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.88) and low mean turn angle (0.0068 radians) suggest a complex and winding path, while the high turn angle variability (0.0072 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_8/frenetic_v/odr/test-588",
+    "status": "ok",
+    "latency_sec": 4.565063238143921,
+    "input_tokens": 350,
+    "output_tokens": 118,
+    "total_tokens": 468,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.32) and low mean turn angle (0.0051 radians) suggest a winding and complex path, while the high turn angle variability (0.0064 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.32) and low mean turn angle (0.0051 radians) suggest a winding and complex path, while the high turn angle variability (0.0064 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_10/frenetic/test-260",
+    "status": "ok",
+    "latency_sec": 2.887413263320923,
+    "input_tokens": 349,
+    "output_tokens": 89,
+    "total_tokens": 438,
+    "risk_score": 0.85,
+    "risk_factors": [
+      "high_tortuosity",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The scenario has a very high tortuosity (18.74) and significant turn angle variability (std 0.0106 rad), which increases the likelihood of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.85,\n  \"risk_factors\": [\"high_tortuosity\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The scenario has a very high tortuosity (18.74) and significant turn angle variability (std 0.0106 rad), which increases the likelihood of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_18/ambiegen/test-598",
+    "status": "ok",
+    "latency_sec": 2.6307806968688965,
+    "input_tokens": 348,
+    "output_tokens": 84,
+    "total_tokens": 432,
+    "risk_score": 0.3,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity indicates a winding path, which can be challenging for the vehicle to navigate accurately. However, the low mean turn angle suggests that the turns are not particularly sharp, reducing the immediate risk of driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.3,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity indicates a winding path, which can be challenging for the vehicle to navigate accurately. However, the low mean turn angle suggests that the turns are not particularly sharp, reducing the immediate risk of driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_17/frenetic_v/test-594",
+    "status": "ok",
+    "latency_sec": 3.094792127609253,
+    "input_tokens": 350,
+    "output_tokens": 101,
+    "total_tokens": 451,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.21) indicates a winding path, which increases the likelihood of the vehicle losing control and driving off the road. The low mean turn angle (0.0042 radians) suggests frequent, small turns, which can also be challenging for the vehicle to navigate accurately.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.6,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.21) indicates a winding path, which increases the likelihood of the vehicle losing control and driving off the road. The low mean turn angle (0.0042 radians) suggests frequent, small turns, which can also be challenging for the vehicle to navigate accurately.\"\n}"
+  },
+  {
+    "test_id": "mt/set_7/frenetic_v/odr/test-481",
+    "status": "ok",
+    "latency_sec": 3.4048218727111816,
+    "input_tokens": 350,
+    "output_tokens": 118,
+    "total_tokens": 468,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.68) and low mean turn angle (0.0046 radians) suggest a winding and complex path, while the high turn angle variability (0.0055 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.68) and low mean turn angle (0.0046 radians) suggest a winding and complex path, while the high turn angle variability (0.0055 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_9/ambiegen/test-928",
+    "status": "ok",
+    "latency_sec": 3.551724672317505,
+    "input_tokens": 348,
+    "output_tokens": 104,
+    "total_tokens": 452,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (2.22) indicates a complex and winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0066 radians) suggests that the turns are not particularly sharp, but the cumulative effect of many small turns can still pose a risk.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (2.22) indicates a complex and winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0066 radians) suggests that the turns are not particularly sharp, but the cumulative effect of many small turns can still pose a risk.\"\n}"
+  },
+  {
+    "test_id": "mt/set_10/frenetic/test-907",
+    "status": "ok",
+    "latency_sec": 3.6081857681274414,
+    "input_tokens": 348,
+    "output_tokens": 118,
+    "total_tokens": 466,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (2.11) and low mean turn angle (0.0073 radians) suggest a complex and winding path, while the high turn angle variability (0.0057 radians) indicates frequent changes in direction, increasing the risk of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (2.11) and low mean turn angle (0.0073 radians) suggest a complex and winding path, while the high turn angle variability (0.0057 radians) indicates frequent changes in direction, increasing the risk of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_16/ambiegen/test-453",
+    "status": "ok",
+    "latency_sec": 2.9450137615203857,
+    "input_tokens": 349,
+    "output_tokens": 97,
+    "total_tokens": 446,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.29) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0060 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.29) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0060 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.\"\n}"
+  },
+  {
+    "test_id": "mt/set_17/frenetic_v/test-511",
+    "status": "ok",
+    "latency_sec": 3.315840721130371,
+    "input_tokens": 350,
+    "output_tokens": 104,
+    "total_tokens": 454,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.06) indicates a winding path, which can be challenging for the vehicle to navigate accurately. Despite the low mean turn angle, the variability in turn angles (std: 0.0034 radians) suggests frequent changes in direction, increasing the risk of off-road incidents.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.6,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.06) indicates a winding path, which can be challenging for the vehicle to navigate accurately. Despite the low mean turn angle, the variability in turn angles (std: 0.0034 radians) suggests frequent changes in direction, increasing the risk of off-road incidents.\"\n}"
+  },
+  {
+    "test_id": "mt_set6/frenetic/test-942",
+    "status": "ok",
+    "latency_sec": 3.86869478225708,
+    "input_tokens": 349,
+    "output_tokens": 129,
+    "total_tokens": 478,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle",
+      "high turn angle variability"
+    ],
+    "rationale": "The high tortuosity (1.18) and high turn angle variability (std 0.0053 radians) suggest a complex and unpredictable path, which increases the risk of the vehicle failing to maintain control and driving off the road boundary. The low mean turn angle (0.0055 radians) indicates frequent, small turns, which can also be challenging for the vehicle to navigate accurately.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.6,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\", \"high turn angle variability\"],\n  \"rationale\": \"The high tortuosity (1.18) and high turn angle variability (std 0.0053 radians) suggest a complex and unpredictable path, which increases the risk of the vehicle failing to maintain control and driving off the road boundary. The low mean turn angle (0.0055 radians) indicates frequent, small turns, which can also be challenging for the vehicle to navigate accurately.\"\n}"
+  },
+  {
+    "test_id": "mt/set_14/frenetic_v/test-48",
+    "status": "ok",
+    "latency_sec": 3.16646146774292,
+    "input_tokens": 350,
+    "output_tokens": 103,
+    "total_tokens": 453,
+    "risk_score": 0.5,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.17) indicates a winding path, which can be challenging for the vehicle to navigate accurately. Despite the low mean turn angle, the variability in turn angles (std: 0.0038 radians) suggests some sharp turns, increasing the risk of off-road failure.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.5,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.17) indicates a winding path, which can be challenging for the vehicle to navigate accurately. Despite the low mean turn angle, the variability in turn angles (std: 0.0038 radians) suggests some sharp turns, increasing the risk of off-road failure.\"\n}"
+  },
+  {
+    "test_id": "mt/set_16/frenetic_v/test-392",
+    "status": "ok",
+    "latency_sec": 3.5454368591308594,
+    "input_tokens": 350,
+    "output_tokens": 118,
+    "total_tokens": 468,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.34) and low mean turn angle (0.0047 radians) suggest a winding and complex path, while the high turn angle variability (0.0042 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.34) and low mean turn angle (0.0047 radians) suggest a winding and complex path, while the high turn angle variability (0.0042 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_18/frenetic/test-831",
+    "status": "ok",
+    "latency_sec": 3.5777194499969482,
+    "input_tokens": 348,
+    "output_tokens": 120,
+    "total_tokens": 468,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (5.25) and low mean turn angle (0.0080 radians) suggest a complex and winding path, while the high turn angle variability (0.0080 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (5.25) and low mean turn angle (0.0080 radians) suggest a complex and winding path, while the high turn angle variability (0.0080 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_17/frenetic_v/test-425",
+    "status": "ok",
+    "latency_sec": 4.19969916343689,
+    "input_tokens": 349,
+    "output_tokens": 92,
+    "total_tokens": 441,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.54) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0034 radians) suggests frequent but small turns, which can also pose control difficulties.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.54) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0034 radians) suggests frequent but small turns, which can also pose control difficulties.\"\n}"
+  },
+  {
+    "test_id": "mt/set_10/ambiegen/test-504",
+    "status": "ok",
+    "latency_sec": 2.817131757736206,
+    "input_tokens": 348,
+    "output_tokens": 84,
+    "total_tokens": 432,
+    "risk_score": 0.3,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity indicates a winding path, which can be challenging for the vehicle to navigate accurately. However, the low mean turn angle suggests that the turns are not particularly sharp, reducing the immediate risk of driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.3,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity indicates a winding path, which can be challenging for the vehicle to navigate accurately. However, the low mean turn angle suggests that the turns are not particularly sharp, reducing the immediate risk of driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt_set5/ambiegen/test-209",
+    "status": "ok",
+    "latency_sec": 2.9430437088012695,
+    "input_tokens": 348,
+    "output_tokens": 92,
+    "total_tokens": 440,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.29) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0039 radians) suggests frequent, small turns, which can also pose control difficulties.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.29) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0039 radians) suggests frequent, small turns, which can also pose control difficulties.\"\n}"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-934",
+    "status": "ok",
+    "latency_sec": 2.8143999576568604,
+    "input_tokens": 348,
+    "output_tokens": 84,
+    "total_tokens": 432,
+    "risk_score": 0.3,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity indicates a winding path, which can be challenging for the vehicle to navigate accurately. However, the low mean turn angle suggests that the turns are not particularly sharp, reducing the immediate risk of driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.3,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity indicates a winding path, which can be challenging for the vehicle to navigate accurately. However, the low mean turn angle suggests that the turns are not particularly sharp, reducing the immediate risk of driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_14/ambiegen/test-488",
+    "status": "ok",
+    "latency_sec": 3.1185359954833984,
+    "input_tokens": 348,
+    "output_tokens": 97,
+    "total_tokens": 445,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (2.11) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0061 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (2.11) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0061 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.\"\n}"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-754",
+    "status": "ok",
+    "latency_sec": 5.407114028930664,
+    "input_tokens": 348,
+    "output_tokens": 120,
+    "total_tokens": 468,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (2.29) and low mean turn angle (0.0051 radians) suggest a winding and complex path, while the high turn angle variability (0.0031 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (2.29) and low mean turn angle (0.0051 radians) suggest a winding and complex path, while the high turn angle variability (0.0031 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_13/ambiegen/test-422",
+    "status": "ok",
+    "latency_sec": 3.063965082168579,
+    "input_tokens": 348,
+    "output_tokens": 98,
+    "total_tokens": 446,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (3.45) and high turn angle variability (std 0.0144 radians) suggest a complex and unpredictable path, which increases the risk of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.6,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (3.45) and high turn angle variability (std 0.0144 radians) suggest a complex and unpredictable path, which increases the risk of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_14/frenetic/test-256",
+    "status": "ok",
+    "latency_sec": 3.543940782546997,
+    "input_tokens": 349,
+    "output_tokens": 118,
+    "total_tokens": 467,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.42) and low mean turn angle (0.0061 radians) suggest a winding and complex path, while the high turn angle variability (0.0089 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.42) and low mean turn angle (0.0061 radians) suggest a winding and complex path, while the high turn angle variability (0.0089 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_10/ambiegen/test-957",
+    "status": "ok",
+    "latency_sec": 3.124433755874634,
+    "input_tokens": 348,
+    "output_tokens": 97,
+    "total_tokens": 445,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.29) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0046 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.29) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0046 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.\"\n}"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-476",
+    "status": "ok",
+    "latency_sec": 3.078843593597412,
+    "input_tokens": 349,
+    "output_tokens": 94,
+    "total_tokens": 443,
+    "risk_score": 0.5,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.19) indicates a winding path, which can be challenging for the vehicle to navigate accurately. Despite the low mean turn angle, the variability in turn angles (0.0025 radians) suggests potential difficulty in maintaining consistent control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.5,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.19) indicates a winding path, which can be challenging for the vehicle to navigate accurately. Despite the low mean turn angle, the variability in turn angles (0.0025 radians) suggests potential difficulty in maintaining consistent control.\"\n}"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-31",
+    "status": "ok",
+    "latency_sec": 3.5744712352752686,
+    "input_tokens": 349,
+    "output_tokens": 129,
+    "total_tokens": 478,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle",
+      "high turn angle variability"
+    ],
+    "rationale": "The high tortuosity (1.17) and high turn angle variability (std 0.0079 radians) suggest a complex and unpredictable path, which increases the risk of the vehicle failing to maintain control and driving off the road. The low mean turn angle (0.0051 radians) indicates frequent, small turns, which can also be challenging for the vehicle to navigate accurately.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\", \"high turn angle variability\"],\n  \"rationale\": \"The high tortuosity (1.17) and high turn angle variability (std 0.0079 radians) suggest a complex and unpredictable path, which increases the risk of the vehicle failing to maintain control and driving off the road. The low mean turn angle (0.0051 radians) indicates frequent, small turns, which can also be challenging for the vehicle to navigate accurately.\"\n}"
+  },
+  {
+    "test_id": "mt/set_7/frenetic_v/odr/test-242",
+    "status": "ok",
+    "latency_sec": 3.2368149757385254,
+    "input_tokens": 350,
+    "output_tokens": 102,
+    "total_tokens": 452,
+    "risk_score": 0.5,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.19) indicates a winding path, which can be challenging for the vehicle to navigate accurately. Despite the low mean turn angle, the variability in turn angles (std 0.0028 radians) suggests some sharp turns, increasing the risk of driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.5,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.19) indicates a winding path, which can be challenging for the vehicle to navigate accurately. Despite the low mean turn angle, the variability in turn angles (std 0.0028 radians) suggests some sharp turns, increasing the risk of driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_8/frenetic_v/odr/test-825",
+    "status": "ok",
+    "latency_sec": 3.523169994354248,
+    "input_tokens": 350,
+    "output_tokens": 118,
+    "total_tokens": 468,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.52) and low mean turn angle (0.0068 radians) suggest a complex and winding path, while the high turn angle variability (0.0058 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.52) and low mean turn angle (0.0068 radians) suggest a complex and winding path, while the high turn angle variability (0.0058 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt_set6/frenetic/test-745",
+    "status": "ok",
+    "latency_sec": 3.5580086708068848,
+    "input_tokens": 348,
+    "output_tokens": 118,
+    "total_tokens": 466,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.86) and low mean turn angle (0.0066 radians) suggest a complex and winding path, while the high turn angle variability (0.0062 radians) indicates frequent changes in direction, increasing the risk of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.86) and low mean turn angle (0.0066 radians) suggest a complex and winding path, while the high turn angle variability (0.0062 radians) indicates frequent changes in direction, increasing the risk of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-661",
+    "status": "ok",
+    "latency_sec": 2.9067447185516357,
+    "input_tokens": 349,
+    "output_tokens": 92,
+    "total_tokens": 441,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.84) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0062 radians) suggests frequent but small turns, which can also pose control difficulties.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.84) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0062 radians) suggests frequent but small turns, which can also pose control difficulties.\"\n}"
+  },
+  {
+    "test_id": "mt/set_16/frenetic/test-584",
+    "status": "ok",
+    "latency_sec": 3.3648462295532227,
+    "input_tokens": 348,
+    "output_tokens": 105,
+    "total_tokens": 453,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The scenario has a high tortuosity, indicating a complex and winding path, which increases the likelihood of the vehicle losing control. Additionally, the low mean turn angle and high turn angle variability suggest frequent and unpredictable changes in direction, further increasing the risk of driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The scenario has a high tortuosity, indicating a complex and winding path, which increases the likelihood of the vehicle losing control. Additionally, the low mean turn angle and high turn angle variability suggest frequent and unpredictable changes in direction, further increasing the risk of driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_14/frenetic/test-257",
+    "status": "ok",
+    "latency_sec": 3.556814193725586,
+    "input_tokens": 349,
+    "output_tokens": 117,
+    "total_tokens": 466,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.50) and low mean turn angle (0.0045 radians) suggest a complex and winding path, while the high turn angle variability (0.0033 radians) indicates frequent and unpredictable changes in direction, increasing the risk of the vehicle driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.50) and low mean turn angle (0.0045 radians) suggest a complex and winding path, while the high turn angle variability (0.0033 radians) indicates frequent and unpredictable changes in direction, increasing the risk of the vehicle driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-169",
+    "status": "ok",
+    "latency_sec": 2.9135921001434326,
+    "input_tokens": 349,
+    "output_tokens": 92,
+    "total_tokens": 441,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.59) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0055 radians) suggests frequent but small turns, which can also pose control difficulties.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.59) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0055 radians) suggests frequent but small turns, which can also pose control difficulties.\"\n}"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-466",
+    "status": "ok",
+    "latency_sec": 5.653969764709473,
+    "input_tokens": 349,
+    "output_tokens": 120,
+    "total_tokens": 469,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle",
+      "high turn angle variability"
+    ],
+    "rationale": "The high tortuosity (1.06) and high turn angle variability (std 0.0020 radians) suggest a complex and unpredictable path, which increases the risk of the vehicle failing to maintain control and driving off the road boundary. The low mean turn angle indicates frequent but small turns, which can also be challenging for the vehicle to navigate accurately.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\", \"high turn angle variability\"],\n  \"rationale\": \"The high tortuosity (1.06) and high turn angle variability (std 0.0020 radians) suggest a complex and unpredictable path, which increases the risk of the vehicle failing to maintain control and driving off the road boundary. The low mean turn angle indicates frequent but small turns, which can also be challenging for the vehicle to navigate accurately.\"\n}"
+  },
+  {
+    "test_id": "mt/set_7/frenetic_v/odr/test-439",
+    "status": "ok",
+    "latency_sec": 3.4893393516540527,
+    "input_tokens": 349,
+    "output_tokens": 118,
+    "total_tokens": 467,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (2.69) and low mean turn angle (0.0043 radians) suggest a winding and complex path, while the high turn angle variability (0.0040 radians) indicates frequent changes in direction, increasing the risk of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (2.69) and low mean turn angle (0.0043 radians) suggest a winding and complex path, while the high turn angle variability (0.0040 radians) indicates frequent changes in direction, increasing the risk of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_13/ambiegen/test-178",
+    "status": "ok",
+    "latency_sec": 2.983675003051758,
+    "input_tokens": 348,
+    "output_tokens": 93,
+    "total_tokens": 441,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.19) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0037 radians) suggests frequent, small turns, which can also be difficult to control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.19) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0037 radians) suggests frequent, small turns, which can also be difficult to control.\"\n}"
+  },
+  {
+    "test_id": "mt/set_10/frenetic_v/test-571",
+    "status": "ok",
+    "latency_sec": 3.077883005142212,
+    "input_tokens": 350,
+    "output_tokens": 97,
+    "total_tokens": 447,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.28) and high turn angle variability (std 0.0068) suggest a complex and unpredictable path, which increases the risk of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.28) and high turn angle variability (std 0.0068) suggest a complex and unpredictable path, which increases the risk of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_8/frenetic_v/odr/test-839",
+    "status": "ok",
+    "latency_sec": 3.2296814918518066,
+    "input_tokens": 350,
+    "output_tokens": 97,
+    "total_tokens": 447,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.27) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0044 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.6,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.27) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0044 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.\"\n}"
+  },
+  {
+    "test_id": "mt/set_9/ambiegen/test-950",
+    "status": "ok",
+    "latency_sec": 3.233966112136841,
+    "input_tokens": 348,
+    "output_tokens": 97,
+    "total_tokens": 445,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (2.34) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0073 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (2.34) indicates a winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle (0.0073 radians) suggests frequent, small turns, which can also increase the risk of off-road incidents.\"\n}"
+  },
+  {
+    "test_id": "mt/set_6/frenetic_v/test-409",
+    "status": "ok",
+    "latency_sec": 3.089597463607788,
+    "input_tokens": 350,
+    "output_tokens": 101,
+    "total_tokens": 451,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.37) indicates a winding path, which increases the likelihood of the vehicle losing control and driving off the road. The low mean turn angle (0.0057 radians) suggests frequent, small turns, which can also be challenging for the vehicle to navigate accurately.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.6,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.37) indicates a winding path, which increases the likelihood of the vehicle losing control and driving off the road. The low mean turn angle (0.0057 radians) suggests frequent, small turns, which can also be challenging for the vehicle to navigate accurately.\"\n}"
+  },
+  {
+    "test_id": "mt/set_18/frenetic/test-191",
+    "status": "ok",
+    "latency_sec": 3.484471321105957,
+    "input_tokens": 348,
+    "output_tokens": 118,
+    "total_tokens": 466,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.98) and low mean turn angle (0.0058 radians) suggest a winding and complex path, while the high turn angle variability (0.0041 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.98) and low mean turn angle (0.0058 radians) suggest a winding and complex path, while the high turn angle variability (0.0041 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-282",
+    "status": "ok",
+    "latency_sec": 2.9726970195770264,
+    "input_tokens": 348,
+    "output_tokens": 100,
+    "total_tokens": 448,
+    "risk_score": 0.3,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.39) indicates a winding path, which can be challenging for the vehicle to navigate accurately. However, the low mean turn angle (0.0039 radians) suggests that the turns are not particularly sharp, reducing the immediate risk of driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.3,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.39) indicates a winding path, which can be challenging for the vehicle to navigate accurately. However, the low mean turn angle (0.0039 radians) suggests that the turns are not particularly sharp, reducing the immediate risk of driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_16/frenetic_v/test-124",
+    "status": "ok",
+    "latency_sec": 3.6469991207122803,
+    "input_tokens": 349,
+    "output_tokens": 120,
+    "total_tokens": 469,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (6.48) and low mean turn angle (0.0057 radians) suggest a complex and winding path, while the high turn angle variability (0.0055 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (6.48) and low mean turn angle (0.0057 radians) suggest a complex and winding path, while the high turn angle variability (0.0055 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-777",
+    "status": "ok",
+    "latency_sec": 3.649045944213867,
+    "input_tokens": 348,
+    "output_tokens": 105,
+    "total_tokens": 453,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The scenario has a high tortuosity, indicating a complex and winding path, which increases the likelihood of the vehicle losing control. Additionally, the low mean turn angle and high turn angle variability suggest frequent and unpredictable changes in direction, further increasing the risk of driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The scenario has a high tortuosity, indicating a complex and winding path, which increases the likelihood of the vehicle losing control. Additionally, the low mean turn angle and high turn angle variability suggest frequent and unpredictable changes in direction, further increasing the risk of driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_7/frenetic/odr/test-406",
+    "status": "ok",
+    "latency_sec": 3.40838885307312,
+    "input_tokens": 349,
+    "output_tokens": 118,
+    "total_tokens": 467,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.27) and low mean turn angle (0.0059 radians) suggest a complex and winding path, while the high turn angle variability (0.0067 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.27) and low mean turn angle (0.0059 radians) suggest a complex and winding path, while the high turn angle variability (0.0067 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_14/frenetic_v/test-461",
+    "status": "ok",
+    "latency_sec": 3.2967302799224854,
+    "input_tokens": 349,
+    "output_tokens": 108,
+    "total_tokens": 457,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The scenario has a high tortuosity (4.24), indicating a complex and winding path. Despite low mean turn angles and no sharp turns, the high variability in turn angles suggests frequent and unpredictable changes in direction, increasing the risk of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The scenario has a high tortuosity (4.24), indicating a complex and winding path. Despite low mean turn angles and no sharp turns, the high variability in turn angles suggests frequent and unpredictable changes in direction, increasing the risk of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_18/frenetic_v/test-188",
+    "status": "ok",
+    "latency_sec": 5.25728178024292,
+    "input_tokens": 350,
+    "output_tokens": 118,
+    "total_tokens": 468,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.48) and low mean turn angle (0.0040 radians) suggest a complex and winding path, while the high turn angle variability (0.0041 radians) indicates frequent changes in direction, increasing the risk of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.48) and low mean turn angle (0.0040 radians) suggest a complex and winding path, while the high turn angle variability (0.0041 radians) indicates frequent changes in direction, increasing the risk of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_10/ambiegen/test-571",
+    "status": "ok",
+    "latency_sec": 3.11336612701416,
+    "input_tokens": 348,
+    "output_tokens": 93,
+    "total_tokens": 441,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity indicates a complex and winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle suggests that while there are no sharp turns, the path is still quite twisty, increasing the risk of the vehicle driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity indicates a complex and winding path, which can be challenging for the vehicle to navigate accurately. The low mean turn angle suggests that while there are no sharp turns, the path is still quite twisty, increasing the risk of the vehicle driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_10/frenetic/test-916",
+    "status": "ok",
+    "latency_sec": 3.396029233932495,
+    "input_tokens": 349,
+    "output_tokens": 118,
+    "total_tokens": 467,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.69) and low mean turn angle (0.0069 radians) suggest a complex and winding path, while the high turn angle variability (0.0059 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.69) and low mean turn angle (0.0069 radians) suggest a complex and winding path, while the high turn angle variability (0.0059 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_2/ambiegen/odr/test-632",
+    "status": "ok",
+    "latency_sec": 3.1163086891174316,
+    "input_tokens": 348,
+    "output_tokens": 101,
+    "total_tokens": 449,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (3.14) indicates a winding path, which increases the likelihood of the vehicle losing control and driving off the road. The low mean turn angle (0.0059 radians) suggests frequent, small turns, which can also be challenging for the vehicle to navigate accurately.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.6,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (3.14) indicates a winding path, which increases the likelihood of the vehicle losing control and driving off the road. The low mean turn angle (0.0059 radians) suggests frequent, small turns, which can also be challenging for the vehicle to navigate accurately.\"\n}"
+  },
+  {
+    "test_id": "mt/set_17/frenetic/test-815",
+    "status": "ok",
+    "latency_sec": 3.7103116512298584,
+    "input_tokens": 348,
+    "output_tokens": 118,
+    "total_tokens": 466,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.51) and low mean turn angle (0.0050 radians) suggest a complex and winding path, while the high turn angle variability (0.0041 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.51) and low mean turn angle (0.0050 radians) suggest a complex and winding path, while the high turn angle variability (0.0041 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_11/ambiegen/test-258",
+    "status": "ok",
+    "latency_sec": 3.5933375358581543,
+    "input_tokens": 348,
+    "output_tokens": 127,
+    "total_tokens": 475,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (2.56) and high turn angle variability (std 0.0107 radians) suggest a complex and unpredictable path, which increases the risk of the vehicle losing control and driving off the road. The low mean turn angle (0.0091 radians) indicates frequent but small turns, which can also contribute to control difficulty.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.4,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (2.56) and high turn angle variability (std 0.0107 radians) suggest a complex and unpredictable path, which increases the risk of the vehicle losing control and driving off the road. The low mean turn angle (0.0091 radians) indicates frequent but small turns, which can also contribute to control difficulty.\"\n}"
+  },
+  {
+    "test_id": "mt/set_16/frenetic/test-586",
+    "status": "ok",
+    "latency_sec": 3.360860586166382,
+    "input_tokens": 348,
+    "output_tokens": 108,
+    "total_tokens": 456,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The scenario has a high tortuosity (2.17), indicating a complex and winding path. Despite low mean turn angles and no sharp turns, the high variability in turn angles suggests frequent and unpredictable changes in direction, increasing the risk of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The scenario has a high tortuosity (2.17), indicating a complex and winding path. Despite low mean turn angles and no sharp turns, the high variability in turn angles suggests frequent and unpredictable changes in direction, increasing the risk of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_10/frenetic/test-463",
+    "status": "ok",
+    "latency_sec": 3.2278823852539062,
+    "input_tokens": 349,
+    "output_tokens": 101,
+    "total_tokens": 450,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity (1.35) indicates a winding path, which increases the likelihood of the vehicle losing control and driving off the road. The low mean turn angle (0.0071 radians) suggests frequent, small turns, which can also be challenging for the vehicle to navigate accurately.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.6,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity (1.35) indicates a winding path, which increases the likelihood of the vehicle losing control and driving off the road. The low mean turn angle (0.0071 radians) suggests frequent, small turns, which can also be challenging for the vehicle to navigate accurately.\"\n}"
+  },
+  {
+    "test_id": "mt/set_7/frenetic/odr/test-417",
+    "status": "ok",
+    "latency_sec": 3.6030051708221436,
+    "input_tokens": 348,
+    "output_tokens": 118,
+    "total_tokens": 466,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (4.33) and low mean turn angle (0.0057 radians) suggest a complex and winding path, while the high turn angle variability (0.0033 radians) indicates frequent changes in direction, increasing the risk of the vehicle losing control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (4.33) and low mean turn angle (0.0057 radians) suggest a complex and winding path, while the high turn angle variability (0.0033 radians) indicates frequent changes in direction, increasing the risk of the vehicle losing control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_12/ambiegen/test-795",
+    "status": "ok",
+    "latency_sec": 3.028748035430908,
+    "input_tokens": 349,
+    "output_tokens": 98,
+    "total_tokens": 447,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.98) and high turn angle variability (std 0.0099) suggest a complex and unpredictable path, which increases the risk of the vehicle failing to maintain control and driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.6,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.98) and high turn angle variability (std 0.0099) suggest a complex and unpredictable path, which increases the risk of the vehicle failing to maintain control and driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_9/ambiegen/test-371",
+    "status": "ok",
+    "latency_sec": 2.769164562225342,
+    "input_tokens": 349,
+    "output_tokens": 84,
+    "total_tokens": 433,
+    "risk_score": 0.3,
+    "risk_factors": [
+      "high tortuosity",
+      "low mean turn angle"
+    ],
+    "rationale": "The high tortuosity indicates a winding path, which can be challenging for the vehicle to navigate accurately. However, the low mean turn angle suggests that the turns are not particularly sharp, reducing the immediate risk of driving off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "{\n  \"risk_score\": 0.3,\n  \"risk_factors\": [\"high tortuosity\", \"low mean turn angle\"],\n  \"rationale\": \"The high tortuosity indicates a winding path, which can be challenging for the vehicle to navigate accurately. However, the low mean turn angle suggests that the turns are not particularly sharp, reducing the immediate risk of driving off the road.\"\n}"
+  },
+  {
+    "test_id": "mt/set_13/frenetic_v/test-810",
+    "status": "ok",
+    "latency_sec": 3.5371129512786865,
+    "input_tokens": 350,
+    "output_tokens": 118,
+    "total_tokens": 468,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.92) and low mean turn angle (0.0063 radians) suggest a complex and winding path, while the high turn angle variability (0.0084 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.92) and low mean turn angle (0.0063 radians) suggest a complex and winding path, while the high turn angle variability (0.0084 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  },
+  {
+    "test_id": "mt/set_7/frenetic/odr/test-806",
+    "status": "ok",
+    "latency_sec": 3.434291362762451,
+    "input_tokens": 349,
+    "output_tokens": 118,
+    "total_tokens": 467,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "high_tortuosity",
+      "low_mean_turn_angle",
+      "high_turn_angle_variability"
+    ],
+    "rationale": "The high tortuosity (1.62) and low mean turn angle (0.0051 radians) suggest a complex and winding path, while the high turn angle variability (0.0063 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "{\n  \"risk_score\": 0.75,\n  \"risk_factors\": [\"high_tortuosity\", \"low_mean_turn_angle\", \"high_turn_angle_variability\"],\n  \"rationale\": \"The high tortuosity (1.62) and low mean turn angle (0.0051 radians) suggest a complex and winding path, while the high turn angle variability (0.0063 radians) indicates frequent and unpredictable changes in direction, increasing the likelihood of the vehicle driving off the road boundary.\"\n}"
+  }
+]

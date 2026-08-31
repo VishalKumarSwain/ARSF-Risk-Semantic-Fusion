@@ -1,0 +1,47 @@
+{
+  "100": {
+    "fixed_fusion_fail_hits": 72,
+    "arsf_fail_hits": 91,
+    "shared": 18,
+    "fixed_only": 54,
+    "arsf_only": 73,
+    "union": 145,
+    "jaccard": 0.12413793103448276,
+    "qwen_only_fails_at_k": 62,
+    "arsf_recovers_from_qwen_only": 10,
+    "arsf_recovers_from_qwen_only_frac": 0.16129032258064516,
+    "kseresnet_fails_at_k": 77,
+    "arsf_retains_from_kseresnet": 26,
+    "arsf_retains_from_kseresnet_frac": 0.33766233766233766
+  },
+  "500": {
+    "fixed_fusion_fail_hits": 365,
+    "arsf_fail_hits": 402,
+    "shared": 175,
+    "fixed_only": 190,
+    "arsf_only": 227,
+    "union": 592,
+    "jaccard": 0.2956081081081081,
+    "qwen_only_fails_at_k": 217,
+    "arsf_recovers_from_qwen_only": 26,
+    "arsf_recovers_from_qwen_only_frac": 0.11981566820276497,
+    "kseresnet_fails_at_k": 389,
+    "arsf_retains_from_kseresnet": 235,
+    "arsf_retains_from_kseresnet_frac": 0.6041131105398457
+  },
+  "1000": {
+    "fixed_fusion_fail_hits": 720,
+    "arsf_fail_hits": 768,
+    "shared": 504,
+    "fixed_only": 216,
+    "arsf_only": 264,
+    "union": 984,
+    "jaccard": 0.5121951219512195,
+    "qwen_only_fails_at_k": 191,
+    "arsf_recovers_from_qwen_only": 35,
+    "arsf_recovers_from_qwen_only_frac": 0.18324607329842932,
+    "kseresnet_fails_at_k": 704,
+    "arsf_retains_from_kseresnet": 533,
+    "arsf_retains_from_kseresnet_frac": 0.7571022727272727
+  }
+}

@@ -1,0 +1,167 @@
+2026-08-31 03:46:56.080804: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/user2/.local/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.12) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+INFO 08-31 03:46:59 [__init__.py:244] Automatically detected platform cuda.
+WARNING 08-31 03:46:59 [cuda.py:478] Detected different devices in the system: NVIDIA A100-SXM4-80GB, NVIDIA A100-SXM4-80GB, NVIDIA A100-SXM4-80GB, NVIDIA DGX Display, NVIDIA A100-SXM4-80GB. Please make sure to set `CUDA_DEVICE_ORDER=PCI_BUS_ID` to avoid unexpected behavior.
+Scoring Qwen/Qwen3-8B on 7205 Stage-1 scenarios ...
+  50/7205: ok=50 malformed=0 error=0 elapsed=84.8s
+  100/7205: ok=100 malformed=0 error=0 elapsed=169.7s
+  150/7205: ok=150 malformed=0 error=0 elapsed=253.8s
+  200/7205: ok=200 malformed=0 error=0 elapsed=339.4s
+  250/7205: ok=250 malformed=0 error=0 elapsed=423.9s
+  300/7205: ok=300 malformed=0 error=0 elapsed=509.1s
+  350/7205: ok=350 malformed=0 error=0 elapsed=593.8s
+  400/7205: ok=400 malformed=0 error=0 elapsed=678.6s
+  450/7205: ok=450 malformed=0 error=0 elapsed=763.9s
+  500/7205: ok=500 malformed=0 error=0 elapsed=848.8s
+  550/7205: ok=550 malformed=0 error=0 elapsed=933.2s
+  600/7205: ok=600 malformed=0 error=0 elapsed=1018.1s
+  650/7205: ok=650 malformed=0 error=0 elapsed=1102.9s
+  700/7205: ok=700 malformed=0 error=0 elapsed=1186.7s
+  750/7205: ok=750 malformed=0 error=0 elapsed=1270.9s
+  800/7205: ok=800 malformed=0 error=0 elapsed=1356.1s
+  850/7205: ok=850 malformed=0 error=0 elapsed=1439.7s
+  900/7205: ok=900 malformed=0 error=0 elapsed=1525.3s
+  950/7205: ok=950 malformed=0 error=0 elapsed=1609.3s
+  1000/7205: ok=1000 malformed=0 error=0 elapsed=1695.8s
+  1050/7205: ok=1050 malformed=0 error=0 elapsed=1780.7s
+  1100/7205: ok=1100 malformed=0 error=0 elapsed=1865.0s
+  1150/7205: ok=1150 malformed=0 error=0 elapsed=1949.7s
+  1200/7205: ok=1200 malformed=0 error=0 elapsed=2034.7s
+  1250/7205: ok=1250 malformed=0 error=0 elapsed=2118.9s
+  1300/7205: ok=1300 malformed=0 error=0 elapsed=2203.1s
+  1350/7205: ok=1350 malformed=0 error=0 elapsed=2289.0s
+  1400/7205: ok=1400 malformed=0 error=0 elapsed=2375.2s
+  1450/7205: ok=1450 malformed=0 error=0 elapsed=2463.1s
+  1500/7205: ok=1500 malformed=0 error=0 elapsed=2549.5s
+  1550/7205: ok=1550 malformed=0 error=0 elapsed=2634.7s
+  1600/7205: ok=1600 malformed=0 error=0 elapsed=2719.5s
+  1650/7205: ok=1650 malformed=0 error=0 elapsed=2804.9s
+  1700/7205: ok=1700 malformed=0 error=0 elapsed=2889.7s
+  1750/7205: ok=1750 malformed=0 error=0 elapsed=2974.5s
+  1800/7205: ok=1800 malformed=0 error=0 elapsed=3059.6s
+  1850/7205: ok=1850 malformed=0 error=0 elapsed=3145.2s
+  1900/7205: ok=1900 malformed=0 error=0 elapsed=3231.0s
+  1950/7205: ok=1950 malformed=0 error=0 elapsed=3315.5s
+  2000/7205: ok=2000 malformed=0 error=0 elapsed=3401.3s
+  2050/7205: ok=2050 malformed=0 error=0 elapsed=3487.3s
+  2100/7205: ok=2100 malformed=0 error=0 elapsed=3572.2s
+  2150/7205: ok=2150 malformed=0 error=0 elapsed=3658.4s
+  2200/7205: ok=2200 malformed=0 error=0 elapsed=3744.6s
+  2250/7205: ok=2250 malformed=0 error=0 elapsed=3829.8s
+  2300/7205: ok=2300 malformed=0 error=0 elapsed=3914.9s
+  2350/7205: ok=2350 malformed=0 error=0 elapsed=4001.5s
+  2400/7205: ok=2400 malformed=0 error=0 elapsed=4087.6s
+  2450/7205: ok=2450 malformed=0 error=0 elapsed=4173.9s
+  2500/7205: ok=2500 malformed=0 error=0 elapsed=4259.2s
+  2550/7205: ok=2550 malformed=0 error=0 elapsed=4343.9s
+  2600/7205: ok=2600 malformed=0 error=0 elapsed=4428.0s
+  2650/7205: ok=2650 malformed=0 error=0 elapsed=4511.4s
+  2700/7205: ok=2700 malformed=0 error=0 elapsed=4596.0s
+  2750/7205: ok=2750 malformed=0 error=0 elapsed=4679.3s
+  2800/7205: ok=2800 malformed=0 error=0 elapsed=4763.5s
+  2850/7205: ok=2850 malformed=0 error=0 elapsed=4847.1s
+  2900/7205: ok=2900 malformed=0 error=0 elapsed=4930.6s
+  2950/7205: ok=2950 malformed=0 error=0 elapsed=5013.8s
+  3000/7205: ok=3000 malformed=0 error=0 elapsed=5096.7s
+  3050/7205: ok=3050 malformed=0 error=0 elapsed=5179.9s
+  3100/7205: ok=3100 malformed=0 error=0 elapsed=5264.8s
+  3150/7205: ok=3150 malformed=0 error=0 elapsed=5349.2s
+  3200/7205: ok=3200 malformed=0 error=0 elapsed=5432.2s
+  3250/7205: ok=3250 malformed=0 error=0 elapsed=5516.3s
+  3300/7205: ok=3300 malformed=0 error=0 elapsed=5599.0s
+  3350/7205: ok=3350 malformed=0 error=0 elapsed=5682.9s
+  3400/7205: ok=3400 malformed=0 error=0 elapsed=5765.7s
+  3450/7205: ok=3450 malformed=0 error=0 elapsed=5850.2s
+  3500/7205: ok=3500 malformed=0 error=0 elapsed=5935.3s
+  3550/7205: ok=3550 malformed=0 error=0 elapsed=6019.0s
+  3600/7205: ok=3600 malformed=0 error=0 elapsed=6103.0s
+  3650/7205: ok=3650 malformed=0 error=0 elapsed=6185.9s
+  3700/7205: ok=3700 malformed=0 error=0 elapsed=6269.8s
+  3750/7205: ok=3750 malformed=0 error=0 elapsed=6353.9s
+  3800/7205: ok=3800 malformed=0 error=0 elapsed=6437.2s
+  3850/7205: ok=3850 malformed=0 error=0 elapsed=6521.3s
+  3900/7205: ok=3900 malformed=0 error=0 elapsed=6606.0s
+  3950/7205: ok=3950 malformed=0 error=0 elapsed=6689.6s
+  4000/7205: ok=4000 malformed=0 error=0 elapsed=6772.2s
+  4050/7205: ok=4050 malformed=0 error=0 elapsed=6855.4s
+  4100/7205: ok=4100 malformed=0 error=0 elapsed=6939.2s
+  4150/7205: ok=4150 malformed=0 error=0 elapsed=7022.8s
+  4200/7205: ok=4200 malformed=0 error=0 elapsed=7105.9s
+  4250/7205: ok=4250 malformed=0 error=0 elapsed=7190.2s
+  4300/7205: ok=4300 malformed=0 error=0 elapsed=7273.8s
+  4350/7205: ok=4350 malformed=0 error=0 elapsed=7357.6s
+  4400/7205: ok=4400 malformed=0 error=0 elapsed=7442.7s
+  4450/7205: ok=4450 malformed=0 error=0 elapsed=7527.1s
+  4500/7205: ok=4500 malformed=0 error=0 elapsed=7612.3s
+  4550/7205: ok=4550 malformed=0 error=0 elapsed=7696.0s
+  4600/7205: ok=4600 malformed=0 error=0 elapsed=7779.8s
+  4650/7205: ok=4650 malformed=0 error=0 elapsed=7864.4s
+  4700/7205: ok=4700 malformed=0 error=0 elapsed=7949.1s
+  4750/7205: ok=4750 malformed=0 error=0 elapsed=8033.9s
+  4800/7205: ok=4800 malformed=0 error=0 elapsed=8117.9s
+  4850/7205: ok=4850 malformed=0 error=0 elapsed=8201.2s
+  4900/7205: ok=4900 malformed=0 error=0 elapsed=8286.0s
+  4950/7205: ok=4950 malformed=0 error=0 elapsed=8369.6s
+  5000/7205: ok=5000 malformed=0 error=0 elapsed=8453.9s
+  5050/7205: ok=5050 malformed=0 error=0 elapsed=8536.0s
+  5100/7205: ok=5100 malformed=0 error=0 elapsed=8621.0s
+  5150/7205: ok=5150 malformed=0 error=0 elapsed=8703.3s
+  5200/7205: ok=5200 malformed=0 error=0 elapsed=8786.2s
+  5250/7205: ok=5250 malformed=0 error=0 elapsed=8868.4s
+  5300/7205: ok=5300 malformed=0 error=0 elapsed=8951.7s
+  5350/7205: ok=5350 malformed=0 error=0 elapsed=9035.2s
+  5400/7205: ok=5400 malformed=0 error=0 elapsed=9119.4s
+  5450/7205: ok=5450 malformed=0 error=0 elapsed=9205.2s
+  5500/7205: ok=5500 malformed=0 error=0 elapsed=9287.9s
+  5550/7205: ok=5550 malformed=0 error=0 elapsed=9371.7s
+  5600/7205: ok=5600 malformed=0 error=0 elapsed=9454.9s
+  5650/7205: ok=5650 malformed=0 error=0 elapsed=9538.1s
+  5700/7205: ok=5700 malformed=0 error=0 elapsed=9622.0s
+  5750/7205: ok=5750 malformed=0 error=0 elapsed=9704.5s
+  5800/7205: ok=5800 malformed=0 error=0 elapsed=9788.0s
+  5850/7205: ok=5850 malformed=0 error=0 elapsed=9870.5s
+  5900/7205: ok=5900 malformed=0 error=0 elapsed=9953.9s
+  5950/7205: ok=5950 malformed=0 error=0 elapsed=10037.0s
+  6000/7205: ok=6000 malformed=0 error=0 elapsed=10120.3s
+  6050/7205: ok=6050 malformed=0 error=0 elapsed=10202.8s
+  6100/7205: ok=6100 malformed=0 error=0 elapsed=10285.8s
+  6150/7205: ok=6150 malformed=0 error=0 elapsed=10369.9s
+  6200/7205: ok=6200 malformed=0 error=0 elapsed=10453.5s
+  6250/7205: ok=6250 malformed=0 error=0 elapsed=10536.9s
+  6300/7205: ok=6300 malformed=0 error=0 elapsed=10619.5s
+  6350/7205: ok=6350 malformed=0 error=0 elapsed=10704.6s
+  6400/7205: ok=6400 malformed=0 error=0 elapsed=10788.6s
+  6450/7205: ok=6450 malformed=0 error=0 elapsed=10871.1s
+  6500/7205: ok=6500 malformed=0 error=0 elapsed=10955.1s
+  6550/7205: ok=6550 malformed=0 error=0 elapsed=11038.2s
+  6600/7205: ok=6600 malformed=0 error=0 elapsed=11124.8s
+  6650/7205: ok=6650 malformed=0 error=0 elapsed=11209.6s
+  6700/7205: ok=6700 malformed=0 error=0 elapsed=11293.0s
+  6750/7205: ok=6750 malformed=0 error=0 elapsed=11377.8s
+  6800/7205: ok=6800 malformed=0 error=0 elapsed=11461.6s
+  6850/7205: ok=6850 malformed=0 error=0 elapsed=11545.2s
+  6900/7205: ok=6900 malformed=0 error=0 elapsed=11629.9s
+  6950/7205: ok=6950 malformed=0 error=0 elapsed=11713.8s
+  7000/7205: ok=7000 malformed=0 error=0 elapsed=11798.4s
+  7050/7205: ok=7050 malformed=0 error=0 elapsed=11882.6s
+  7100/7205: ok=7100 malformed=0 error=0 elapsed=11967.9s
+  7150/7205: ok=7150 malformed=0 error=0 elapsed=12053.7s
+  7200/7205: ok=7200 malformed=0 error=0 elapsed=12138.4s
+
+=== STAGE-1 SUMMARY: Qwen/Qwen3-8B ===
+model: Qwen/Qwen3-8B
+total_requests: 7205
+successful_requests: 7205
+malformed_json: 0
+inference_errors: 0
+success_rate_pct: 100.0
+mean_latency_sec: 1.6858
+median_latency_sec: 1.6278
+std_latency_sec: 0.1833
+min_latency_sec: 1.3618
+max_latency_sec: 2.8475
+total_runtime_sec: 12146.65
+scenarios_per_minute: 35.59
+Wrote ranking to results/rankings/qwen3_8b_test_full.csv

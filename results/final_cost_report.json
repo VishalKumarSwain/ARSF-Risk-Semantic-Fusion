@@ -1,0 +1,13 @@
+{
+  "scenario_execution_cost_total_sec": 418859.3432459831,
+  "scenario_execution_cost_mean_sec": 58.13453757751327,
+  "note": "scenario execution cost (duration field) used for APFDc; LLM inference cost reported SEPARATELY below, never mixed into APFDc",
+  "llm_inference_cost": {
+    "model": "Qwen/Qwen3-8B",
+    "total_requests": 7205,
+    "mean_latency_sec": 1.6858,
+    "median_latency_sec": 1.6278,
+    "total_runtime_sec": 12146.65,
+    "scenarios_per_minute": 35.59
+  }
+}

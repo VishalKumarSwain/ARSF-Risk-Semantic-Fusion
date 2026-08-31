@@ -1,0 +1,63 @@
+{
+  "n_test": 7205,
+  "n_fail_test": 2767,
+  "by_budget": {
+    "100": {
+      "budget": 100,
+      "KSERESNET_top_fail_hits": 78,
+      "Qwen_top_fail_hits": 63,
+      "shared_R_L": 7,
+      "KSERESNET_only": 71,
+      "Qwen_only": 56,
+      "union_R_L": 134,
+      "jaccard_R_L": 0.05223880597014925,
+      "Fixed_Fusion_fail_hits": 70,
+      "ARSF_fail_hits": 82,
+      "ARSF_recovers_Qwen_only": 5,
+      "ARSF_recovers_Qwen_only_frac": 0.08928571428571429,
+      "Fixed_Fusion_recovers_Qwen_only": 46,
+      "Fixed_Fusion_recovers_Qwen_only_frac": 0.8214285714285714,
+      "ARSF_retains_KSERESNET": 33,
+      "ARSF_retains_KSERESNET_frac": 0.4230769230769231,
+      "net_additional_fails_ARSF_vs_Fixed": 12
+    },
+    "500": {
+      "budget": 500,
+      "KSERESNET_top_fail_hits": 390,
+      "Qwen_top_fail_hits": 267,
+      "shared_R_L": 53,
+      "KSERESNET_only": 337,
+      "Qwen_only": 214,
+      "union_R_L": 604,
+      "jaccard_R_L": 0.08774834437086093,
+      "Fixed_Fusion_fail_hits": 366,
+      "ARSF_fail_hits": 410,
+      "ARSF_recovers_Qwen_only": 33,
+      "ARSF_recovers_Qwen_only_frac": 0.1542056074766355,
+      "Fixed_Fusion_recovers_Qwen_only": 133,
+      "Fixed_Fusion_recovers_Qwen_only_frac": 0.6214953271028038,
+      "ARSF_retains_KSERESNET": 236,
+      "ARSF_retains_KSERESNET_frac": 0.6051282051282051,
+      "net_additional_fails_ARSF_vs_Fixed": 44
+    },
+    "1000": {
+      "budget": 1000,
+      "KSERESNET_top_fail_hits": 714,
+      "Qwen_top_fail_hits": 267,
+      "shared_R_L": 75,
+      "KSERESNET_only": 639,
+      "Qwen_only": 192,
+      "union_R_L": 906,
+      "jaccard_R_L": 0.08278145695364239,
+      "Fixed_Fusion_fail_hits": 722,
+      "ARSF_fail_hits": 757,
+      "ARSF_recovers_Qwen_only": 51,
+      "ARSF_recovers_Qwen_only_frac": 0.265625,
+      "Fixed_Fusion_recovers_Qwen_only": 123,
+      "Fixed_Fusion_recovers_Qwen_only_frac": 0.640625,
+      "ARSF_retains_KSERESNET": 514,
+      "ARSF_retains_KSERESNET_frac": 0.7198879551820728,
+      "net_additional_fails_ARSF_vs_Fixed": 35
+    }
+  }
+}

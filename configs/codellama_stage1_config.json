@@ -1,0 +1,21 @@
+{
+  "model_served_name": "codellama/CodeLlama-7b-Instruct-hf",
+  "model_path": "",
+  "dtype": "bfloat16",
+  "max_model_len": 4096,
+  "gpu_memory_utilization": 0.85,
+  "temperature": 0.1,
+  "seed": 42,
+  "max_output_tokens": 300,
+  "request_timeout_sec": 120,
+  "vllm_version": "0.9.1",
+  "cuda_version": "12.4",
+  "nvidia_driver_version": "550.144.03",
+  "python_version": "3.10.12",
+  "os": "Linux-5.15.0-1073-nvidia-x86_64-with-glibc2.35",
+  "model_load_time_sec": null,
+  "retry_policy": "no retries",
+  "enable_thinking": false,
+  "stage": "Stage-1 1000-scenario screening",
+  "notes": "CodeLlama-7b-Instruct, exploratory Stage-1 candidate added after initial 3-model screening"
+}

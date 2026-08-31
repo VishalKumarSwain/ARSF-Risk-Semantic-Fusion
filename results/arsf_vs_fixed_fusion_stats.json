@@ -1,0 +1,20 @@
+[
+  {
+    "point_diff": 0.01957769823368111,
+    "ci_lo": 0.016017574499264643,
+    "ci_hi": 0.023127086231074116,
+    "p_value": 0.0,
+    "effect_size": 10.802302479946388,
+    "significant": true,
+    "metric": "APFD"
+  },
+  {
+    "point_diff": 0.021449089585928435,
+    "ci_lo": 0.01726156372255869,
+    "ci_hi": 0.025636160747512612,
+    "p_value": 0.0,
+    "effect_size": 10.025346829094454,
+    "significant": true,
+    "metric": "APFDc"
+  }
+]

@@ -1,0 +1,1743 @@
+[
+  {
+    "test_id": "mt/set_11/frenetic_v/test-806",
+    "status": "ok",
+    "latency_sec": 14.091363906860352,
+    "input_tokens": 343,
+    "output_tokens": 656,
+    "total_tokens": 999,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "tortuosity",
+      "consistent turn angles"
+    ],
+    "rationale": "The road has high tortuosity, indicating a winding path, but no sharp turns, making gradual and consistent navigation possible.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 197.92 units. The straight-line distance from start to end is 136.51 units. That means the road is quite winding because the tortuosity is 1.45, which is higher than 1. Tortuosity is calculated as road length divided by straight-line distance, so a higher value indicates a more winding or meandering road.\n\nNext, the mean turn angle between segments is 0.0046 radians. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.0431 radians, which is about 2.47 degrees. That's still a small angle, so no sharp turns. The turn angle variability is 0.0041 radians, which is even smaller, meaning the turns are consistent and not varying much in sharpness.\n\nThe number of sharp turns, defined as angles greater than 0.3 radians (~17 degrees), is zero. So, the road doesn't have an"
+  },
+  {
+    "test_id": "mt_set5/ambiegen/test-577",
+    "status": "ok",
+    "latency_sec": 13.8771390914917,
+    "input_tokens": 342,
+    "output_tokens": 669,
+    "total_tokens": 1011,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "High tortuosity",
+      "Complex road path (high number of waypoints)"
+    ],
+    "rationale": "The road has a high tortuosity (5.07) and a complex path with many waypoints (985), indicating a twisty and winding road that could pose significant control challenges for an autonomous vehicle.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this road scenario based on the given geometric properties. Let me go through each factor one by one.\n\nFirst, the tortuosity is 5.07. I remember that tortuosity is a measure of how much the road meanders. A higher value means a more winding or twisty road. Twisty roads can be harder for autonomous vehicles to navigate because they require precise control, and any small error can lead to losing control. So a high tortuosity is a bad sign for safety.\n\nNext, the number of waypoints is 985, which is quite high. More waypoints usually mean a more complex road path. A complex path with many turns can be challenging for the vehicle's sensors and control systems to handle, increasing the risk of failure.\n\nThe mean turn angle is 0.0179 radians, which is about 1.027 degrees. That's a very small angle, so the turns are gradual. However, the maximum single turn angle is 0.7735 radians, which is about 44.27 degrees. That's a sharp turn, but sinc"
+  },
+  {
+    "test_id": "mt/set_12/ambiegen/test-581",
+    "status": "ok",
+    "latency_sec": 12.516602277755737,
+    "input_tokens": 342,
+    "output_tokens": 607,
+    "total_tokens": 949,
+    "risk_score": 0.3,
+    "risk_factors": [
+      "High tortuosity (road_length / straight_line_distance: 2.95)",
+      "Gradual turns (mean turn angle: 0.0101 radians)"
+    ],
+    "rationale": "The high tortuosity indicates a winding road, which can lead to loss of control if not properly managed. The gradual turns, while safe, may require constant driver attention to avoid drifting.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 214.33 units. The straight-line distance from start to end is 72.62 units. That means the road is quite winding because the tortuosity is 2.95, which is way higher than 1. Tortuosity is calculated as road length divided by straight-line distance, so a high value indicates a lot of twists and turns.\n\nThe mean turn angle between segments is 0.0101 radians, which is about 0.57 degrees. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.1012 radians, which is around 5.8 degrees. Still, that's a sharp turn compared to the mean, but not extremely sharp. The turn angle variability is 0.0105 radians, so the turns don't vary much from the mean. There are no sharp turns greater than 0.3 radians (~17 degrees), which is good because sharp turns can cause sudden changes in "
+  },
+  {
+    "test_id": "mt/set_12/frenetic/test-306",
+    "status": "ok",
+    "latency_sec": 12.04341983795166,
+    "input_tokens": 341,
+    "output_tokens": 524,
+    "total_tokens": 865,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "tortuosity",
+      "number of waypoints",
+      "consistent turn angles"
+    ],
+    "rationale": "The road's high tortuosity and numerous waypoints suggest a winding path that could lead to increased difficulty in maintaining control, despite consistent turn angles.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 1.65. Tortuosity measures how much the road meanders compared to a straight line. A value greater than 1 indicates a winding road, and higher values mean more twists and turns. This road seems quite winding, which can make it harder for the car to maintain control.\n\nNext, the number of waypoints is 985, which suggests a detailed path with many segments. High curvature in a road with many waypoints can lead to sharp turns, which are harder for the vehicle to navigate. However, the mean turn angle is 0.0049 radians, which is about 0.28 degrees, indicating very slight turns on average. The maximum single turn angle is 0.0615 radians, about 3.53 degrees, which is still relatively small. So, while the road is winding, the turns aren't extremely sharp.\n\nThe turn angle variability is 0.0042 r"
+  },
+  {
+    "test_id": "mt/set_18/frenetic/test-185",
+    "status": "ok",
+    "latency_sec": 10.587133407592773,
+    "input_tokens": 342,
+    "output_tokens": 506,
+    "total_tokens": 848,
+    "risk_score": 0.05,
+    "risk_factors": [
+      "Low tortuosity",
+      "Consistent turn angles",
+      "Balanced geometry"
+    ],
+    "rationale": "The road has low tortuosity, consistent turn angles, and a balanced geometry, indicating minimal risk of vehicle failure.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the tortuosity is 1.03, which is very close to 1. Tortuosity measures how much the road meanders compared to a straight line. A value close to 1 suggests the road is almost straight, which is good because it's easier for the vehicle to navigate without sudden changes in direction. So that's a positive sign.\n\nNext, the number of waypoints is 985, and the total road length is 139.50 units, but the straight-line distance is 134.80 units. That means the road isn't extremely winding, but it's not a perfectly straight line either. The straight-line distance being slightly shorter than the road length indicates some minor meandering, but not a lot.\n\nLooking at the mean turn angle between segments, it's 0.0027 radians. That's a very small angle, almost negligible. The maximum single turn angle is 0.0576 radians, which is"
+  },
+  {
+    "test_id": "mt/set_2/ambiegen/odr/test-385",
+    "status": "ok",
+    "latency_sec": 13.12227725982666,
+    "input_tokens": 342,
+    "output_tokens": 635,
+    "total_tokens": 977,
+    "risk_score": 0.65,
+    "risk_factors": [
+      "High tortuosity",
+      "Number of waypoints"
+    ],
+    "rationale": "The road has a high tortuosity (1.62) and a large number of waypoints (750), indicating a complex and winding path that could lead to sudden changes in direction.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 750 waypoints and a total length of 155.88 units. The straight-line distance from start to end is 96.21 units. That means the road is quite winding because the total length is longer than the straight line. The tortuosity is 1.62, which is calculated by dividing the road length by the straight-line distance. Tortuosity usually indicates how much the road twists and turns. A higher value means more twists, so that's a factor to consider for difficulty.\n\nNext, the mean turn angle between segments is 0.0089 radians. That's a very small angle, so the turns are gradual on average. However, the maximum single turn angle is 0.2945 radians, which is about 17 degrees. That's a sharp turn, but it's not extremely sharp. The turn angle variability is 0.0210 radians, which is quite low, meaning the turns are relatively consistent in sharpness.\n\n"
+  },
+  {
+    "test_id": "mt/set_16/ambiegen/test-27",
+    "status": "ok",
+    "latency_sec": 12.490576267242432,
+    "input_tokens": 342,
+    "output_tokens": 608,
+    "total_tokens": 950,
+    "risk_score": 0.8,
+    "risk_factors": [
+      "High tortuosity",
+      "Number of waypoints",
+      "Presence of sharp turns"
+    ],
+    "rationale": "The road has a high tortuosity and a large number of waypoints, indicating a complex and winding path. Additionally, there are sharp turns that could challenge the vehicle's control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this road scenario based on the given geometric properties. Let me go through each factor one by one.\n\nFirst, the tortuosity is 3.63. I remember that tortuosity is a measure of how much a road meanders. A higher tortuosity means a more winding path. I think that's bad for autonomous vehicles because it requires more precise control and can lead to loss of stability. So a high tortuosity like 3.63 is a red flag.\n\nNext, the number of waypoints is 985, which is quite a lot. More waypoints usually mean a more complex path with more turns. That could make the vehicle's navigation more challenging, increasing the risk of going off the road.\n\nThe mean turn angle is 0.0128 radians, which is about 0.73 degrees. That's a very small angle, so the turns are gentle on average. However, the maximum single turn angle is 0.3702 radians, which is about 21.26 degrees. That's a sharp turn, but since it's the maximum, it's just one instance. The number"
+  },
+  {
+    "test_id": "mt/set_18/ambiegen/test-459",
+    "status": "ok",
+    "latency_sec": 12.277610301971436,
+    "input_tokens": 343,
+    "output_tokens": 591,
+    "total_tokens": 934,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "High tortuosity",
+      "Gradual but consistent turns"
+    ],
+    "rationale": "The road has a high tortuosity, indicating a winding path, but the turns are gradual and consistent, which might make it less dangerous despite the complexity.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 175.83 units. The straight-line distance from start to end is 103.62 units. That means the road is quite winding because the tortuosity is 1.70, which is higher than 1. A tortuosity of 1 would be a straight line, so 1.70 indicates a lot of twists and turns.\n\nThe mean turn angle between segments is 0.0078 radians, which is about 0.44 degrees. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.2475 radians, which is about 14.2 degrees. Still, that's a sharp turn compared to the mean, but not extremely so. The turn angle variability is 0.0171 radians, which is about 0.98 degrees. So, the turns are pretty consistent in angle.\n\nThere are no sharp turns, as none exceed 0.3 radians (~17 degrees). That's good because sharp turns can cause sudden changes in direction, m"
+  },
+  {
+    "test_id": "mt/set_8/frenetic_v/odr/test-611",
+    "status": "ok",
+    "latency_sec": 16.257962703704834,
+    "input_tokens": 343,
+    "output_tokens": 718,
+    "total_tokens": 1061,
+    "risk_score": 0.35,
+    "risk_factors": [
+      "high tortuosity",
+      "winding road"
+    ],
+    "rationale": "The road has a high tortuosity, indicating significant winding, which can make it harder for the autonomous vehicle to maintain control. Although there are no sharp turns, the overall meandering nature of the road poses a moderate risk.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 1.27. I remember that tortuosity measures how much a road meanders. A value greater than 1 means it's more winding than a straight line. I think higher tortuosity can make driving harder because the vehicle has to navigate turns more frequently and with smaller radii, which can be tricky for control.\n\nNext, the number of waypoints is 985, which suggests a detailed road with many turns. But without knowing the number of actual turns, it's hard to say. The total road length is 188.18 units, and the straight-line distance is 148.11 units. So the road is 188.18 units long but only 148.11 units straight. That's a significant difference, indicating a lot of back and forth, which could contribute to high tortuosity.\n\nThe mean turn angle between segments is 0.0044 radians, which is about 0.25 "
+  },
+  {
+    "test_id": "mt/set_14/ambiegen/test-139",
+    "status": "ok",
+    "latency_sec": 10.414782047271729,
+    "input_tokens": 342,
+    "output_tokens": 500,
+    "total_tokens": 842,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "High tortuosity",
+      "Gradual and consistent turns"
+    ],
+    "rationale": "The road has a high tortuosity, indicating significant winding, but the turns are gradual and consistent, reducing the risk of sudden directional changes that could cause loss of control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 169.68 units. The straight-line distance from start to end is 60.52 units. That means the road is quite winding because the tortuosity is 2.80, which is quite high. Tortuosity is calculated as road length divided by straight-line distance, so a value much greater than 1 indicates a lot of twists and turns.\n\nThe mean turn angle between segments is 0.0053 radians, which is about 0.3 degrees. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.0495 radians, which is about 2.85 degrees. Still, that's a small angle, so no sharp turns. The turn angle variability is 0.0044 radians, which is even smaller, so the turns are consistent.\n\nThe number of sharp turns, defined as angles greater than 0.3 radians (~17 degrees), is zero. That's good because sharp turns can cause l"
+  },
+  {
+    "test_id": "mt/set_6/frenetic_v/test-380",
+    "status": "ok",
+    "latency_sec": 13.230640172958374,
+    "input_tokens": 342,
+    "output_tokens": 646,
+    "total_tokens": 988,
+    "risk_score": 0.8,
+    "risk_factors": [
+      "High tortuosity (2.03), number of waypoints (985)"
+    ],
+    "rationale": "The high tortuosity and a large number of waypoints suggest a complex and winding road, which increases the likelihood of the autonomous vehicle losing control or drifting off the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 2.03. I remember that tortuosity measures how much a road meanders. A value of 1 is straight, so 2.03 is quite tortuous. That's a high value, which suggests the road is winding a lot, making it harder for the car to follow the path.\n\nNext, the number of waypoints is 985, which is a lot. More waypoints usually mean more turns or a more complex path. But I don't see a direct count of turns here, just the number of waypoints. However, a high number of waypoints could imply more turns, which might contribute to difficulty.\n\nThe straight-line distance is 77.54 units, and the total road length is 157.22 units. So the ratio is about 2.03, which is the tortuosity. That's consistent with what I noted earlier.\n\nThe mean turn angle is 0.0059 radians, which is about 0.34 degrees. That's a very sli"
+  },
+  {
+    "test_id": "mt/set_18/frenetic/test-314",
+    "status": "ok",
+    "latency_sec": 12.070204019546509,
+    "input_tokens": 341,
+    "output_tokens": 579,
+    "total_tokens": 920,
+    "risk_score": 0.7,
+    "risk_factors": [
+      "High tortuosity (road_length / straight_line_distance: 1.71)"
+    ],
+    "rationale": "The high tortuosity indicates a winding road, which can lead to increased lateral acceleration and difficulty in maintaining control, increasing the risk of driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 170.29 units, but the straight-line distance is only 99.48 units. That means the tortuosity is 1.71, which is quite high. Tortuosity usually indicates how much the road meanders, so a higher value suggests a more winding path. Winding roads can be harder for vehicles to navigate because they require more precise control.\n\nNext, the mean turn angle between segments is 0.0064 radians, which is about 0.367 degrees. That's a very small angle, so the road doesn't have many sharp turns. The maximum single turn angle is 0.0613 radians, which is roughly 3.52 degrees. Still, that's not a sharp turn. The variability in turn angles is even smaller at 0.0048 radians, so the turns are consistent and not varying much. This suggests that the road doesn't have sudden, un"
+  },
+  {
+    "test_id": "mt_set5/ambiegen/test-785",
+    "status": "ok",
+    "latency_sec": 9.370168209075928,
+    "input_tokens": 343,
+    "output_tokens": 440,
+    "total_tokens": 783,
+    "risk_score": 0.0,
+    "risk_factors": [],
+    "rationale": "The road has a low tortuosity, small turn angles, and no sharp turns, indicating minimal control difficulty.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the number of waypoints is 985, which seems like a lot, but I'm not sure how that directly affects the risk. The total road length is 119.20 units, and the straight-line distance is 100.89 units. The tortuosity is 1.18, which is just a bit above 1, so not extremely tortuous. Tortuosity measures how much the road meanders, so a value close to 1 suggests a relatively straight road, which is good for control.\n\nThe mean turn angle between segments is 0.0046 radians, which is about 0.26 degrees. That's a very small angle, so the road doesn't have many turns on average. The maximum single turn angle is 0.0875 radians, which is about 5 degrees. That's still a small angle, so no sharp turns. The turn angle variability is 0.0059 radians, which is even smaller, indicating that the turns are consistent and not var"
+  },
+  {
+    "test_id": "mt/set_2/ambiegen/odr/test-365",
+    "status": "ok",
+    "latency_sec": 13.397737979888916,
+    "input_tokens": 342,
+    "output_tokens": 654,
+    "total_tokens": 996,
+    "risk_score": 0.7,
+    "risk_factors": [
+      "High tortuosity",
+      "Winding road path"
+    ],
+    "rationale": "The high tortuosity and winding nature of the road increase the likelihood of the vehicle losing control, leading to a higher risk of failure.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 2.99, which is quite high. Tortuosity measures how much the road meanders compared to a straight line. A high tortuosity usually means the road is winding or twisty, which can make it harder for the vehicle to maintain control because it's constantly changing direction. That's a red flag for increased risk.\n\nNext, the number of waypoints is 980, and the total road length is 202.07 units, but the straight-line distance is only 67.65 units. This also indicates a highly tortuous path since the actual driving distance is much longer than the straight-line distance. The vehicle would have to navigate a long, winding path, which can lead to loss of direction and increased likelihood of skidding or going off the road.\n\nThe mean turn angle between segments is 0.0063 radians, which is about 0.3"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-429",
+    "status": "ok",
+    "latency_sec": 9.973829746246338,
+    "input_tokens": 342,
+    "output_tokens": 485,
+    "total_tokens": 827,
+    "risk_score": 0.1,
+    "risk_factors": [],
+    "rationale": "The road has a high tortuosity but very gradual and consistent turns, with no sharp turns. The geometry suggests smooth and predictable driving, reducing the likelihood of failure.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the information given step by step.\n\nFirst, the road has 985 waypoints and a total length of 152.48 units. The straight-line distance from start to end is 35.67 units. That means the road is quite winding because the total length is much longer than the straight line. The tortuosity is 4.27, which is a measure of how much the road meanders. High tortuosity usually means more turns and curves, which can make driving harder.\n\nThe mean turn angle between segments is 0.0061 radians, which is about 0.35 degrees. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.0529 radians, which is roughly 3 degrees. Still pretty gentle. The turn angle variability is 0.0038 radians, so the turns don't vary much from each other. That suggests the road doesn't have sharp, unpredictable turns.\n\nThere are no sharp turns (>0.3 radians or ~17 degrees), which is good bec"
+  },
+  {
+    "test_id": "mt/set_18/ambiegen/test-625",
+    "status": "ok",
+    "latency_sec": 14.483234405517578,
+    "input_tokens": 342,
+    "output_tokens": 707,
+    "total_tokens": 1049,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "High tortuosity",
+      "Large number of waypoints",
+      "Presence of sharp turns"
+    ],
+    "rationale": "The road's high tortuosity and numerous waypoints suggest a complex and winding path, which increases the likelihood of the vehicle losing control. The presence of sharp turns, though not too frequent, adds to the difficulty in maintaining stability.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I need to assess the failure risk of an autonomous vehicle in a given road scenario. The scenario provides several geometric properties, and I have to evaluate based on those. Let me go through each factor step by step.\n\nFirst, the tortuosity is 1.77. Tortuosity measures how much the road meanders compared to a straight line. A higher tortuosity means a more winding path. I remember that a tortuosity above 1.5 is considered quite tortuous, which can make it harder for vehicles to navigate because they have to make more frequent turns and have a harder time maintaining their path.\n\nNext, the number of waypoints is 985, which is quite high. More waypoints usually mean a more complex path with more turns and changes in direction. This could lead to a more unpredictable driving path, increasing the risk of losing control.\n\nThe mean turn angle is 0.0072 radians, which is about 0.41 degrees. That's a very small angle, so the vehicle is making many small turns rather than large ones."
+  },
+  {
+    "test_id": "mt/set_9/frenetic/test-50",
+    "status": "ok",
+    "latency_sec": 15.606334686279297,
+    "input_tokens": 341,
+    "output_tokens": 765,
+    "total_tokens": 1106,
+    "risk_score": 0.85,
+    "risk_factors": [
+      "High tortuosity (2.05), indicating a winding path that requires precise control and may lead to loss of control"
+    ],
+    "rationale": "The high tortuosity of the road suggests a winding path that requires precise control, increasing the likelihood of the vehicle losing control and potentially driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 199.64 units, but the straight-line distance is only 97.28 units. That means the tortuosity is 2.05, which is quite high. Tortuosity usually indicates how much the road meanders, so a higher value suggests a more winding path. High tortuosity can make the road more challenging for a vehicle to navigate because it requires precise control and constant adjustments in direction.\n\nNext, the mean turn angle between segments is 0.0053 radians, which is about 0.3 degrees. That's a very small angle, meaning the turns are gradual and not abrupt. However, the maximum single turn angle is 0.0776 radians, which is about 4.44 degrees. While still relatively small, this could indicate that there are occasional sharper turns that aren't immediately obvious from the mean"
+  },
+  {
+    "test_id": "mt/set_13/frenetic_v/test-787",
+    "status": "ok",
+    "latency_sec": 9.27018928527832,
+    "input_tokens": 343,
+    "output_tokens": 434,
+    "total_tokens": 777,
+    "risk_score": 0.0,
+    "risk_factors": [],
+    "rationale": "The road is relatively straight with minimal turns, indicating a low risk of driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 168.50 units. The straight-line distance from start to end is 155.43 units. That means the road is a bit longer than the straight line, which gives a tortuosity of about 1.08. Tortuosity is a measure of how much the road meanders, so a value close to 1 suggests it's relatively straight, not too twisty.\n\nThe mean turn angle between segments is 0.0032 radians, which is about 0.18 degrees. That's a very small angle, so the road doesn't have many turns. The maximum single turn angle is 0.0263 radians, which is roughly 1.5 degrees. That's still a small angle, so no sharp turns here. The variability in turn angles is even smaller at 0.0026 radians, meaning the turns are consistent and not varying much.\n\nThere are zero sharp turns, defined as angles greater than 0.3 radians (~17 degrees). Since all turns"
+  },
+  {
+    "test_id": "mt/set_6/frenetic_v/test-456",
+    "status": "ok",
+    "latency_sec": 10.670961141586304,
+    "input_tokens": 343,
+    "output_tokens": 497,
+    "total_tokens": 840,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "Moderate tortuosity",
+      "Consistent and gentle turns"
+    ],
+    "rationale": "The road has a moderate tortuosity (1.29) but no sharp turns, and consistent turns suggest gentle steering, reducing control difficulty.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 158.17 units, but the straight-line distance is 122.69 units. That means the tortuosity is 1.29, which is slightly above 1. Tortuosity usually indicates how much the road meanders. A value above 1 suggests some level of curvature, but not extremely high.\n\nThe mean turn angle between segments is 0.0038 radians, which is about 0.219 degrees. That's a very small angle, almost negligible. The maximum single turn angle is 0.0389 radians, which is about 2.24 degrees. Still quite small. The variability in turn angles is even smaller at 0.0036 radians, so the turns are consistent and not varying much.\n\nThere are no sharp turns, as none exceed 0.3 radians (~17 degrees). So, the road doesn't have any sudden, drastic turns that would make the vehicle lose control.\n\nThe boundi"
+  },
+  {
+    "test_id": "mt/set_18/ambiegen/test-343",
+    "status": "ok",
+    "latency_sec": 12.551674842834473,
+    "input_tokens": 342,
+    "output_tokens": 611,
+    "total_tokens": 953,
+    "risk_score": 0.3,
+    "risk_factors": [
+      "High tortuosity",
+      "Gradual turns"
+    ],
+    "rationale": "The road has a high tortuosity, indicating significant meandering, but no sharp turns, suggesting gradual changes that might be manageable.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the information given step by step.\n\nFirst, the road has 985 waypoints and a total length of 157 units. The straight-line distance from start to end is 63.69 units. That means the road is quite winding because the total length is almost three times the straight-line distance. The tortuosity is 2.47, which is pretty high. I remember that tortuosity is a measure of how much a road meanders, so a higher number means more twists and turns.\n\nNext, the mean turn angle between segments is 0.0041 radians. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.0417 radians, which is about 2.4 degrees. That's still a small angle, so no sharp turns. The turn angle variability is 0.0046 radians, which is also small, meaning the turns are consistent and not varying much in sharpness.\n\nThe number of sharp turns, defined as angles greater than 0.3 radians (~17 deg"
+  },
+  {
+    "test_id": "mt/set_7/frenetic_v/odr/test-812",
+    "status": "ok",
+    "latency_sec": 10.73213243484497,
+    "input_tokens": 342,
+    "output_tokens": 516,
+    "total_tokens": 858,
+    "risk_score": 0.15,
+    "risk_factors": [],
+    "rationale": "The road has a moderate tortuosity but no sharp turns, and consistent small turns. The geometry is balanced with no extreme changes in direction.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 2.53. Tortuosity measures how much the road meanders compared to a straight line. A higher value means a more winding path. I remember that higher tortuosity can make it harder for the vehicle to follow the path because it's constantly changing direction, which might lead to loss of control.\n\nNext, the number of waypoints is 985, which suggests a detailed path with many segments. However, the total road length is 177.08 units, and the straight-line distance is 70.05 units. So, the road isn't extremely twisty, but the fact that there are so many waypoints might mean small, rapid turns or changes in direction.\n\nThe mean turn angle between segments is 0.006 radians, which is about 0.34 degrees. That's a very slight turn on average. The maximum single turn angle is 0.041 radians, which is "
+  },
+  {
+    "test_id": "mt/set_14/ambiegen/test-957",
+    "status": "ok",
+    "latency_sec": 12.002322673797607,
+    "input_tokens": 342,
+    "output_tokens": 582,
+    "total_tokens": 924,
+    "risk_score": 0.3,
+    "risk_factors": [
+      "Moderate tortuosity (tortuosity = 2.72)"
+    ],
+    "rationale": "The road has a moderate level of tortuosity, which can lead to difficulty in maintaining control and staying on the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 2.72. Tortuosity measures how much the road meanders compared to a straight line. A higher value means more twists and turns. I remember that higher tortuosity can make it harder for the vehicle to follow the path because it's constantly changing direction, which might lead to loss of control.\n\nNext, the mean turn angle between segments is 0.0100 radians, which is about 0.57 degrees. That's a very small angle, so the turns are gradual. However, the maximum single turn angle is 0.2349 radians, which is roughly 13.46 degrees. While that's still a sharp turn compared to the mean, it's not extremely high. The variability in turn angles is low, with a standard deviation of 0.0166 radians, meaning the turns are relatively consistent.\n\nThere are no sharp turns greater than 0.3 radians (~17 de"
+  },
+  {
+    "test_id": "mt/set_6/frenetic_v/test-625",
+    "status": "ok",
+    "latency_sec": 10.310189723968506,
+    "input_tokens": 343,
+    "output_tokens": 484,
+    "total_tokens": 827,
+    "risk_score": 0.15,
+    "risk_factors": [],
+    "rationale": "The road has a moderate tortuosity but no sharp turns, and consistent turns with low variability. The aspect ratio suggests a balanced geometry, indicating low risk of drive-off.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 207.76 units, but the straight-line distance is 159.78 units. That means the tortuosity is 1.30, which is a measure of how much the road meanders. Tortuosity above 1 indicates some level of curvature, but I'm not sure how severe it is yet.\n\nThe mean turn angle between segments is 0.0054 radians, which is about 0.31 degrees. That's a very small angle, suggesting that the road doesn't have frequent turns. The maximum single turn angle is 0.1039 radians, which is roughly 5.96 degrees. Still, that's a sharp turn for a road, but not extremely so. The variability in turn angles is 0.0064 radians, which is even smaller, indicating that the turns are consistent rather than varying a lot.\n\nThere are no sharp turns defined as angles greater than 0.3 radians (~17 de"
+  },
+  {
+    "test_id": "mt/set_14/frenetic_v/test-326",
+    "status": "ok",
+    "latency_sec": 12.672121047973633,
+    "input_tokens": 343,
+    "output_tokens": 603,
+    "total_tokens": 946,
+    "risk_score": 0.7,
+    "risk_factors": [
+      "High tortuosity",
+      "Consistent but many gentle turns"
+    ],
+    "rationale": "The high tortuosity suggests a complex, winding road that could challenge the vehicle's control, despite the turns being mostly gentle and consistent.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 158.27 units, but the straight-line distance is 110.44 units. That means the tortuosity is 1.43, which is pretty high. Tortuosity usually indicates how much the road meanders, so a higher value suggests more twists and turns. I remember that higher tortuosity can make driving harder because the vehicle has to navigate more abruptly and less straight, which might be a problem for the autonomous system.\n\nNext, the mean turn angle between segments is 0.0040 radians. That's a very small angle, which probably means the turns are gradual. However, the maximum single turn angle is 0.0347 radians, which is about 2 degrees. That's still a small angle, so maybe the turns aren't too sharp. But wait, the number of sharp turns is zero, so maybe all turns are gentle. H"
+  },
+  {
+    "test_id": "mt/set_11/frenetic/test-461",
+    "status": "ok",
+    "latency_sec": 14.876115322113037,
+    "input_tokens": 341,
+    "output_tokens": 710,
+    "total_tokens": 1051,
+    "risk_score": 0.65,
+    "risk_factors": [
+      "High tortuosity",
+      "Significant winding",
+      "High number of waypoints"
+    ],
+    "rationale": "The road has a high tortuosity and is significantly winding, which increases the risk of losing control. The high number of waypoints suggests complex navigation, contributing to a moderate failure risk.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the tortuosity is 3.42. Tortuosity is a measure of how much the road meanders. A higher value means a more winding or twisty road. I remember that higher tortuosity can make it harder for the vehicle to follow the path because it's constantly changing direction, which might lead to loss of control.\n\nNext, the number of waypoints is 985, which is quite high. That suggests a very detailed and possibly complex road layout. More waypoints might mean more turns or changes in direction, increasing the risk of the vehicle losing its path.\n\nThe total road length is 229.96 units, but the straight-line distance is only 67.30 units. This means the road is significantly longer than the straight path, which again points towards a winding or tortuous path. The straight-line distance is much shorter, so the vehicle has to navig"
+  },
+  {
+    "test_id": "mt/set_10/ambiegen/test-481",
+    "status": "ok",
+    "latency_sec": 14.491563081741333,
+    "input_tokens": 342,
+    "output_tokens": 708,
+    "total_tokens": 1050,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "High tortuosity",
+      "Large number of waypoints",
+      "Long winding path"
+    ],
+    "rationale": "The road has a high tortuosity (1.63), indicating a winding path, which increases the likelihood of the vehicle losing control. The large number of waypoints (985) suggests a complex path with many turns, and the long winding path (total road length: 140.86 units vs. straight-line distance: 86.61 units) further exacerbates the risk of driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this road scenario based on the given geometric properties. Let me go through each factor one by one.\n\nFirst, the tortuosity is 1.63. I remember that tortuosity measures how much a road meanders. A higher value means more twists and turns. Since this is above 1.5, it's quite a winding road, which can make driving harder because the vehicle has to adjust constantly.\n\nNext, the number of waypoints is 985, which is a lot. More waypoints usually mean a more complex path with more turns. But without knowing the exact distribution, it's hard to say, but a high number might indicate a lot of small turns or a winding path.\n\nThe straight-line distance is 86.61 units, and the total road length is 140.86 units. The ratio is about 1.63, which again points to a highly tortuous road. This means the vehicle has to navigate a longer path, which can lead to increased wear and tear on the tires and suspension.\n\nThe mean turn angle is 0.0047 radians, "
+  },
+  {
+    "test_id": "mt/set_8/frenetic/odr/test-810",
+    "status": "ok",
+    "latency_sec": 12.120369911193848,
+    "input_tokens": 342,
+    "output_tokens": 579,
+    "total_tokens": 921,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "High tortuosity",
+      "Consistent gradual turns"
+    ],
+    "rationale": "The road has a high tortuosity, indicating a winding path that could be challenging for the autonomous vehicle to navigate, despite consistent gradual turns.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 200 units, but the straight-line distance is 134.87 units. That means the tortuosity is 1.48, which is pretty high. Tortuosity usually indicates how much the road meanders, so a higher value suggests more twists and turns. I remember that higher tortuosity can make driving harder because the vehicle has to navigate more abruptly, which might be a problem for the autonomous system.\n\nNext, the mean turn angle between segments is 0.007 radians, which is about 0.4 degrees. That's a very small angle, so the turns are gradual. However, the maximum single turn angle is 0.1122 radians, which is about 6.43 degrees. That's still a noticeable turn, but not extremely sharp. The variability in turn angles is low, with a standard deviation of 0.0072 radians, meaning the turns ar"
+  },
+  {
+    "test_id": "mt/set_11/frenetic_v/test-628",
+    "status": "ok",
+    "latency_sec": 11.220229387283325,
+    "input_tokens": 343,
+    "output_tokens": 535,
+    "total_tokens": 878,
+    "risk_score": 0.1,
+    "risk_factors": [],
+    "rationale": "The road has minimal and consistent turns, no sharp turns, and a predictable path with low tortuosity, indicating a stable and straightforward geometry that reduces the likelihood of failure.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 167.35 units, but the straight-line distance is 119.95 units. That means the tortuosity is 1.40, which is a measure of how much the road meanders. A tortuosity greater than 1 indicates a winding or curved path, so that's a factor to consider.\n\nThe mean turn angle between segments is 0.0057 radians, which is about 0.326 degrees. That's a very small angle, suggesting that the road doesn't have frequent turns. The maximum single turn angle is 0.0488 radians, which is roughly 2.8 degrees. Still a small angle, so no sharp turns here.\n\nThe turn angle variability is 0.0034 radians, which is even smaller, indicating that the turns are consistent and not varying much. So, the road doesn't have erratic turns, which might make it easier for the vehicle to predict th"
+  },
+  {
+    "test_id": "mt/set_8/frenetic/odr/test-405",
+    "status": "ok",
+    "latency_sec": 10.09198260307312,
+    "input_tokens": 342,
+    "output_tokens": 486,
+    "total_tokens": 828,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "Moderate tortuosity",
+      "Consistent, small turn angles"
+    ],
+    "rationale": "The road has a moderate level of tortuosity but no sharp turns, with consistent and small turn angles, suggesting low vehicle control difficulty.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 159.55 units, but the straight-line distance is 131.35 units. That means the tortuosity is 1.21, which is slightly above 1. Tortuosity usually indicates how much the road meanders, so a value above 1 suggests some level of curvature but not extremely bad.\n\nThe mean turn angle between segments is 0.0034 radians, which is about 0.195 degrees. That's a very small angle, almost negligible. The maximum single turn angle is 0.0455 radians, which is about 2.618 degrees. Still quite small. The variability in turn angles is even smaller at 0.0039 radians, so the turns are consistent and not varying much.\n\nThere are no sharp turns, as none exceed 0.3 radians (~17 degrees). So, the road doesn't have any sudden, drastic turns that would make the vehicle lose control.\n\nThe boun"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-213",
+    "status": "ok",
+    "latency_sec": 11.953790426254272,
+    "input_tokens": 341,
+    "output_tokens": 578,
+    "total_tokens": 919,
+    "risk_score": 0.05,
+    "risk_factors": [],
+    "rationale": "The road has minimal tortuosity, consistent turn angles, and a low aspect ratio, indicating a smooth and predictable path with no significant geometric irregularities.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the information given step by step.\n\nFirst, the road has 985 waypoints and a total length of 98.56 units. The straight-line distance from start to end is 93.02 units. That means the road is a bit longer than the straight line, which suggests some curvature or maybe a winding path. The tortuosity is 1.06, which is just a bit above 1. I remember that tortuosity is calculated as the ratio of the road length to the straight-line distance. A value close to 1 means the road is almost straight, so not too bad in terms of being too twisty.\n\nNext, the mean turn angle between segments is 0.0013 radians. That's a very small angle, almost negligible. The maximum single turn angle is 0.0061 radians, which is still quite small. The variability in these angles is even smaller at 0.0018 radians. So, the turns are consistent and not sharp. There are no sharp turns greater than 0.3 radians, which is"
+  },
+  {
+    "test_id": "mt/set_11/ambiegen/test-823",
+    "status": "ok",
+    "latency_sec": 11.66866946220398,
+    "input_tokens": 343,
+    "output_tokens": 565,
+    "total_tokens": 908,
+    "risk_score": 0.65,
+    "risk_factors": [
+      "High tortuosity",
+      "Presence of sharp turns",
+      "Complex path with many waypoints"
+    ],
+    "rationale": "The road has a high tortuosity, indicating a winding path, and includes sharp turns, which can be challenging for autonomous vehicles to handle, increasing the risk of failure.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this road scenario based on the given geometric properties. Let me go through each factor one by one.\n\nFirst, the tortuosity is 20.69. I remember that tortuosity is a measure of how much a road meanders. A higher value means it's more winding. I think that high tortuosity can make it harder for the autonomous vehicle to predict the path, which might increase the risk of going off the road.\n\nNext, the number of waypoints is 985, which is quite a lot. More waypoints usually mean a more complex path with more turns. But I also see that the mean turn angle is very small, only 0.0113 radians, which is about 0.65 degrees. That's a gentle turn on average. However, the maximum single turn angle is 0.488 radians, which is about 28 degrees. That's a sharp turn, and there are four of those. Sharp turns can be dangerous because the vehicle has to react quickly, and if it's not handling them well, it might lose control.\n\nThe turn angle variabili"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-232",
+    "status": "ok",
+    "latency_sec": 13.049463033676147,
+    "input_tokens": 342,
+    "output_tokens": 636,
+    "total_tokens": 978,
+    "risk_score": 0.3,
+    "risk_factors": [
+      "Moderate tortuosity (tortuosity: 1.21)"
+    ],
+    "rationale": "The road has a moderate level of tortuosity, which can make driving more challenging, but there are no sharp turns, reducing the primary risk.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 140.07 units, but the straight-line distance is 116.14 units. That means the tortuosity is 1.21, which is slightly above 1. Tortuosity usually indicates how much the road meanders. A higher tortuosity can make driving more challenging because the vehicle has to navigate turns more frequently.\n\nNext, the mean turn angle between segments is 0.0047 radians. That's a very small angle, so the road doesn't have many sharp turns. The maximum single turn angle is 0.0574 radians, which is about 3.3 degrees. That's still a small angle, so the turns aren't too sharp. The variability in turn angles is even smaller at 0.0044 radians, meaning the turns are consistent and not varying much. So, there aren't any unexpected or large turns that could cause sudden changes in direction"
+  },
+  {
+    "test_id": "mt/set_7/frenetic/odr/test-547",
+    "status": "ok",
+    "latency_sec": 13.797555208206177,
+    "input_tokens": 341,
+    "output_tokens": 674,
+    "total_tokens": 1015,
+    "risk_score": 0.8,
+    "risk_factors": [
+      "high tortuosity",
+      "number of waypoints",
+      "complex path"
+    ],
+    "rationale": "The high tortuosity and number of waypoints indicate a complex and winding path, increasing the likelihood of the vehicle losing control or deviating.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the tortuosity is 6.05. Tortuosity is a measure of how much the road meanders. A higher tortuosity means a more winding path. I remember that higher tortuosity can make it harder for the vehicle to follow the path because it's constantly changing direction. So that's a red flag for difficulty.\n\nNext, the number of waypoints is 985, which is quite high. More waypoints usually mean a more complex path with more turns. But I also see that the number of sharp turns is zero. So maybe the turns are gradual rather than abrupt. That's a bit confusing. If the turns are gradual, the vehicle might handle them better, but the high tortuosity could still pose a problem.\n\nThe total road length is 140.20 units, but the straight-line distance is only 23.18 units. That means the road is very twisty, which again points towards hig"
+  },
+  {
+    "test_id": "mt/set_11/frenetic/test-556",
+    "status": "ok",
+    "latency_sec": 13.292476892471313,
+    "input_tokens": 342,
+    "output_tokens": 643,
+    "total_tokens": 985,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "Tortuosity (road_length / straight_line_distance)"
+    ],
+    "rationale": "The road has a high tortuosity, indicating a winding path that could lead to driver distraction and loss of control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the tortuosity is 1.50. I remember that tortuosity is a measure of how much a road meanders. A higher value means more twists and turns. Since 1.50 is relatively high, that suggests the road is quite winding, which can make it harder for the car to maintain control.\n\nNext, the number of waypoints is 985, which is quite a lot. More waypoints usually mean a more complex path, possibly with many small turns. However, the number of sharp turns is zero, so maybe the turns are gradual rather than abrupt. That's a bit of a mixed signal. Even though the path is complex, without sharp turns, it might be smoother but still potentially dangerous in other ways.\n\nThe mean turn angle is very small, 0.0062 radians, which is about 0.356 degrees. That's a tiny angle, so the turns are very slight. The maximum single turn angle is "
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-726",
+    "status": "ok",
+    "latency_sec": 13.159708499908447,
+    "input_tokens": 342,
+    "output_tokens": 639,
+    "total_tokens": 981,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "High tortuosity (2.75), complex path with many small turns"
+    ],
+    "rationale": "The high tortuosity suggests a winding path with many small turns, which can make it difficult for the autonomous vehicle to maintain the path and avoid going off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 2.75. I remember that tortuosity is a measure of how much a road meanders. A higher tortuosity means a more winding path. I think that higher tortuosity can make it harder for the vehicle to follow the path because it's more unpredictable. So that's a red flag for increased risk.\n\nNext, the number of waypoints is 985, which is quite a lot. More waypoints usually mean a more complex path with more turns. But I don't know if that directly translates to higher risk unless the turns are sharp or frequent. The straight-line distance is 56.31 units, which is shorter than the total road length, so the road is definitely winding.\n\nThe mean turn angle is 0.0049 radians, which is about 0.28 degrees. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.0278 radi"
+  },
+  {
+    "test_id": "mt/set_14/ambiegen/test-436",
+    "status": "ok",
+    "latency_sec": 13.083560705184937,
+    "input_tokens": 342,
+    "output_tokens": 629,
+    "total_tokens": 971,
+    "risk_score": 0.25,
+    "risk_factors": [
+      "high tortuosity",
+      "low variability in curvature"
+    ],
+    "rationale": "The road has a high tortuosity, indicating significant meandering, which can increase difficulty in maintaining control. However, the turns are all gentle, with low variability, suggesting the vehicle can handle the path without sudden changes in direction.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this road scenario based on the given geometric properties. Let me go through each factor one by one.\n\nFirst, the tortuosity is 1.46. I remember that tortuosity measures how much a road meanders. A higher value means more twists and turns. Since this is above 1, it's definitely more than straight, but I'm not sure how much that contributes to risk. I think higher tortuosity can make the road harder to navigate, increasing the chance of losing control.\n\nNext, the mean turn angle is 0.0047 radians, which is about 0.27 degrees. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.0486 radians, which is about 2.8 degrees. Still pretty small. So the turns aren't sharp, which might mean the vehicle can handle them better. But wait, the number of sharp turns is zero, so maybe the turns are all gentle. That's a bit confusing because if all turns are gentle, maybe the risk is lower, but the tortuosity is st"
+  },
+  {
+    "test_id": "mt/set_14/frenetic/test-151",
+    "status": "ok",
+    "latency_sec": 12.99657130241394,
+    "input_tokens": 341,
+    "output_tokens": 631,
+    "total_tokens": 972,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "tortuosity"
+    ],
+    "rationale": "The road has a high tortuosity, indicating a winding path that may make it harder for the autonomous vehicle to follow the path accurately.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the tortuosity is 1.74. I remember that tortuosity is a measure of how much a road meanders. A higher tortuosity means a more winding path. I think that higher tortuosity can make it harder for the vehicle to follow the path because it's more unpredictable. So that's a risk factor.\n\nNext, the number of waypoints is 985, which is quite high. More waypoints usually mean a more complex path with more turns. But in this case, the number of sharp turns is zero. So even though the path is complex, it's not made up of many sharp turns. That might mean the vehicle can handle it better, but I'm not sure yet.\n\nThe mean turn angle is 0.0059 radians, which is about 0.34 degrees. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.0662 radians, which is about 3.8 degrees. Still, that's a sm"
+  },
+  {
+    "test_id": "mt_set5/ambiegen/test-223",
+    "status": "ok",
+    "latency_sec": 11.66404676437378,
+    "input_tokens": 342,
+    "output_tokens": 562,
+    "total_tokens": 904,
+    "risk_score": 0.65,
+    "risk_factors": [
+      "Moderate tortuosity",
+      "Many waypoints"
+    ],
+    "rationale": "The road has a moderate level of tortuosity and a large number of waypoints, which could lead to increased difficulty in maintaining control and potential off-road risk.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this road scenario based on the given geometric properties. Let me go through each factor one by one.\n\nFirst, the number of waypoints is 985, which is quite a lot. That probably means the road has a lot of turns or curves. The total road length is 127.14 units, but the straight-line distance is 96.45 units. The tortuosity is 1.32, which is calculated by dividing the road length by the straight-line distance. Tortuosity usually indicates how much the road meanders. A value above 1 means it's more winding, so that's a factor to consider.\n\nThe mean turn angle between segments is 0.0041 radians. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.0607 radians, which is about 3.5 degrees. That's still a small angle, so no sharp turns. The turn angle variability is 0.0054 radians, which is even smaller, so the turns are pretty consistent.\n\nThere are zero sharp turns, which is good because sharp turns ca"
+  },
+  {
+    "test_id": "mt/set_16/ambiegen/test-434",
+    "status": "ok",
+    "latency_sec": 13.014744758605957,
+    "input_tokens": 342,
+    "output_tokens": 625,
+    "total_tokens": 967,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "High tortuosity",
+      "Large number of waypoints"
+    ],
+    "rationale": "The road has a high tortuosity, indicating significant meandering, but the turns are gradual and consistent, reducing the immediate risk of sudden directional changes.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the information given step by step.\n\nFirst, the road has 985 waypoints and a total length of 166.84 units. The straight-line distance from start to end is 67.41 units. That means the road is quite winding because the total length is almost three times the straight-line distance. The tortuosity is 2.47, which is quite high. I remember that tortuosity is a measure of how much a road meanders, so a higher number means more twists and turns.\n\nNext, the mean turn angle between segments is 0.006 radians, which is about 0.34 degrees. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.0828 radians, which is roughly 4.76 degrees. Still, that's a small angle, so no sharp turns. The turn angle variability is 0.0076 radians, which is even smaller, indicating consistent turns without big fluctuations.\n\nThe number of sharp turns is zero, so the road doesn't h"
+  },
+  {
+    "test_id": "mt/set_18/frenetic/test-914",
+    "status": "ok",
+    "latency_sec": 11.180523157119751,
+    "input_tokens": 341,
+    "output_tokens": 536,
+    "total_tokens": 877,
+    "risk_score": 0.7,
+    "risk_factors": [
+      "High tortuosity (2.15), Gradual turns"
+    ],
+    "rationale": "High tortuosity indicates a winding road which can lead to increased lateral acceleration and difficulty in maintaining control, increasing the risk of driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 199.84 units, but the straight-line distance is only 92.83 units. That means the tortuosity is 2.15, which is quite high. Tortuosity usually indicates how much the road meanders, so a high value suggests a winding or twisty road. I remember that winding roads can make it harder for the car to maintain control because the path is more complex.\n\nNext, the mean turn angle between segments is 0.0061 radians, which is about 0.35 degrees. That's a very small angle, so the turns are gradual. However, the maximum single turn angle is 0.0588 radians, which is roughly 3.37 degrees. Still, that's a sharp turn compared to the mean, but since it's the maximum, it's not extremely sharp. The variability in turn angles is low, with a standard deviation of 0.0059 radians,"
+  },
+  {
+    "test_id": "mt/set_2/ambiegen/odr/test-69",
+    "status": "ok",
+    "latency_sec": 10.763213157653809,
+    "input_tokens": 342,
+    "output_tokens": 516,
+    "total_tokens": 858,
+    "risk_score": 0.65,
+    "risk_factors": [
+      "high tortuosity",
+      "many gentle turns"
+    ],
+    "rationale": "The road has a high tortuosity (1.81), indicating a winding path with many turns, which can increase the risk of losing control or going off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 770 waypoints and a total length of 159.71 units. The straight-line distance from start to end is 88.21 units. That means the road is quite winding because the tortuosity is 1.81, which is way higher than 1. Tortuosity is calculated as road length divided by straight-line distance, so a higher value indicates a more winding or meandering road.\n\nNext, the mean turn angle between segments is 0.0085 radians. That's a very small angle, so the turns are gentle on average. The maximum single turn angle is 0.1824 radians, which is about 10.5 degrees. That's still a small angle, so no extremely sharp turns. The turn angle variability is 0.0115 radians, which is even smaller, meaning the turns are pretty consistent in sharpness.\n\nThere are no sharp turns greater than 0.3 radians, so that's good. The bounding-box aspect ratio is 1.34, which i"
+  },
+  {
+    "test_id": "mt/set_10/frenetic/test-921",
+    "status": "ok",
+    "latency_sec": 11.765571594238281,
+    "input_tokens": 341,
+    "output_tokens": 555,
+    "total_tokens": 896,
+    "risk_score": 0.65,
+    "risk_factors": [
+      "High tortuosity (3.24), many waypoints (985), gradual turns (mean 0.0062 rad)"
+    ],
+    "rationale": "High tortuosity and many waypoints suggest a complex path that may lead to loss of control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 219.41 units. The straight-line distance from start to end is 67.76 units. That means the road is quite winding because the tortuosity is 3.24, which is quite high. Tortuosity is calculated as road length divided by straight-line distance, so a value much greater than 1 indicates a lot of twists and turns.\n\nThe mean turn angle between segments is 0.0062 radians, which is about 0.356 degrees. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.1259 radians, which is roughly 7.23 degrees. Still, that's a sharp turn compared to the mean, but not extremely so. The turn angle variability is 0.0090 radians, so the turns don't vary much from the mean. There are no sharp turns greater than 0.3 radians (~17 degrees), which is good because sharp turns can cause sudden cha"
+  },
+  {
+    "test_id": "mt_set6/frenetic/test-720",
+    "status": "ok",
+    "latency_sec": 15.232208967208862,
+    "input_tokens": 342,
+    "output_tokens": 752,
+    "total_tokens": 1094,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "High tortuosity",
+      "Complex path with many waypoints"
+    ],
+    "rationale": "The scenario has a high tortuosity (1.88), indicating a winding and unpredictable path. The complexity of the path, with 985 waypoints, suggests a highly variable route that could challenge the vehicle's control, especially if the driver is not attentive.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the tortuosity is 1.88. I remember that tortuosity is a measure of how much a road meanders. A higher tortuosity means a more winding path. I think that higher tortuosity can make it harder for the vehicle to follow the path because it's more unpredictable. So that's a risk factor.\n\nNext, the number of waypoints is 985, which is quite high. More waypoints usually mean a more complex path with more turns. But in this case, the number of sharp turns is zero. So even though the path is complex, it's not made up of many sharp turns. That might mean the turns are more gradual, which could be easier to handle, but I'm not sure yet.\n\nThe mean turn angle is 0.0068 radians, which is about 0.39 degrees. That's a very small angle, so the turns are quite gradual. The maximum single turn angle is 0.0857 radians, which is abou"
+  },
+  {
+    "test_id": "mt/set_8/frenetic_v/odr/test-588",
+    "status": "ok",
+    "latency_sec": 13.729970216751099,
+    "input_tokens": 343,
+    "output_tokens": 668,
+    "total_tokens": 1011,
+    "risk_score": 0.65,
+    "risk_factors": [
+      "High tortuosity",
+      "Large number of waypoints"
+    ],
+    "rationale": "The road has a high tortuosity (1.32), indicating a winding path that could lead to loss of control, despite the absence of sharp turns. The large number of waypoints (985) suggests complex navigation, increasing the risk of deviation.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 227.60 units, but the straight-line distance is 172.70 units. That means the road is quite tortuous because the tortuosity is 1.32, which is higher than 1. Tortuous roads are known to be more challenging for vehicles because they require precise control and can lead to loss of direction.\n\nNext, the mean turn angle between segments is 0.0051 radians, which is about 0.29 degrees. That's a very small angle, so the turns are gradual. However, the maximum single turn angle is 0.0661 radians, which is around 3.8 degrees. While that's still a small angle, it's larger than the mean, so there are some turns that are slightly sharper than others. The variability in turn angles is 0.0064 radians, which is about 0.37 degrees. This indicates that the turns are relatively consis"
+  },
+  {
+    "test_id": "mt/set_10/frenetic/test-260",
+    "status": "ok",
+    "latency_sec": 12.381102323532104,
+    "input_tokens": 342,
+    "output_tokens": 595,
+    "total_tokens": 937,
+    "risk_score": 0.85,
+    "risk_factors": [
+      "High tortuosity",
+      "Number of waypoints"
+    ],
+    "rationale": "High tortuosity indicates a very twisty and winding road, which increases the difficulty of maintaining control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the tortuosity is 18.74, which is really high. Tortuosity is the ratio of the road's length to the straight-line distance. A high value like this means the road is very twisty and winding. That's a big red flag because a lot of sharp turns and curves can make it hard for the car to stay on the road.\n\nNext, the mean turn angle is 0.0087 radians, which is about 0.5 degrees. That's a very slight turn on average. But the maximum single turn angle is 0.1886 radians, which is around 10.8 degrees. While that's not extremely sharp, it's still noticeable. However, since there are no sharp turns (defined as >0.3 radians or ~17 degrees), this factor alone doesn't add much to the risk.\n\nThe turn angle variability is 0.0106 radians, which is about 0.6 degrees. This is quite low, meaning the turns are consistent and not varyin"
+  },
+  {
+    "test_id": "mt/set_18/ambiegen/test-598",
+    "status": "ok",
+    "latency_sec": 10.892438173294067,
+    "input_tokens": 342,
+    "output_tokens": 524,
+    "total_tokens": 866,
+    "risk_score": 0.2,
+    "risk_factors": [
+      "tortuosity (road_length / straight_line_distance)"
+    ],
+    "rationale": "The road has a high tortuosity (1.22), indicating significant meandering, which can increase difficulty in maintaining control and may lead to a higher risk of driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 104.04 units, but the straight-line distance is 85.28 units. That means the tortuosity is 1.22, which is a measure of how much the road meanders. Tortuosity above 1 indicates a winding road, so that's a point towards higher risk because the vehicle has to navigate through curves, which can be harder.\n\nNext, the mean turn angle between segments is 0.0034 radians. That's a very small angle, so the road doesn't have many sharp turns. The maximum single turn angle is 0.0342 radians, which is about 1.96 degrees. That's also a gentle turn, so the vehicle doesn't have to make any abrupt changes in direction. The turn angle variability is 0.0025 radians, which is even smaller, meaning the turns are consistent and not varying much. So, no unexpected sharp turns th"
+  },
+  {
+    "test_id": "mt/set_17/frenetic_v/test-594",
+    "status": "ok",
+    "latency_sec": 11.583600997924805,
+    "input_tokens": 343,
+    "output_tokens": 556,
+    "total_tokens": 899,
+    "risk_score": 0.0,
+    "risk_factors": [],
+    "rationale": "The road has no sharp turns, consistent turn angles, and low tortuosity, indicating minimal control difficulty and low off-road risk.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 148.20 units, but the straight-line distance is 122.41 units. That means the tortuosity is 1.21, which is slightly above 1. Tortuosity usually indicates how much the road meanders, so a value above 1 suggests some level of curvature but not extremely bad.\n\nThe mean turn angle between segments is 0.0042 radians, which is about 0.24 degrees. That's a very small angle, so the road doesn't have many turns on average. The maximum single turn angle is 0.0476 radians, which is roughly 2.73 degrees. Still, that's a small angle, so the sharpest turn isn't too sharp.\n\nThe turn angle variability is 0.0036 radians, which is about 0.206 degrees. This is quite low, meaning the turns are consistent and not varying much in sharpness. So, the road doesn't have turns that "
+  },
+  {
+    "test_id": "mt/set_7/frenetic_v/odr/test-481",
+    "status": "ok",
+    "latency_sec": 14.125512599945068,
+    "input_tokens": 343,
+    "output_tokens": 663,
+    "total_tokens": 1006,
+    "risk_score": 0.3,
+    "risk_factors": [
+      "high tortuosity",
+      "gradual turns"
+    ],
+    "rationale": "The road is long and winding with high tortuosity but lacks sharp turns, making it manageable for autonomous systems.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 207.82 units. The straight-line distance from start to end is 123.47 units. That means the road is quite winding because the tortuosity is 1.68, which is higher than 1. Tortuosity is calculated as road length divided by straight-line distance, so a higher value indicates a more winding or meandering road.\n\nNext, the mean turn angle between segments is 0.0046 radians. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.0681 radians, which is about 3.9 degrees. That's still a small angle, so no sharp turns. The turn angle variability is 0.0055 radians, which is even smaller, meaning the turns are consistent and not varying much in sharpness.\n\nThe number of sharp turns, defined as angles greater than 0.3 radians (~17 degrees), is zero. So, the road doesn't have any"
+  },
+  {
+    "test_id": "mt/set_9/ambiegen/test-928",
+    "status": "ok",
+    "latency_sec": 12.084781885147095,
+    "input_tokens": 342,
+    "output_tokens": 576,
+    "total_tokens": 918,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "High tortuosity",
+      "Number of waypoints"
+    ],
+    "rationale": "The road has a high tortuosity (2.22) and a large number of waypoints (985), indicating a complex and winding path that could lead to difficulty in maintaining directional control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 211.22 units. The straight-line distance from start to end is 95.09 units. That means the road is quite winding because the tortuosity is 2.22, which is quite high. Tortuosity is calculated as road length divided by straight-line distance, so a value much greater than 1 indicates a lot of twists and turns.\n\nThe mean turn angle between segments is 0.0066 radians, which is about 0.377 degrees. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.1109 radians, which is roughly 6.37 degrees. Still, that's a sharp turn compared to the mean, but not extremely so. The turn angle variability is 0.0105 radians, which is about 0.603 degrees. So, the turns are pretty consistent in angle, not varying much from each other.\n\nThere are no sharp turns, as defined by angles great"
+  },
+  {
+    "test_id": "mt/set_10/frenetic/test-907",
+    "status": "ok",
+    "latency_sec": 12.72458291053772,
+    "input_tokens": 341,
+    "output_tokens": 614,
+    "total_tokens": 955,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "High tortuosity",
+      "Large number of waypoints"
+    ],
+    "rationale": "The scenario has a high tortuosity (2.11) and a large number of waypoints (985), indicating a complex, winding road that could pose moderate risk to the autonomous vehicle's control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the tortuosity is 2.11, which is quite high. Tortuosity measures how much the road meanders compared to a straight line. A high value like 2.11 suggests a very winding or twisty road. That's a red flag because a lot of turns can make it hard for the car to stay on the road.\n\nNext, the number of waypoints is 985, which is a lot. More waypoints usually mean more turns or a more complex path. But in this case, the number of sharp turns is zero. So, all the turns are gentle, but with so many, the overall path is still very twisty.\n\nThe mean turn angle is 0.0073 radians, which is about 0.42 degrees. That's a very small angle, meaning each turn is very slight. However, the maximum single turn angle is 0.0686 radians, which is about 3.94 degrees. Still, that's a sharp turn compared to the mean, but not extremely so.\n\nTh"
+  },
+  {
+    "test_id": "mt/set_16/ambiegen/test-453",
+    "status": "ok",
+    "latency_sec": 10.467296600341797,
+    "input_tokens": 343,
+    "output_tokens": 502,
+    "total_tokens": 845,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "Moderately high tortuosity",
+      "Consistent but sharp turns"
+    ],
+    "rationale": "The road has a moderately high tortuosity, indicating some level of winding, which can increase difficulty in maintaining control. While the turns are consistent, the presence of some sharp turns (even if not extreme) can contribute to increased risk of losing control or deviating from the road.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this road scenario based on the given geometric properties. Let me go through each factor one by one.\n\nFirst, the tortuosity is 1.29. I remember that tortuosity measures how much a road meanders. A value close to 1 means it's relatively straight, while higher values indicate more twists and turns. Here, 1.29 is moderately high, so that's a sign of a more winding road.\n\nNext, the mean turn angle between segments is 0.006 radians, which is about 0.34 degrees. That's a very small angle, meaning the turns are gentle. However, the maximum single turn angle is 0.1865 radians, which is around 10.7 degrees. That's still a sharp turn, but not extremely so. The variability in turn angles is low, with a standard deviation of 0.0154 radians, so the turns are consistent.\n\nThere are no sharp turns, which is good because sharp turns can be harder to navigate. The number of waypoints is 985, which suggests a detailed road with many segments, but si"
+  },
+  {
+    "test_id": "mt/set_17/frenetic_v/test-511",
+    "status": "ok",
+    "latency_sec": 10.53476333618164,
+    "input_tokens": 343,
+    "output_tokens": 507,
+    "total_tokens": 850,
+    "risk_score": 0.05,
+    "risk_factors": [],
+    "rationale": "The road has minimal geometric irregularities, with no sharp turns or high curvature variability, indicating a smooth and predictable path.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 158.44 units. The straight-line distance from start to end is 149.61 units. That means the tortuosity is 1.06, which is just a bit above 1. Tortuosity usually indicates how much the road meanders, so a value close to 1 suggests a relatively straight road with minor twists and turns.\n\nThe mean turn angle between segments is 0.0034 radians, which is about 0.195 degrees. That's a very small angle, almost negligible. The maximum single turn angle is 0.0446 radians, which is about 2.55 degrees. Still quite small. The turn angle variability is 0.0034 radians, so the turns are consistent and not varying much from the mean.\n\nThere are no sharp turns, as none exceed 0.3 radians (about 17 degrees). So, the road doesn't have any sudden, drastic turns that would make the vehicle lose control.\n\nThe bounding-bo"
+  },
+  {
+    "test_id": "mt_set6/frenetic/test-942",
+    "status": "ok",
+    "latency_sec": 11.025068521499634,
+    "input_tokens": 342,
+    "output_tokens": 527,
+    "total_tokens": 869,
+    "risk_score": 0.1,
+    "risk_factors": [
+      "Absence of sharp turns",
+      "Smooth road geometry"
+    ],
+    "rationale": "The road has a low risk of failure due to its smooth geometry and absence of sharp turns, which reduces control difficulty.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 179.68 units, but the straight-line distance is 151.75 units. That means the tortuosity is 1.18, which is slightly above 1. Tortuosity usually indicates how much the road meanders. A value close to 1 suggests a relatively smooth path, but I'm not sure how much that affects the risk.\n\nThe mean turn angle between segments is 0.0055 radians, which is about 0.316 degrees. That's a very small angle, so the road doesn't have many turns. The maximum single turn angle is 0.0662 radians, which is around 3.8 degrees. That's still a small angle, so the road doesn't have any sharp turns. The turn angle variability is 0.0053 radians, which is even smaller, indicating consistent turns rather than varying angles.\n\nThere are zero sharp turns, which is good because sharp turns can "
+  },
+  {
+    "test_id": "mt/set_14/frenetic_v/test-48",
+    "status": "ok",
+    "latency_sec": 10.610540390014648,
+    "input_tokens": 343,
+    "output_tokens": 505,
+    "total_tokens": 848,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "Tortuosity",
+      "Consistent turn angles",
+      "No sharp turns"
+    ],
+    "rationale": "The road has a moderate tortuosity but no sharp turns, and consistent turn angles suggest smooth driving.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 187.78 units. The straight-line distance from start to end is 160.42 units. That means the road is a bit longer than the straight line, which gives a tortuosity of about 1.17. Tortuosity is a measure of how much the road meanders, so a value close to 1 is pretty smooth, but 1.17 is slightly more winding.\n\nThe mean turn angle between segments is 0.0046 radians, which is about 0.26 degrees. That's a very small angle, so the road doesn't have many turns. The maximum single turn angle is 0.0453 radians, which is about 2.6 degrees. Still, that's a small angle, so the sharpest turn isn't too sharp.\n\nThe turn angle variability is 0.0038 radians, which is even smaller than the mean. That suggests that the turns are quite consistent in angle, no big fluctuations. So, the road doesn't have some turns that a"
+  },
+  {
+    "test_id": "mt/set_16/frenetic_v/test-392",
+    "status": "ok",
+    "latency_sec": 12.658217191696167,
+    "input_tokens": 343,
+    "output_tokens": 616,
+    "total_tokens": 959,
+    "risk_score": 0.2,
+    "risk_factors": [
+      "Moderate road tortuosity, no sharp turns"
+    ],
+    "rationale": "The road has a moderate level of tortuosity but no sharp turns, indicating a smoother driving path.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 207.73 units. The straight-line distance from start to end is 154.63 units. That means the road is a bit longer than the straight line, which gives a tortuosity of about 1.34. Tortuosity is a measure of how much the road meanders, so a value above 1 indicates some level of curvature.\n\nThe mean turn angle between segments is 0.0047 radians, which is about 0.27 degrees. That's a very small angle, so the road doesn't have many sharp turns. The maximum single turn angle is 0.0488 radians, which is roughly 2.8 degrees. That's still a small angle, so even the sharpest turns aren't too sharp.\n\nThe turn angle variability is 0.0042 radians, which is about 0.24 degrees. This is quite low, meaning the turns are consistent and not varying much in angle. So, the road doesn't have sudden changes in turning dire"
+  },
+  {
+    "test_id": "mt/set_18/frenetic/test-831",
+    "status": "ok",
+    "latency_sec": 12.794821500778198,
+    "input_tokens": 341,
+    "output_tokens": 619,
+    "total_tokens": 960,
+    "risk_score": 0.85,
+    "risk_factors": [
+      "High tortuosity",
+      "Large number of waypoints"
+    ],
+    "rationale": "The high tortuosity and large number of waypoints suggest a complex and winding path, which increases the likelihood of the vehicle losing control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the tortuosity is 5.25. I remember that tortuosity is a measure of how much a road meanders. A higher value means a more winding path. Since this is quite high, it suggests a lot of twists and turns, which can make the vehicle lose control.\n\nNext, the number of waypoints is 985, which is a lot. More waypoints usually mean a more complex path with more segments. This could lead to more opportunities for errors, especially if the segments are too sharp or the turns are too frequent.\n\nThe mean turn angle is 0.008 radians, which is about 0.45 degrees. That's a very small angle, so the turns are gradual. However, the maximum single turn angle is 0.0961 radians, which is about 5.5 degrees. While that's still a small angle, the variability in turn angles is low, so the turns are consistent. But wait, the number of sharp"
+  },
+  {
+    "test_id": "mt/set_17/frenetic_v/test-425",
+    "status": "ok",
+    "latency_sec": 13.975972890853882,
+    "input_tokens": 342,
+    "output_tokens": 677,
+    "total_tokens": 1019,
+    "risk_score": 0.35,
+    "risk_factors": [
+      "tortuosity",
+      "number of waypoints"
+    ],
+    "rationale": "The road has a high tortuosity and a large number of waypoints, indicating a complex and winding path that could be challenging for the autonomous vehicle to navigate without sensor data.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 1.54. Tortuosity measures how much the road meanders compared to a straight line. A value greater than 1 indicates a winding road, which can make navigation more challenging for the vehicle. So that's a point towards higher risk.\n\nNext, the number of waypoints is 985, which suggests a highly segmented road. More waypoints usually mean more turns and changes in direction, increasing the complexity of the path. However, without knowing the exact angles, it's hard to say, but the number alone might indicate a more complex path.\n\nThe total road length is 138.36 units, and the straight-line distance is 89.72 units. The straight-line distance is shorter, which again points to a winding road. The ratio of 1.54 is moderate, but still indicates a significant amount of meandering.\n\nThe mean turn"
+  },
+  {
+    "test_id": "mt/set_10/ambiegen/test-504",
+    "status": "ok",
+    "latency_sec": 11.897183895111084,
+    "input_tokens": 342,
+    "output_tokens": 572,
+    "total_tokens": 914,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "Moderate tortuosity",
+      "Consistent gradual turns"
+    ],
+    "rationale": "The road has moderate tortuosity, indicating some winding, but the turns are consistent and gradual, reducing the risk of sudden changes in direction.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this road scenario based on the given geometric properties. Let me go through each factor one by one.\n\nFirst, the number of waypoints is 985, which is quite a lot. That might mean the road has a lot of turns or curves. The total road length is 119.22 units, but the straight-line distance is 94.40 units. The tortuosity is 1.26, which is calculated by dividing the road length by the straight-line distance. Tortuosity usually indicates how much the road meanders. A value above 1 means it's more winding than straight. So, this road is a bit winding.\n\nThe mean turn angle between segments is 0.0039 radians. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.0237 radians, which is still small, so no sharp turns. The turn angle variability is 0.0028 radians, which is also low, meaning the turns are consistent and not varying much in sharpness.\n\nThe number of sharp turns (>0.3 radians) is zero, so that's "
+  },
+  {
+    "test_id": "mt_set5/ambiegen/test-209",
+    "status": "ok",
+    "latency_sec": 12.339072704315186,
+    "input_tokens": 342,
+    "output_tokens": 591,
+    "total_tokens": 933,
+    "risk_score": 0.2,
+    "risk_factors": [
+      "Moderately tortuous path with no sharp turns"
+    ],
+    "rationale": "The road has a tortuosity of 1.29, indicating moderate winding, but no sharp turns or variability in turns, making sharp maneuvering less likely.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 119.65 units. The straight-line distance from start to end is 92.87 units. That means the road is a bit longer than the straight line, which suggests some curvature or turns along the way.\n\nThe tortuosity is 1.29, which is calculated by dividing the road length by the straight-line distance. Tortuosity usually indicates how much the road meanders. A value above 1 means it's more winding than straight. So, this road is moderately tortuous.\n\nThe mean turn angle between segments is 0.0039 radians. That's a very small angle, almost negligible. The maximum single turn angle is 0.0371 radians, which is about 2.14 degrees. That's still a small angle, so the turns aren't sharp. The variability in turn angles is even smaller at 0.0035 radians, meaning the turns are consistent and not varying much.\n\nThere a"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-934",
+    "status": "ok",
+    "latency_sec": 10.872999429702759,
+    "input_tokens": 342,
+    "output_tokens": 523,
+    "total_tokens": 865,
+    "risk_score": 0.1,
+    "risk_factors": [],
+    "rationale": "The road has a moderate tortuosity but consists of very gradual and consistent turns with no sharp angles, making it relatively safe for autonomous driving.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 104.73 units. The straight-line distance from start to end is 81.95 units. That means the road is a bit longer than the straight line, which suggests some curvature or turns along the way.\n\nThe tortuosity is 1.28, which is calculated by dividing the road length by the straight-line distance. Tortuosity usually indicates how much the road meanders. A value above 1 means it's more winding than straight. So, this road is moderately tortuous.\n\nThe mean turn angle between segments is 0.0022 radians, which is about 0.126 degrees. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.015 radians, which is about 0.859 degrees. Still, that's a small angle, so no sharp turns here.\n\nThe turn angle variability is 0.0022 radians, which is the same as the mean. That suggests th"
+  },
+  {
+    "test_id": "mt/set_14/ambiegen/test-488",
+    "status": "ok",
+    "latency_sec": 11.536868333816528,
+    "input_tokens": 342,
+    "output_tokens": 556,
+    "total_tokens": 898,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "High tortuosity",
+      "Gradual turns"
+    ],
+    "rationale": "The road has a high tortuosity, indicating a winding path, but the turns are gradual and consistent, reducing the risk of sudden directional changes.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 168.19 units. The straight-line distance from start to end is 79.59 units. That means the road is quite winding because the tortuosity is 2.11, which is quite high. Tortuosity is calculated as road length divided by straight-line distance, so a value greater than 1 indicates a winding path.\n\nThe mean turn angle between segments is 0.0061 radians, which is about 0.35 degrees. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.1301 radians, which is about 7.5 degrees. Still, that's a sharp turn for a car, but not extremely so. The turn angle variability is 0.0073 radians, which is even smaller, so the turns are pretty consistent.\n\nThere are no sharp turns greater than 0.3 radians (~17 degrees), which is good because sharp turns can cause loss of control. The boun"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-754",
+    "status": "ok",
+    "latency_sec": 12.280132055282593,
+    "input_tokens": 341,
+    "output_tokens": 594,
+    "total_tokens": 935,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "High tortuosity",
+      "Narrow road width"
+    ],
+    "rationale": "The road's high tortuosity and narrow width suggest moderate difficulty in maintaining control, increasing the risk of driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 140.17 units, but the straight-line distance is only 61.10 units. That means the tortuosity is quite high at 2.29. Tortuosity usually indicates how much the road meanders, which can make it harder for the car to predict its path and might lead to sudden changes in direction.\n\nThe mean turn angle between segments is 0.0051 radians, which is about 0.29 degrees. That's a very slight turn on average. The maximum single turn angle is 0.0327 radians, or around 1.87 degrees. So, the turns aren't extremely sharp, but they do vary a bit. The variability in turn angles is 0.0031 radians, which is about 0.177 degrees. That's a small variation, meaning the turns are relatively consistent in sharpness.\n\nThere are no sharp turns greater than 0.3 radians (~17 degrees), "
+  },
+  {
+    "test_id": "mt/set_13/ambiegen/test-422",
+    "status": "ok",
+    "latency_sec": 12.224620819091797,
+    "input_tokens": 342,
+    "output_tokens": 595,
+    "total_tokens": 937,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "High tortuosity",
+      "Consistent but sharp turns"
+    ],
+    "rationale": "The road has a high tortuosity, indicating a winding path, which can make it difficult for the vehicle to follow the path accurately. Although the turns are consistent, the presence of sharp turns (even if not extremely sharp) can contribute to increased risk.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 3.45. I remember that tortuosity is a measure of how much a road meanders. A higher tortuosity means a more winding path. I think that higher tortuosity can make it harder for the vehicle to follow the path because it's more unpredictable. So that's a red flag for increased risk.\n\nNext, the number of waypoints is 985, which is quite a lot. More waypoints usually mean a more complex path with more turns. But I don't know if that directly translates to higher risk unless the turns are sharp or frequent. The straight-line distance is 49.96 units, which is much shorter than the total road length of 172.11 units. That confirms the tortuosity is high, so the vehicle has a long, winding path to follow.\n\nThe mean turn angle between segments is 0.0087 radians, which is about 0.5 degrees. That's"
+  },
+  {
+    "test_id": "mt/set_14/frenetic/test-256",
+    "status": "ok",
+    "latency_sec": 12.86463475227356,
+    "input_tokens": 342,
+    "output_tokens": 626,
+    "total_tokens": 968,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "High tortuosity",
+      "Many waypoints"
+    ],
+    "rationale": "The road has a high tortuosity, indicating a winding path, and many waypoints, suggesting a complex and possibly error-prone navigation.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the tortuosity is 1.42. I remember that tortuosity measures how much a road meanders. A higher value means more twists and turns. Since 1.42 is relatively high, that suggests the road isn't straight and has a lot of curves, which could make it harder for the car to navigate.\n\nNext, the number of waypoints is 985, which is quite a lot. More waypoints usually mean a more complex path with more turns. But I also see that the number of sharp turns is zero. Sharp turns are usually a bad sign because they require quick adjustments in steering, which can be error-prone for autonomous systems.\n\nThe mean turn angle is 0.0061 radians, which is about 0.35 degrees. That's a very small angle, meaning the turns are gradual. However, the maximum single turn angle is 0.1391 radians, which is about 8 degrees. While that's still a"
+  },
+  {
+    "test_id": "mt/set_10/ambiegen/test-957",
+    "status": "ok",
+    "latency_sec": 9.488227367401123,
+    "input_tokens": 342,
+    "output_tokens": 449,
+    "total_tokens": 791,
+    "risk_score": 0.15,
+    "risk_factors": [],
+    "rationale": "The road has low variability in turn angles, no sharp turns, and a moderate tortuosity, suggesting consistent and gradual changes in direction with minimal risk of sudden maneuvers.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this road scenario based on the given geometric properties. Let me go through each factor one by one.\n\nFirst, the tortuosity is 1.29. I remember that tortuosity measures how much a road meanders. A value close to 1 means it's straight, while higher values indicate more twists and turns. This one is 1.29, which isn't too bad but still shows some level of meandering.\n\nNext, the mean turn angle between segments is 0.0046 radians. That's a very small angle, almost like a smooth transition. The maximum single turn angle is 0.0819 radians, which is about 4.7 degrees. That's still a sharp turn, but considering the mean is so low, it's probably consistent across the road.\n\nThe turn angle variability is 0.0060 radians, which is even smaller. This suggests that the turns are pretty uniform, not varying much from one segment to another. So, no sudden, unexpected turns that could confuse the system.\n\nThere are no sharp turns, which is good beca"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-476",
+    "status": "ok",
+    "latency_sec": 10.990718126296997,
+    "input_tokens": 342,
+    "output_tokens": 530,
+    "total_tokens": 872,
+    "risk_score": 0.05,
+    "risk_factors": [],
+    "rationale": "The road has minimal curvature, consistent and gentle turns, and no sharp turns, indicating a predictable and safe path.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 129.75 units, but the straight-line distance is 108.90 units. That means the road is quite winding because the tortuosity is 1.19, which is just a bit above 1. I remember that tortuosity is a measure of how much the road meanders, so a value close to 1 suggests minimal meandering, but still some turns.\n\nThe mean turn angle between segments is 0.0035 radians, which is about 0.2 degrees. That's a very small angle, so the road doesn't have many sharp turns. The maximum single turn angle is 0.0201 radians, which is about 1.15 degrees. Still, that's quite a small angle, so the turns aren't sharp. The variability in turn angles is even smaller at 0.0025 radians, meaning the turns are consistent and not varying much in steepness.\n\nThere are no sharp turns (>0.3 radians or"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-31",
+    "status": "ok",
+    "latency_sec": 13.048850774765015,
+    "input_tokens": 342,
+    "output_tokens": 632,
+    "total_tokens": 974,
+    "risk_score": 0.2,
+    "risk_factors": [],
+    "rationale": "The road has a moderate tortuosity and some weaving, but no sharp turns or high curvature variability, indicating a relatively smooth and predictable driving path.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the number of waypoints is 985, which seems like a lot, but I'm not sure how that directly affects the risk. The total road length is 199.55 units, and the straight-line distance is 171.09 units. The tortuosity is 1.17, which is just a bit above 1, so it's slightly more winding than a straight road. Tortuosity alone doesn't seem too bad, but I'll keep that in mind.\n\nThe mean turn angle between segments is 0.0051 radians, which is about 0.29 degrees. That's a very small angle, so the road doesn't have many turns on average. The maximum single turn angle is 0.1385 radians, which is roughly 7.96 degrees. That's a sharp turn, but not extremely so. The turn angle variability is 0.0079 radians, which is about 0.45 degrees. So, the turns are pretty consistent in angle, not varying much from each other.\n\nThere "
+  },
+  {
+    "test_id": "mt/set_7/frenetic_v/odr/test-242",
+    "status": "ok",
+    "latency_sec": 9.253616094589233,
+    "input_tokens": 343,
+    "output_tokens": 440,
+    "total_tokens": 783,
+    "risk_score": 0.1,
+    "risk_factors": [],
+    "rationale": "The road has a moderate tortuosity but no sharp turns or high curvature variability, indicating good control and low risk of driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 148.53 units. The straight-line distance from start to end is 124.70 units. That means the road is a bit longer than the straight line, which gives a tortuosity of about 1.19. Tortuosity is a measure of how much the road meanders, so a value close to 1 is pretty smooth, but 1.19 is slightly more winding.\n\nThe mean turn angle between segments is 0.003 radians, which is about 0.17 degrees. That's a very small angle, so the road doesn't have many turns. The maximum single turn angle is 0.0364 radians, which is around 2.1 degrees. That's still a small angle, so the sharpest turn isn't too sharp. There are no sharp turns greater than 0.3 radians, so that's good.\n\nThe turn angle variability is 0.0028 radians, which is even smaller. That suggests that the turns are consistent and not varying much, which "
+  },
+  {
+    "test_id": "mt/set_8/frenetic_v/odr/test-825",
+    "status": "ok",
+    "latency_sec": 11.736326932907104,
+    "input_tokens": 343,
+    "output_tokens": 568,
+    "total_tokens": 911,
+    "risk_score": 0.3,
+    "risk_factors": [
+      "Tortuosity (road_length / straight_line_distance)"
+    ],
+    "rationale": "The road has a high tortuosity, indicating a winding path, which can increase the difficulty of maintaining control and may pose a moderate risk of driving off the road boundary.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 1.52. I remember that tortuosity is a measure of how much a road meanders. A value greater than 1 means it's more winding than a straight line. I think higher tortuosity can make driving harder because the vehicle has to navigate turns more frequently and with smaller radii, which can be tricky for control.\n\nNext, the number of waypoints is 985, which suggests a lot of turns and perhaps a very winding path. The total road length is 236.83 units, but the straight-line distance is only 155.60 units. That means the road is quite twisty, which aligns with the high tortuosity.\n\nThe mean turn angle between segments is 0.0068 radians, which is about 0.39 degrees. That's a very slight turn on average. The maximum single turn angle is 0.0789 radians, which is about 4.5 degrees. That's still a s"
+  },
+  {
+    "test_id": "mt_set6/frenetic/test-745",
+    "status": "ok",
+    "latency_sec": 14.693472623825073,
+    "input_tokens": 341,
+    "output_tokens": 721,
+    "total_tokens": 1062,
+    "risk_score": 0.85,
+    "risk_factors": [
+      "High tortuosity",
+      "Large number of waypoints",
+      "Many small turns"
+    ],
+    "rationale": "The road has a high tortuosity, indicating a winding path, and a large number of waypoints leading to many small turns, making the driving path unpredictable and challenging for the autonomous vehicle.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 1.86. Tortuosity measures how much the road meanders compared to a straight line. A higher tortuosity means a more winding path. I remember that a tortuosity greater than 1 indicates a winding road, so this one is quite winding. That could make it harder for the car to follow the path, increasing the risk.\n\nNext, the number of waypoints is 985, which is quite high. More waypoints usually mean a more complex path with more turns and changes in direction. This could lead to a more unpredictable driving path, making it harder for the vehicle to stay on course.\n\nThe total road length is 180.05 units, but the straight-line distance is only 96.95 units. That's almost double, which again points to a highly tortuous road. The straight-line distance is much shorter, so the vehicle has to naviga"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-661",
+    "status": "ok",
+    "latency_sec": 9.811344861984253,
+    "input_tokens": 343,
+    "output_tokens": 465,
+    "total_tokens": 808,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "High tortuosity (1.84) leading to unpredictable direction changes"
+    ],
+    "rationale": "The high tortuosity indicates a road with significant meandering, leading to unpredictable direction changes and potential difficulty in maintaining control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this road scenario based on the given geometric properties. Let me go through each factor one by one.\n\nFirst, the tortuosity is 1.84. I remember that tortuosity is a measure of how much a road meanders. A higher tortuosity usually means more twists and turns, which can make it harder for a car to maintain control. Since this is quite high, it might contribute to a higher risk.\n\nNext, the mean turn angle between segments is 0.0062 radians. That's a very small angle, so the turns are gradual. But the maximum single turn angle is 0.07 radians, which is about 4 degrees. That's still a slight turn, but not too sharp. However, the variability in turn angles is low, with a standard deviation of 0.0059 radians. So the turns are consistent, which might make the road predictable but not too dangerous.\n\nThere are no sharp turns, as none exceed 0.3 radians. So the vehicle won't face sudden, harsh turns that could lose control. That's a positive"
+  },
+  {
+    "test_id": "mt/set_16/frenetic/test-584",
+    "status": "ok",
+    "latency_sec": 13.90667724609375,
+    "input_tokens": 341,
+    "output_tokens": 677,
+    "total_tokens": 1018,
+    "risk_score": 0.85,
+    "risk_factors": [
+      "High tortuosity",
+      "Large number of waypoints",
+      "Many gentle turns"
+    ],
+    "rationale": "The road's high tortuosity and numerous waypoints suggest significant control challenges and potential off-road risks due to its winding nature.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 8.90, which is quite high. Tortuosity is the ratio of the road's length to the straight-line distance. A high value like 8.9 suggests a very winding or twisty road. That's a red flag because a lot of turns can make it hard for the car to stay on the road, especially if the driver isn't paying close attention.\n\nNext, the number of waypoints is 985, which is a lot. That probably means the road has many small turns or changes in direction. More waypoints could imply more opportunities for the vehicle to lose control or veer off the road, especially if the turns are not well-planned.\n\nThe mean turn angle is 0.0078 radians, which is about 0.45 degrees. That's a very slight turn. However, the maximum single turn angle is 0.1373 radians, which is about 7.87 degrees. While that's not extremely"
+  },
+  {
+    "test_id": "mt/set_14/frenetic/test-257",
+    "status": "ok",
+    "latency_sec": 10.26709794998169,
+    "input_tokens": 342,
+    "output_tokens": 493,
+    "total_tokens": 835,
+    "risk_score": 0.8,
+    "risk_factors": [
+      "High tortuosity",
+      "Complex path with many waypoints"
+    ],
+    "rationale": "The road has a high tortuosity, indicating a winding path that increases difficulty in maintaining control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the tortuosity is 1.50. I remember that tortuosity is a measure of how much a road meanders. A higher value means it's more winding. I think that higher tortuosity can make it harder for the car to predict the path, increasing the risk of going off the road.\n\nNext, the number of waypoints is 985, which is quite high. More waypoints usually mean a more complex path with more turns. But in this case, the number of sharp turns is zero. So maybe the turns are gradual, but the high number of waypoints could still contribute to a more unpredictable path.\n\nThe mean turn angle is 0.0045 radians, which is about 0.26 degrees. That's a very small angle, so the turns are gentle. The maximum single turn angle is 0.0386 radians, which is about 2.22 degrees. Still, that's a small angle, so no sharp turns. The variability in tur"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-169",
+    "status": "ok",
+    "latency_sec": 13.575438261032104,
+    "input_tokens": 343,
+    "output_tokens": 665,
+    "total_tokens": 1008,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "High tortuosity (road_length / straight_line_distance: 1.59)",
+      "Consistent, gradual turns (mean turn angle: 0.0055 radians, max: 0.0749 radians)"
+    ],
+    "rationale": "The road has a high tortuosity, indicating a winding path, which can be challenging for autonomous vehicles. However, the turns are consistent and gradual, reducing the risk of sudden directional changes.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 163.59 units. The straight-line distance from start to end is 102.88 units. That means the road is quite winding because the tortuosity is 1.59, which is higher than 1. Tortuosity is calculated as road length divided by straight-line distance, so a value above 1 indicates a winding or meandering road.\n\nNext, the mean turn angle between segments is 0.0055 radians, which is about 0.316 degrees. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.0749 radians, which is roughly 4.3 degrees. Still, that's a small angle, so no sharp turns. The turn angle variability is 0.0075 radians, which is about 0.43 degrees. So the turns are consistent and not varying much in angle.\n\nThe number of sharp turns, defined as angles greater than 0.3 radians (~17 degrees), is zero. Tha"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-466",
+    "status": "ok",
+    "latency_sec": 11.588757038116455,
+    "input_tokens": 342,
+    "output_tokens": 561,
+    "total_tokens": 903,
+    "risk_score": 0.05,
+    "risk_factors": [
+      "No sharp turns (>0.3 rad / ~17deg)"
+    ],
+    "rationale": "The road has no sharp turns and is relatively straight, indicating minimal control difficulty.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 129.51 units, but the straight-line distance is 121.62 units. That means the tortuosity is 1.06, which is just slightly above 1. Tortuosity usually indicates how much the road meanders, so a value close to 1 suggests a relatively straight road with minimal twists and turns. That's not too bad, but I'll keep that in mind.\n\nNext, the mean turn angle between segments is 0.0018 radians. That's a very small angle, almost negligible. The maximum single turn angle is 0.0317 radians, which is about 1.8 degrees. That's also quite small. The variability in turn angles is even smaller at 0.0020 radians. So, the road doesn't have any sharp turns or sudden changes in direction. It's mostly smooth with very slight turns here and there.\n\nThere are no sharp turns (>0.3 radians or "
+  },
+  {
+    "test_id": "mt/set_7/frenetic_v/odr/test-439",
+    "status": "ok",
+    "latency_sec": 12.138828039169312,
+    "input_tokens": 342,
+    "output_tokens": 583,
+    "total_tokens": 925,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "High tortuosity (road_length / straight_line_distance: 2.69)"
+    ],
+    "rationale": "High tortuosity indicates a complex, meandering path which can lead to increased difficulty in maintaining control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 2.69. Tortuosity measures how much the road meanders compared to a straight line. A higher value means more twists and turns. I remember that higher tortuosity can make it harder for the vehicle to follow the path because it's constantly changing direction, which might lead to loss of control.\n\nNext, the number of waypoints is 985, which is quite high. More waypoints usually mean a more complex path with more turns. However, the mean turn angle is very small at 0.0043 radians, which is about 0.25 degrees. That's a gentle turn, so maybe the vehicle can handle it. The maximum single turn angle is 0.0394 radians, which is about 2.26 degrees. Still, that's a sharp turn for a car, but not extremely so.\n\nThe turn angle variability is low at 0.0040 radians. That means the turns are relatively"
+  },
+  {
+    "test_id": "mt/set_13/ambiegen/test-178",
+    "status": "ok",
+    "latency_sec": 10.852479934692383,
+    "input_tokens": 342,
+    "output_tokens": 527,
+    "total_tokens": 869,
+    "risk_score": 0.15,
+    "risk_factors": [],
+    "rationale": "The road has a moderate tortuosity but consists of gentle, consistent turns with no sharp angles, indicating a smooth and predictable path.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the information given step by step.\n\nFirst, the road has 985 waypoints and a total length of 111.24 units. The straight-line distance from start to end is 93.13 units. That means the road is a bit longer than the straight line, which suggests some curvature or turns along the way.\n\nThe tortuosity is 1.19, which is calculated by dividing the road length by the straight-line distance. Tortuosity usually indicates how much the road meanders. A value above 1 means it's more winding than straight. So, this road is moderately tortuous.\n\nThe mean turn angle between segments is 0.0037 radians. That's a very small angle, almost like a straight line. The maximum single turn angle is 0.0794 radians, which is about 4.54 degrees. That's still a small angle, so the turns aren't sharp. The variability in turn angles is even smaller at 0.0042 radians, meaning the turns are consistent and not varyi"
+  },
+  {
+    "test_id": "mt/set_10/frenetic_v/test-571",
+    "status": "ok",
+    "latency_sec": 10.799473285675049,
+    "input_tokens": 343,
+    "output_tokens": 521,
+    "total_tokens": 864,
+    "risk_score": 0.1,
+    "risk_factors": [],
+    "rationale": "The road has a moderate tortuosity but no sharp turns or high curvature variability, indicating smooth navigation.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 227.36 units. The straight-line distance from start to end is 177.21 units. That means the road is a bit longer than the straight line, which gives a tortuosity of about 1.28. Tortuosity is a measure of how much the road meanders, so a value above 1 indicates some level of curvature.\n\nThe mean turn angle between segments is 0.0055 radians, which is about 0.317 degrees. That's a very small angle, so the road doesn't have many turns on average. The maximum single turn angle is 0.1015 radians, which is roughly 5.83 degrees. That's still a small angle, so the sharpest turn isn't too sharp.\n\nThe turn angle variability is 0.0068 radians, which is about 0.39 degrees. This is the standard deviation of the turn angles, so it's a measure of how consistent the turns are. Since it's low, the turns are pretty "
+  },
+  {
+    "test_id": "mt/set_8/frenetic_v/odr/test-839",
+    "status": "ok",
+    "latency_sec": 10.977686882019043,
+    "input_tokens": 343,
+    "output_tokens": 523,
+    "total_tokens": 866,
+    "risk_score": 0.1,
+    "risk_factors": [],
+    "rationale": "The road has a moderate tortuosity but no sharp turns or high curvature variability, indicating smooth and predictable driving conditions.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 158.01 units. The straight-line distance from start to end is 124 units. That means the road is a bit longer than the straight line, which suggests some curvature or turns along the way.\n\nThe tortuosity is 1.27, which is calculated by dividing the road length by the straight-line distance. Tortuosity usually indicates how much the road meanders. A value above 1 means it's more winding than straight. So, this road is moderately tortuous.\n\nThe mean turn angle between segments is 0.0044 radians. That's a very small angle, so the turns are gentle on average. The maximum single turn angle is 0.0571 radians, which is about 3.27 degrees. That's still a small angle, so no sharp turns. The variability in turn angles is even smaller at 0.0037 radians, meaning the turns are consistent and not varying much in"
+  },
+  {
+    "test_id": "mt/set_9/ambiegen/test-950",
+    "status": "ok",
+    "latency_sec": 11.321478366851807,
+    "input_tokens": 342,
+    "output_tokens": 539,
+    "total_tokens": 881,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "high tortuosity",
+      "complex path with many waypoints"
+    ],
+    "rationale": "The road has a high tortuosity, indicating a winding path, which increases difficulty in maintaining control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this road scenario based on the given geometric properties. Let me go through each factor one by one.\n\nFirst, the tortuosity is 2.34. I remember that tortuosity measures how much a road meanders. A higher value means it's more winding. I think that's bad for a car because it's harder to predict the path and can lead to losing control. So a high tortuosity might increase the risk.\n\nNext, the number of waypoints is 985, which is quite high. More waypoints usually mean a more complex path with more turns. But I don't know if that directly translates to higher risk unless the turns are sharp. The total road length is 201.82 units, but the straight-line distance is only 86.38 units. That means the road is quite winding, which again points to high tortuosity.\n\nThe mean turn angle is 0.0073 radians, which is about 0.42 degrees. That's a very slight turn. The maximum single turn angle is 0.1125 radians, which is about 6.44 degrees. So the t"
+  },
+  {
+    "test_id": "mt/set_6/frenetic_v/test-409",
+    "status": "ok",
+    "latency_sec": 12.14411735534668,
+    "input_tokens": 343,
+    "output_tokens": 531,
+    "total_tokens": 874,
+    "risk_score": 0.8,
+    "risk_factors": [
+      "High tortuosity",
+      "Narrow road aspect ratio"
+    ],
+    "rationale": "The road's high tortuosity and narrow aspect ratio increase the difficulty in maintaining control, leading to a higher risk of failure.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 197.43 units, but the straight-line distance is 144.25 units. That means the road is quite tortuous because the tortuosity is 1.37, which is higher than 1. Tortuous roads are known to be more challenging for vehicles because they require precise control and can lead to loss of direction.\n\nNext, the mean turn angle between segments is 0.0057 radians, which is about 0.326 degrees. That's a very small angle, so the turns are gradual. However, the maximum single turn angle is 0.1143 radians, which is about 6.55 degrees. That's still a noticeable turn but not extremely sharp. The variability in turn angles is low, with a standard deviation of 0.0066 radians, meaning the turns are consistent and not varying much from the mean. So, there aren't any unexpected sharp turns "
+  },
+  {
+    "test_id": "mt/set_18/frenetic/test-191",
+    "status": "ok",
+    "latency_sec": 13.30463695526123,
+    "input_tokens": 341,
+    "output_tokens": 642,
+    "total_tokens": 983,
+    "risk_score": 0.85,
+    "risk_factors": [
+      "High tortuosity",
+      "Number of waypoints",
+      "Narrow bounding-box aspect ratio"
+    ],
+    "rationale": "The scenario involves a highly tortuous road with a large number of waypoints and a narrow aspect ratio, increasing the likelihood of the vehicle losing control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 1.98, which is quite high. Tortuosity is the ratio of the road's length to the straight-line distance. A value greater than 1 means the road is winding, and 1.98 suggests a very twisty or winding path. That's a red flag because a highly tortuous road would make it harder for the vehicle to maintain control, increasing the risk of losing traction or going off the road.\n\nNext, the number of waypoints is 985, which is a lot. More waypoints usually mean a more complex path with more turns and changes in direction. However, the mean turn angle is very small at 0.0058 radians, which is about 0.33 degrees. That's a gentle turn, so maybe the vehicle can handle it. But the maximum single turn angle is 0.0531 radians, which is about 3 degrees. Still, that's a sharp turn compared to the mean, but"
+  },
+  {
+    "test_id": "mt/set_8/ambiegen/odr/test-282",
+    "status": "ok",
+    "latency_sec": 11.046137571334839,
+    "input_tokens": 342,
+    "output_tokens": 535,
+    "total_tokens": 877,
+    "risk_score": 0.65,
+    "risk_factors": [
+      "High tortuosity",
+      "Complex road geometry with many waypoints"
+    ],
+    "rationale": "The road has a high tortuosity and a complex geometry with many waypoints, which increases the likelihood of the autonomous vehicle encountering difficulty in maintaining control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this road scenario based on the given geometric properties. Let me go through each factor one by one.\n\nFirst, the tortuosity is 1.39. I remember that tortuosity measures how much a road meanders. A higher value means more twists and turns. Since 1.39 is relatively high, that could make the road more challenging for an autonomous vehicle to navigate because it's not a straight path.\n\nNext, the number of waypoints is 985, which is quite a lot. More waypoints usually mean a more complex road design with more turns and curves. That would increase the likelihood of the vehicle losing control, especially if the turns are sharp or the curvature changes too abruptly.\n\nThe mean turn angle is 0.0039 radians, which is about 0.22 degrees. That's a very small angle, so the turns are gentle. However, the maximum single turn angle is 0.0485 radians, which is about 2.78 degrees. While still small, it's a bit higher than the mean, but not extremely "
+  },
+  {
+    "test_id": "mt/set_16/frenetic_v/test-124",
+    "status": "ok",
+    "latency_sec": 14.80150818824768,
+    "input_tokens": 342,
+    "output_tokens": 720,
+    "total_tokens": 1062,
+    "risk_score": 0.45,
+    "risk_factors": [
+      "High tortuosity",
+      "Complex path with many small turns"
+    ],
+    "rationale": "The road has a high tortuosity, indicating a very twisty path, which can make it difficult for the vehicle to predict its path and maintain control. The path is complex with many small turns, contributing to the overall difficulty in navigating the scenario.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 6.48. Tortuosity is a measure of how much the road meanders compared to a straight line. A higher tortuosity means a more winding path. I remember that high tortuosity can make it harder for the vehicle to predict the path, which might lead to loss of control. So that's a red flag.\n\nNext, the number of waypoints is 985, which is quite a lot. More waypoints usually mean a more complex path with more turns. But I don't know if that's directly related to risk unless the turns are sharp or frequent.\n\nThe total road length is 217.27 units, and the straight-line distance is 33.51 units. The ratio of these is the tortuosity, which we've already considered. So the road is very twisty.\n\nThe mean turn angle is 0.0057 radians, which is about 0.326 degrees. That's a very slight turn on average. Th"
+  },
+  {
+    "test_id": "mt_set5/frenetic/test-777",
+    "status": "ok",
+    "latency_sec": 12.59836483001709,
+    "input_tokens": 341,
+    "output_tokens": 605,
+    "total_tokens": 946,
+    "risk_score": 0.85,
+    "risk_factors": [
+      "High tortuosity",
+      "Large number of waypoints"
+    ],
+    "rationale": "The road has a high tortuosity and a large number of waypoints, indicating a complex and winding path that may be difficult for the autonomous vehicle to navigate.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 4.74, which is quite high. Tortuosity measures how much the road meanders compared to a straight line. A high tortuosity usually means the road is winding and has many turns, which can make it harder for the vehicle to navigate because it's constantly changing direction. That's a red flag for difficulty in control.\n\nNext, the number of waypoints is 985, which suggests a very detailed and possibly complex road layout. More waypoints often mean more turns and changes in direction, increasing the likelihood of the vehicle losing control, especially if it's not designed to handle such intricate paths.\n\nThe mean turn angle is 0.0058 radians, which is about 0.33 degrees. That's a very slight turn, almost imperceptible. However, the maximum single turn angle is 0.0795 radians, which is about "
+  },
+  {
+    "test_id": "mt/set_7/frenetic/odr/test-406",
+    "status": "ok",
+    "latency_sec": 13.780433654785156,
+    "input_tokens": 342,
+    "output_tokens": 670,
+    "total_tokens": 1012,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "No sharp turns",
+      "Consistent turn angles",
+      "Tortuosity slightly above 1"
+    ],
+    "rationale": "The road has no sharp turns and consistent, small turn angles, indicating manageable control inputs despite a tortuosity slightly above 1.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 169.84 units, but the straight-line distance is 133.37 units. That means the tortuosity is 1.27, which is slightly above 1. Tortuosity usually indicates how much the road meanders, so a value above 1 suggests some level of curvature but not extremely bad.\n\nThe mean turn angle between segments is 0.0059 radians, which is about 0.34 degrees. That's a very small angle, so the road doesn't have many sharp turns. The maximum single turn angle is 0.0916 radians, which is roughly 5.27 degrees. Still, that's not a sharp turn. The variability in turn angles is even smaller at 0.0067 radians, so the turns are consistent and not varying much.\n\nThere are no sharp turns in this scenario, which is good because sharp turns can cause sudden changes in direction that are hard for t"
+  },
+  {
+    "test_id": "mt/set_14/frenetic_v/test-461",
+    "status": "ok",
+    "latency_sec": 11.957604169845581,
+    "input_tokens": 342,
+    "output_tokens": 576,
+    "total_tokens": 918,
+    "risk_score": 0.3,
+    "risk_factors": [
+      "High tortuosity (4.24), gentle turns"
+    ],
+    "rationale": "The road has a high tortuosity, indicating a winding path, which can be challenging for autonomous vehicles. However, all turns are gentle, reducing the immediate risk.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 4.24. Tortuosity measures how much the road meanders compared to a straight line. A higher value means a more winding path. I remember that higher tortuosity can make it harder for the vehicle to follow the path because it's constantly changing direction, which might lead to loss of control.\n\nNext, the number of waypoints is 985, which is quite high. More waypoints usually mean a more complex path with more turns. However, the mean turn angle is very small at 0.0098 radians, which is about 0.56 degrees. That's a gentle turn, so maybe the vehicle can handle it. The maximum single turn angle is 0.0716 radians, which is about 4.12 degrees. Still, that's a sharp turn for a car, but not extremely so.\n\nThe turn angle variability is low at 0.0055 radians, meaning the turns are relatively cons"
+  },
+  {
+    "test_id": "mt/set_18/frenetic_v/test-188",
+    "status": "ok",
+    "latency_sec": 14.59144139289856,
+    "input_tokens": 343,
+    "output_tokens": 639,
+    "total_tokens": 982,
+    "risk_score": 0.3,
+    "risk_factors": [
+      "high tortuosity",
+      "moderate number of waypoints"
+    ],
+    "rationale": "The road has a high tortuosity and a large number of waypoints, indicating a complex path with many small turns that could challenge the vehicle's ability to predict and follow the path accurately.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 178.25 units. The straight-line distance from start to end is 120.29 units. That means the road is quite winding because the tortuosity is 1.48, which is higher than 1. Tortuosity is calculated as road length divided by straight-line distance, so a value above 1 indicates a winding or meandering road.\n\nNext, the mean turn angle between segments is 0.0040 radians, which is about 0.23 degrees. That's a very small angle, so the turns are gradual. The maximum single turn angle is 0.0642 radians, which is roughly 3.7 degrees. Still, that's a sharp turn for a car, but not extremely so. The turn angle variability is 0.0041 radians, which is even smaller, suggesting that the turns are consistent and not varying much in sharpness.\n\nThere are no sharp turns greater than 0.3 radians (~17 degrees), which is g"
+  },
+  {
+    "test_id": "mt/set_10/ambiegen/test-571",
+    "status": "ok",
+    "latency_sec": 12.517271995544434,
+    "input_tokens": 342,
+    "output_tokens": 601,
+    "total_tokens": 943,
+    "risk_score": 0.5,
+    "risk_factors": [
+      "high tortuosity",
+      "winding path"
+    ],
+    "rationale": "The road has a high tortuosity (2.14), indicating a winding path, which can be challenging for autonomous vehicles as they require precise control to navigate. However, there are no sharp turns (>0.3 rad), so the main risk factors are moderate.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 185.66 units. The straight-line distance from start to end is 86.74 units. That means the road is quite winding because the tortuosity is 2.14, which is quite high. Tortuosity is calculated as road length divided by straight-line distance, so a value greater than 1 indicates a winding path.\n\nThe mean turn angle between segments is 0.0073 radians, which is about 0.42 degrees. That's a very small angle, so the turns are gradual and not sharp. The maximum single turn angle is 0.2611 radians, which is about 15 degrees. That's still a relatively small angle, so no extremely sharp turns.\n\nThe turn angle variability is 0.0148 radians, which is about 0.85 degrees. This is quite low, meaning the turns are consistent and not varying much in angle. So, the driver isn't switching between different angles sudd"
+  },
+  {
+    "test_id": "mt/set_10/frenetic/test-916",
+    "status": "ok",
+    "latency_sec": 17.381843328475952,
+    "input_tokens": 342,
+    "output_tokens": 854,
+    "total_tokens": 1196,
+    "risk_score": 0.45,
+    "risk_factors": [
+      "High tortuosity",
+      "Complex road geometry",
+      "Long path length"
+    ],
+    "rationale": "The road has a high tortuosity and a long path length, indicating a complex and winding geometry. While there are no sharp turns, the frequent changes in direction and the overall complexity can lead to increased lateral forces and difficulty in maintaining control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the tortuosity is 1.69. Tortuosity measures how much the road meanders compared to a straight line. A higher value means more twists and turns. I remember that higher tortuosity can make the road harder to navigate because the vehicle has to make frequent changes in direction, which might be stressful for the control systems.\n\nNext, the number of waypoints is 985, which is quite high. That suggests a very detailed and possibly winding path. More waypoints usually mean a more complex road geometry, which could lead to sharp turns or sudden changes in direction.\n\nThe total road length is 180.23 units, but the straight-line distance is only 106.85 units. This further supports the idea that the road is highly tortuous, as the actual driving distance is almost double the straight-line distance.\n\nThe mean turn angle be"
+  },
+  {
+    "test_id": "mt/set_2/ambiegen/odr/test-632",
+    "status": "ok",
+    "latency_sec": 15.889440059661865,
+    "input_tokens": 342,
+    "output_tokens": 677,
+    "total_tokens": 1019,
+    "risk_score": 0.8,
+    "risk_factors": [
+      "High tortuosity",
+      "Number of waypoints"
+    ],
+    "rationale": "The road has a high tortuosity (3.14), indicating a very winding path with many segments. This complexity, combined with the number of waypoints (755), suggests a challenging scenario for the autonomous vehicle to navigate, increasing the likelihood of failure.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 3.14, which is quite high. Tortuosity is the ratio of the road's length to the straight-line distance. A high value like 3.14 suggests a very winding or twisty road. That's a red flag because a lot of turns can make it hard for the car to stay on the road, increasing the chance of going off the track.\n\nNext, the number of waypoints is 755, which means the road has many segments. More segments usually imply more turns and changes in direction. However, the number of sharp turns is zero, so all the turns are gentle. That's interesting because even gentle turns can accumulate and make the road feel more unstable, especially over a long winding path.\n\nThe mean turn angle is 0.0059 radians, which is about 0.34 degrees. That's a very small angle, so the turns are indeed gentle. The maximum s"
+  },
+  {
+    "test_id": "mt/set_17/frenetic/test-815",
+    "status": "ok",
+    "latency_sec": 12.995508670806885,
+    "input_tokens": 341,
+    "output_tokens": 628,
+    "total_tokens": 969,
+    "risk_score": 0.7,
+    "risk_factors": [
+      "High tortuosity (road_length / straight_line_distance: 1.51)"
+    ],
+    "rationale": "The high tortuosity indicates a winding road, which can make the vehicle's path unpredictable and increase the risk of losing control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 150.03 units, but the straight-line distance is 99.53 units. That means the tortuosity is 1.51, which is pretty high. Tortuosity usually indicates how much the road meanders, so a higher value suggests a more winding path. I remember that higher tortuosity can make driving harder because the vehicle has to follow a more complex path, which might be harder for the car to handle, especially if the driver isn't paying full attention.\n\nNext, the mean turn angle between segments is 0.005 radians, which is about 0.286 degrees. That's a very small angle, so the turns are gradual and not sharp. The maximum single turn angle is 0.0645 radians, which is roughly 3.7 degrees. That's still a small angle, so the sharpest turns aren't too abrupt. However, the turn angle"
+  },
+  {
+    "test_id": "mt/set_11/ambiegen/test-258",
+    "status": "ok",
+    "latency_sec": 10.204719305038452,
+    "input_tokens": 342,
+    "output_tokens": 492,
+    "total_tokens": 834,
+    "risk_score": 0.7,
+    "risk_factors": [
+      "High tortuosity",
+      "Consistent but moderate turns"
+    ],
+    "rationale": "The high tortuosity indicates a very winding road, which increases the likelihood of the vehicle losing control due to difficulty in predicting the path.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 2.56. Tortuosity measures how much the road meanders compared to a straight line. A higher value means more twists and turns. I remember that higher tortuosity can make it harder for the vehicle to predict the path, increasing the risk of losing control.\n\nNext, the number of waypoints is 985, which suggests a detailed road with many turns. However, the straight-line distance is only 93.04 units, while the total road length is 238.65 units. That means the road is quite winding, which aligns with the high tortuosity.\n\nThe mean turn angle is 0.0091 radians, which is about 0.52 degrees. That's a very slight turn on average. The maximum single turn angle is 0.1551 radians, which is about 8.89 degrees. So, the turns aren't extremely sharp, but there are some noticeable ones. The variability "
+  },
+  {
+    "test_id": "mt/set_16/frenetic/test-586",
+    "status": "ok",
+    "latency_sec": 12.61108946800232,
+    "input_tokens": 341,
+    "output_tokens": 611,
+    "total_tokens": 952,
+    "risk_score": 0.4,
+    "risk_factors": [
+      "High tortuosity (road_length / straight_line_distance: 2.17)"
+    ],
+    "rationale": "The high tortuosity of the road suggests a winding path, which can make it difficult for the autonomous vehicle to maintain control and stability.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 149.87 units, but the straight-line distance is only 68.98 units. That means the tortuosity is 2.17, which is quite high. Tortuosity usually indicates how much the road meanders, so a high value suggests a winding or twisty road. I remember that winding roads can make it harder for the car to maintain control because the path is more complex.\n\nNext, the mean turn angle between segments is 0.0046 radians, which is about 0.26 degrees. That's a very small angle, meaning the turns are gradual and not sharp. The maximum single turn angle is 0.0712 radians, which is roughly 4.08 degrees. Still, that's a small angle, so the turns aren't very sharp. The variability in turn angles is even smaller at 0.0043 radians, so the turns are consistent and not varying much "
+  },
+  {
+    "test_id": "mt/set_10/frenetic/test-463",
+    "status": "ok",
+    "latency_sec": 12.252697229385376,
+    "input_tokens": 342,
+    "output_tokens": 586,
+    "total_tokens": 928,
+    "risk_score": 0.65,
+    "risk_factors": [
+      "High tortuosity (tortuosity: 1.35)"
+    ],
+    "rationale": "The road's high tortuosity suggests a winding path, which can be challenging for control despite gradual turns.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 190.23 units, but the straight-line distance is 141.36 units. That means the road is quite tortuous because the tortuosity is 1.35, which is higher than 1. Tortuous roads are known to be more challenging for vehicles because they require precise control and can lead to sudden changes in direction.\n\nNext, the mean turn angle between segments is 0.0071 radians, which is about 0.4 degrees. That's a very small angle, so the turns are gradual. However, the maximum single turn angle is 0.105 radians, which is about 6 degrees. That's still a noticeable turn but not too sharp. The variability in these angles is low, with a standard deviation of 0.0064 radians, meaning the turns are consistent and not varying much. So, there aren't any unexpected or sharp turns that could c"
+  },
+  {
+    "test_id": "mt/set_7/frenetic/odr/test-417",
+    "status": "ok",
+    "latency_sec": 10.821330785751343,
+    "input_tokens": 341,
+    "output_tokens": 523,
+    "total_tokens": 864,
+    "risk_score": 0.85,
+    "risk_factors": [
+      "High tortuosity",
+      "Consistent but small turns"
+    ],
+    "rationale": "The high tortuosity of the road suggests a winding path that could lead to loss of control.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the road has 985 waypoints and a total length of 150.20 units, but the straight-line distance is only 34.72 units. That means the tortuosity is quite high at 4.33. Tortuosity usually indicates how much the road meanders, which can make it harder for the car to predict its path and could lead to losing control.\n\nThe mean turn angle between segments is 0.0057 radians, which is about 0.326 degrees. That's a very slight turn, almost negligible. The maximum single turn angle is 0.0273 radians, around 1.56 degrees, which is still quite small. The variability in these angles is even smaller at 0.0033 radians, so the turns are consistent and not too sharp.\n\nThere are no sharp turns greater than 0.3 radians (~17 degrees), which is good because sharp turns can cause sudden changes in direction and affect control."
+  },
+  {
+    "test_id": "mt/set_12/ambiegen/test-795",
+    "status": "ok",
+    "latency_sec": 10.250433921813965,
+    "input_tokens": 343,
+    "output_tokens": 494,
+    "total_tokens": 837,
+    "risk_score": 0.75,
+    "risk_factors": [
+      "High tortuosity (1.98) leading to potential loss of control"
+    ],
+    "rationale": "The high tortuosity indicates a winding road, which can lead to loss of control and off-road risk despite the turns being gentle.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this autonomous driving scenario. Let me go through the given data step by step.\n\nFirst, the road has 985 waypoints and a total length of 244.61 units. The straight-line distance from start to end is 123.77 units. That means the road is quite winding because the tortuosity is 1.98, which is quite high. Tortuosity is calculated as road length divided by straight-line distance, so a value greater than 1 indicates a winding path.\n\nThe mean turn angle between segments is 0.01 radians, which is very small. The maximum single turn angle is 0.1266 radians, which is about 7.26 degrees. That's still a small angle, so the turns aren't too sharp. The turn angle variability is 0.0099 radians, which is even smaller, suggesting consistent turns rather than varying angles.\n\nThere are no sharp turns, as none exceed 0.3 radians (~17 degrees). So, the turns are gentle, but the overall road is still quite tortuous because of the high tortuosity.\n\nThe "
+  },
+  {
+    "test_id": "mt/set_9/ambiegen/test-371",
+    "status": "ok",
+    "latency_sec": 9.882991552352905,
+    "input_tokens": 343,
+    "output_tokens": 470,
+    "total_tokens": 813,
+    "risk_score": 0.15,
+    "risk_factors": [
+      "Moderate tortuosity, consistent turn angles"
+    ],
+    "rationale": "The road has a moderate tortuosity (1.11) but no sharp turns (>0.3 rad). The turns are consistent with a mean angle of 0.006 rad and maximum of 0.2029 rad, indicating smooth and gradual curves.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "FAIL",
+    "raw_content": "Okay, so I'm trying to figure out the failure risk of this road scenario based on the given geometric properties. Let me go through each factor one by one.\n\nFirst, the number of waypoints is 985, which is quite a lot. That probably means the road has a lot of turns or curves. The total road length is 137.91 units, but the straight-line distance is 124.65 units. The tortuosity is 1.11, which is just a bit above 1, so not extremely twisty, but there's some meandering.\n\nThe mean turn angle between segments is 0.006 radians, which is about 0.34 degrees. That's a very small angle, so the road doesn't have many sharp turns. The maximum single turn angle is 0.2029 radians, which is around 11.66 degrees. That's still a sharp turn, but not extremely so. The turn angle variability is 0.0131 radians, which is about 0.75 degrees. So the turns are pretty consistent in angle.\n\nThere are zero sharp turns, which is interesting. Sharp turns are usually a big factor in failure risk because they require "
+  },
+  {
+    "test_id": "mt/set_13/frenetic_v/test-810",
+    "status": "ok",
+    "latency_sec": 13.532790899276733,
+    "input_tokens": 343,
+    "output_tokens": 656,
+    "total_tokens": 999,
+    "risk_score": 0.7,
+    "risk_factors": [
+      "High tortuosity",
+      "Significant winding path"
+    ],
+    "rationale": "The road has a high tortuosity (1.92) and a significantly longer path than the straight-line distance, indicating a winding and meandering path that could challenge the vehicle's control systems.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based solely on the geometric properties provided. Let me go through each factor step by step.\n\nFirst, the tortuosity is 1.92. I remember that tortuosity is a measure of how much a road meanders. A value greater than 1 means it's quite winding. High tortuosity can make the road harder to navigate because the vehicle has to make frequent turns, which can be stressful on the control systems.\n\nNext, the number of waypoints is 985, which is quite high. That suggests a very detailed path, possibly with many small turns. However, the mean turn angle is 0.0063 radians, which is about 0.36 degrees. That's a very slight turn, so maybe not too bad. But the maximum single turn angle is 0.1146 radians, which is about 6.56 degrees. Still, that's a sharp turn for a car, but not extremely so.\n\nThe turn angle variability is 0.0084 radians, which is about 0.48 degrees. That's a small variation, meaning the turns are rela"
+  },
+  {
+    "test_id": "mt/set_7/frenetic/odr/test-806",
+    "status": "ok",
+    "latency_sec": 12.52044415473938,
+    "input_tokens": 342,
+    "output_tokens": 606,
+    "total_tokens": 948,
+    "risk_score": 0.6,
+    "risk_factors": [
+      "High tortuosity",
+      "Number of waypoints",
+      "Winding road path"
+    ],
+    "rationale": "The road has a high tortuosity, indicating significant meandering, which can make it harder for the autonomous vehicle to maintain control. The number of waypoints and the winding nature of the road contribute to increased difficulty in navigating the path without deviating from the road boundaries.",
+    "reasoning_content": null,
+    "finish_reason": "stop",
+    "true_outcome": "PASS",
+    "raw_content": "Okay, so I'm trying to assess the failure risk of this autonomous vehicle scenario based on the given geometric properties. Let me go through each factor step by step.\n\nFirst, the tortuosity is 1.62. I remember that tortuosity is a measure of how much a road meanders. A value greater than 1 means it's more winding than a straight line. I think higher tortuosity can make driving harder because the vehicle has to navigate turns more frequently and with smaller radii, which can be tricky for control.\n\nNext, the number of waypoints is 985, which suggests a very detailed and possibly complex road path. More waypoints might mean more turns or a more winding path, increasing the risk of losing control.\n\nThe total road length is 189.66 units, and the straight-line distance is 116.95 units. The straight-line distance is shorter, which again points towards a winding or tortuous road. The ratio of 1.62 indicates significant meandering.\n\nThe mean turn angle is 0.0051 radians, which is about 0.29 d"
+  }
+]

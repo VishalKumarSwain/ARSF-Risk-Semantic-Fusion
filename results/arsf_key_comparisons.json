@@ -1,0 +1,74 @@
+{
+  "ARSF_vs_KSERESNET": {
+    "APFD": {
+      "point_diff": 0.025536537490287926,
+      "ci_lo": 0.021729327456481592,
+      "ci_hi": 0.02942371663934401,
+      "p_value": 0.0,
+      "effect_size": 13.002198743161552,
+      "significant": true
+    },
+    "APFDc": {
+      "point_diff": 0.026379625673688407,
+      "ci_lo": 0.021944404810719312,
+      "ci_hi": 0.030999559241881938,
+      "p_value": 0.0,
+      "effect_size": 11.340689849896838,
+      "significant": true
+    }
+  },
+  "ARSF_vs_FixedFusion": {
+    "APFD": {
+      "point_diff": 0.01957769823368111,
+      "ci_lo": 0.016017574499264643,
+      "ci_hi": 0.023127086231074116,
+      "p_value": 0.0,
+      "effect_size": 10.802302479946388,
+      "significant": true
+    },
+    "APFDc": {
+      "point_diff": 0.021449089585928435,
+      "ci_lo": 0.01726156372255869,
+      "ci_hi": 0.025636160747512612,
+      "p_value": 0.0,
+      "effect_size": 10.025346829094454,
+      "significant": true
+    }
+  },
+  "ARSF_vs_Qwen": {
+    "APFD": {
+      "point_diff": 0.13169171817180966,
+      "ci_lo": 0.12041885404461838,
+      "ci_hi": 0.14292177933209727,
+      "p_value": 0.0,
+      "effect_size": 23.024192510947863,
+      "significant": true
+    },
+    "APFDc": {
+      "point_diff": 0.14163441427796208,
+      "ci_lo": 0.1281880152212188,
+      "ci_hi": 0.15450145640816504,
+      "p_value": 0.0,
+      "effect_size": 21.11482120620172,
+      "significant": true
+    }
+  },
+  "ARSF_vs_GBDT": {
+    "APFD": {
+      "point_diff": 0.017463145446189137,
+      "ci_lo": 0.00855413560304746,
+      "ci_hi": 0.02672091855966327,
+      "p_value": 0.0,
+      "effect_size": 3.7417897586333426,
+      "significant": true
+    },
+    "APFDc": {
+      "point_diff": 0.03477164455491054,
+      "ci_lo": 0.024021017176217102,
+      "ci_hi": 0.04570511985524738,
+      "p_value": 0.0,
+      "effect_size": 6.283674848256169,
+      "significant": true
+    }
+  }
+}

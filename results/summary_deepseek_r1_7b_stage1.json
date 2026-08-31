@@ -1,0 +1,15 @@
+{
+  "model": "deepseek-r1-distill-qwen-7b",
+  "total_requests": 1000,
+  "successful_requests": 1000,
+  "malformed_json": 0,
+  "inference_errors": 0,
+  "success_rate_pct": 100.0,
+  "mean_latency_sec": 12.703,
+  "median_latency_sec": 12.5319,
+  "std_latency_sec": 1.9318,
+  "min_latency_sec": 8.3336,
+  "max_latency_sec": 23.246,
+  "total_runtime_sec": 12703.13,
+  "scenarios_per_minute": 4.72
+}

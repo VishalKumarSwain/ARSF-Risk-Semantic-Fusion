@@ -1,0 +1,15 @@
+# Copyrighted third-party literature (not for redistribution)
+Reference Paper/
+
+# JSS manuscript sources (kept in a separate location, not part of this code release)
+paper/
+
+# Downloaded LaTeX template archive
+els-cas-templates.zip
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

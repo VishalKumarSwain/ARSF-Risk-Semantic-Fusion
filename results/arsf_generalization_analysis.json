@@ -1,0 +1,16 @@
+{
+  "fixed_fusion_val_APFD": 0.6296058483047545,
+  "fixed_fusion_test_APFD": 0.6386846613716182,
+  "arsf_val_APFD": 0.6491447424143022,
+  "arsf_test_APFD": 0.653424505680235,
+  "val_gain_APFD": 0.019538894109547678,
+  "test_gain_APFD": 0.014739844308616856,
+  "pct_val_gain_retained_APFD": 75.43847786868466,
+  "fixed_fusion_val_APFDc": 0.6357806922039936,
+  "fixed_fusion_test_APFDc": 0.6436385893353976,
+  "arsf_val_APFDc": 0.6571818232652622,
+  "arsf_test_APFDc": 0.6592631573646369,
+  "val_gain_APFDc": 0.02140113106126862,
+  "test_gain_APFDc": 0.015624568029239283,
+  "pct_val_gain_retained_APFDc": 73.00814141321878
+}

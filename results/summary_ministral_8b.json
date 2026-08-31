@@ -1,0 +1,33 @@
+{
+  "model": "ministral-8b",
+  "total_requests": 100,
+  "successful_requests": 100,
+  "malformed_json": 0,
+  "missing_fields": 0,
+  "invalid_risk_score": 0,
+  "inference_errors": 0,
+  "timeout_errors": "not separately tracked -- included in inference_errors; see per-scenario 'error' column for exception text",
+  "retries": 0,
+  "success_rate_pct": 100.0,
+  "malformed_rate_pct": 0.0,
+  "finish_reason_distribution": {
+    "stop": 100
+  },
+  "mean_latency_sec": 3.3248,
+  "median_latency_sec": 3.2354,
+  "std_latency_sec": 0.5169,
+  "min_latency_sec": 2.3865,
+  "max_latency_sec": 5.654,
+  "p95_latency_sec": 3.8947,
+  "p99_latency_sec": 5.4096,
+  "total_runtime_sec": 332.49,
+  "scenarios_per_second": 0.3008,
+  "scenarios_per_minute": 18.05,
+  "mean_input_tokens": 348.7,
+  "mean_output_tokens": 104.52,
+  "mean_total_tokens": 453.22,
+  "p95_input_tokens": 350.0,
+  "p95_output_tokens": 120.35,
+  "total_tokens_generated": 10452,
+  "reasoning_tokens_note": "vLLM's OpenAI-compatible API returned reasoning_content=null for every request on models tested so far (Qwen3-8B with enable_thinking=false, and DeepSeek-R1-Distill which does not populate this field in this vLLM version) -- reasoning/thinking token counts could NOT be reliably separated from output_tokens for any model in this run. Not invented; explicitly reported as unavailable."
+}
