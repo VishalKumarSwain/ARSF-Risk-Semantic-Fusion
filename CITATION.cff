@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the associated paper."
+title: "ARSF-Risk-Semantic-Fusion: Code and Artifacts for 'When Does an Offline LLM Help a Learned SDC Risk Model? A Held-Out Study of Risk-Semantic Fusion'"
+type: software
+authors:
+  - family-names: "Swain"
+    given-names: "Vishal Kumar"
+    affiliation: "National Institute of Technology, Warangal"
+    email: "vk25csr1p07@student.nitw.ac.in"
+    orcid: "https://orcid.org/0009-0002-8041-1522"
+  - family-names: "Godboley"
+    given-names: "Sangharatna"
+    affiliation: "National Institute of Technology, Warangal"
+    email: "sanghu@nitw.ac.in"
+  - family-names: "Radha Krishna"
+    given-names: "Pisipati"
+    affiliation: "National Institute of Technology, Warangal"
+    email: "prkrishna@nitw.ac.in"
+repository-code: "https://github.com/VishalKumarSwain/ARSF-Risk-Semantic-Fusion"
+license: MIT
+keywords:
+  - test scenario prioritization
+  - autonomous driving software testing
+  - self-driving car simulation testing
+  - large language models
+  - risk-based testing
+  - adaptive fusion
+  - learned ranking
+  - empirical software engineering
